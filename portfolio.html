@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="" e="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#2196f3">
+        <title>RNR Digital Consultancy</title>
+        <link rel='icon' href='assets/img/rnr_logo.png'>
+        <link rel="stylesheet" href="assets/lib/framework7/css/framework7.material.min.css">
+        <link rel="stylesheet" href="assets/lib/framework7/css/framework7.material.colors.min.css">
+        <link rel="stylesheet" href="assets/lib/framework7/css/framework7.icons.css">
+        <link rel="stylesheet" href="assets/lib/framework7/css/my-app.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body style='background: transparent;'>
+        <div class="views">
+            <div class="view view-main" data-page="home">
+                <div class="pages">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(assets/img/portfolio/1.png)" class="href:aldrinaltorealty.com"></div>
+                            <div class="swiper-slide" style="background-image:url(assets/img/portfolio/2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(assets/img/portfolio/3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(assets/img/portfolio/4.png)"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/lib/framework7/js/framework7.min.js"></script>
+    <style type="text/css">
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script type="text/javascript">
+        var $$ = Dom7;
+        var app = new Framework7({
+            material:true,
+        });    
+        var swiper = app.swiper(".swiper-container",{
+            loop:true,
+            speed: 400,
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true
+            }
+        });
+    </script>
+</html>
+
