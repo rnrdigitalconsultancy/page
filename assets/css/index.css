@@ -114,6 +114,13 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.teamimg {
+    border-radius: 50%;
+    overflow: auto;
+    max-width: 100%;
+    height: auto
+}
+
 .game-row{
     position: absolute;
 }
@@ -225,9 +232,9 @@ to {background-position: 400px 0;}
 }  
 
 .profile{
-  width:100px;
+  width: 100px;
   height:100px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
   /*Button effects*/
 .button:hover {
