@@ -209,3 +209,15 @@ var $$ = Dom7;
 var app = new Framework7({
 	material:true,
 });
+
+var sample = function(){
+	'use strict';
+	return {
+		ini:function(){
+			var data = system.xml("assets/lib/info/info.xml");
+			var renz = $(data.responseText);
+			console.log(renz[1]);
+			$("#main-display").html(renz[2]);
+		}
+	}
+}();
