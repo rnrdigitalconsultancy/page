@@ -210,7 +210,7 @@ var app = new Framework7({
 	material:true,
 });
 
-var sample = function(){
+var content = function(){
 	'use strict';
 	return {
 		ini:function(){

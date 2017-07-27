@@ -3,156 +3,63 @@
 <link rel="stylesheet" href="assets/lib/framework7/css/framework7.material.colors.min.css">
 <link rel="stylesheet" href="assets/lib/framework7/css/framework7.icons.css">
 <link rel="stylesheet" href="assets/lib/framework7/css/my-app.css">
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<div class="views" style="padding-bottom: 50px;">
+	<div class="view view-main">
+		<div class="pages">
+			<div class="page" data-page="home">
+				<div class="page-content">
 
-.view {
-    width: 100%;
-    height: 100%;
-    margin: 1px;
-    float: left;
-    border: 1px solid #fff;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(../assets/img/w5.jpg) no-repeat center center
-}
-.view .mask, .view .content {
-    width: 100%;
-    height: 54%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-.view img {
-    display: block;
-    position: relative
-}
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
-}
-.view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-.view a.info:hover {
-    box-shadow: 0 0 5px #000
-}
-
-.view-third img { 	
-    transition: all 0.2s ease-in; 
-}
-.view-third .mask { 
-	background-color: rgba(0,0,0,0.6);
-	opacity: 0;
-	transform: translate(460px, -100px) rotate(180deg);
-	transition: all 0.2s 0.4s ease-in-out;
-}
-.view-third h2{
-	transform: translateY(-100px);
-	transition: all 0.2s ease-in-out;
-}
-.view-third p { 
-	transform: translateX(300px) rotate(90deg);
-	transition: all 0.2s ease-in-out;
-}
-.view-third a.info { 
-	transform: translateY(-200px);
-	transition: all 0.2s ease-in-out;
-}
-.view-third:hover .mask { 
-	opacity:1; 
-	transition-delay: 0s;							 
-	transform: translate(0px, 0px);
-}
-.view-third:hover h2 { 
-	transform: translateY(0px); 
-	transition-delay: 0.5s; 
-}
-.view-third:hover p	{ 
-    transform: translateX(0px) rotate(0deg);
-	transition-delay: 0.4s;
-}
-.view-third:hover a.info { 
-	transform: translateY(0px);
-	transition-delay: 0.3s;
-} 
-</style>
-	<div class="row" style="min-height: 645px;">
-		<div class="front" style="margin: 0 auto;">
-			<div class="col-50 center" style="padding-top: 50px;margin: 0 auto;">
-				<h1 style="font-size: 40px; border: solid 2px #000; margin-bottom: 50px;">T E A M</h1>
-			</div>
-			<div class="col-100 center" style="padding-top: 50px;margin: 0 auto;">  
-				<div class="row">
-
-<div class="view view-third col-20">  
-<img src="assets/img/pic1.jpg" style="width:200px; height: 350px;" />  
-<div class="mask">  
-<h2>Rey Leonard Dumasig</h2>  
-<p>Chief Executive Officer</p>  
-</div>  
-</div>
-
-<div class="view view-third col-20">  
-<img src="assets/img/pic5.jpg" style="width:200px; height: 350px;" />  
-<div class="mask">  
-<h2>Rufo Gabrillo Jr.</h2>  
-<p>Chief Technology Officer</p>  
-</div>  
-</div>
-
-<div class="view view-third col-20">  
-<img src="assets/img/pic2.jpg" style="width:200px; height: 350px;" />  
-<div class="mask">  
-<h2>Zyndale Jake Ramos</h2>  
-<p>Graphic Designer</p>  
-</div>  
-</div>
-
-<div class="view view-third col-20">  
-<img src="assets/img/pic3.jpg" style="width:200px; height: 350px;"  />  
-<div class="mask">  
-<h2>Mark Ryan Gallano</h2>  
-<p>Developer</p>  
-</div>  
-</div>
-
-<div class="view view-third col-20">  
-<img src="assets/img/pic4.jpg" style="width:200px; height: 350px;" />  
-<div class="mask">  
-<h2>Renmar Cornista</h2>  
-<p>Developer</p>  
-</div>  
-</div>
-
+					<div style="min-height: 645px;">
+						<div class="front" style="margin: 0 auto;">
+							<div class="row">
+								<div class="col s12 m6 l4 center" style="padding-top: 50px;margin: 0 auto;">
+									<h1 style="font-size: 40px; border: solid 2px #000; margin-bottom: 50px;">Team</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m4 l2">
+									<img src="assets/img/pic1.jpg" style="width:200px; height: 200px;">
+									<div class="mask">
+										<h5>Rey Leonard Dumasig</h5>
+										<p>Chief Executive Officer</p>
+									</div>
+								</div>
+								<div class="col s12 m4 l2">
+									<img src="assets/img/pic5.jpg" style="width:200px; height: 200px;">
+									<div class="mask">
+										<h5>Rufo Gabrillo Jr.</h5>
+										<p>Chief Technology Officer</p>
+									</div>
+								</div>
+								<div class="col s12 m4 l2">
+									<img src="assets/img/pic2.jpg" style="width:200px; height: 200px;">
+									<div class="mask">
+										<h5>Zyndale Jake Ramos</h5>
+										<p>Graphic Designer</p>
+									</div>
+								</div>
+								<div class="col s12 m4 l2">
+									<img src="assets/img/pic3.jpg" style="width:200px; height: 200px;">
+									<div class="mask">
+										<h5>Mark Ryan Gallano</h5>
+										<p>Developer</p>
+									</div>
+								</div>
+								<div class="col s12 m4 l2">
+									<img src="assets/img/pic4.jpg" style="width:200px; height: 200px;">
+									<div class="mask">
+										<h5>Renmar Cornista</h5>
+										<p>Developer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
 <script type="text/javascript" src="assets/lib/framework7/js/framework7.min.js"></script>
-<script type="text/javascript">
-</script>
