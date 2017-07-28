@@ -32,7 +32,7 @@
                                         <div class='row'>
                                             <p class="buttons-row">
                                                 <div class='col-100 tablet-50'>
-                                                    <button data-popup=".popup-about" class='button button-fill color-blue button-raised ripple-blue open-popup' style="background: #64c2ec !important;margin: 0 auto;">KNOW MORE</button>
+                                                    <button data-cmd='about' class='button button-fill color-blue button-raised ripple-blue' style="background: #64c2ec !important;margin: 0 auto;">KNOW MORE</button>
                                                 </div>
                                                 <div class='col-100 tablet-50'>
                                                     <button data-popup=".popup-contact" class='button button-fill color-pink button-raised ripple-blue open-popup' style="background: #f74356 !important;margin: 0 auto;">CONTACT US</button>
@@ -160,5 +160,13 @@
         $$(window).on('resize',function(event,data){
             system.resize();
         });
+
+            console.log("xx");
+
+        $$("button[data-cmd='about']").on('click',function(){
+            console.log("xx");
+            $(location).attr('href','/about.html');
+        });
+
     </script>
 </html>

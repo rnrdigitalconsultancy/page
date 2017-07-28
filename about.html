@@ -60,21 +60,22 @@
                 <div class="pages">
                     <div data-page="home" class="page navbar-fixed" style="background: transparent !important; min-height: 600px;">
                         <div class="swiper-custom">
+                            <div class="parallax-bg" style="background-image:url(img/layer_05_1920 x 1080.png)" data-swiper-parallax="-23%"></div>
                             <div class="swiper-container swiper-container-horizontal">
                                 <div class="swiper-wrapper">
-                                    <div style='background: #fff !important;' class="swiper-slide">
+                                    <div style='background: transparent !important;' class="swiper-slide">
                                         <iframe src="why.html" style="width:100% !important; min-height: 650px; border:none;"></iframe>
                                     </div>
-                                    <div style='background: #fff !important;' class="swiper-slide">
+                                    <div style='background: transparent !important;' class="swiper-slide">
                                         <iframe src="services.html" style="width:100% !important; min-height: 650px; border:none;"></iframe>
                                     </div>
-                                    <div style='background: #fff !important;' class="swiper-slide swiper-slide-prev">
+                                    <div style='background: transparent !important;' class="swiper-slide swiper-slide-prev">
                                         <iframe src="portfolio.html" style="width:100% !important; min-height: 650px; border:none;"></iframe>
                                     </div>
-                                    <div style='background: #fff !important;' class="swiper-slide swiper-slide-active">
+                                    <div style='background: transparent !important;' class="swiper-slide swiper-slide-active">
                                         <iframe src="team.html" style="width:100% !important; min-height: 650px; border:none;"></iframe>
                                     </div>
-                                    <div style='background: #fff !important;' class="swiper-slide swiper-slide-next">
+                                    <div style='background: transparent !important;' class="swiper-slide swiper-slide-next">
                                         <iframe src="contact.html" style="width:100% !important; min-height: 650px; border:none;"></iframe>
                                     </div>
                                 </div>
@@ -97,17 +98,16 @@
         var $$ = Dom7;
         var app = new Framework7({
             material:true,
-        });    
+        });  
+          
         var swiper = app.swiper(".swiper-container",{
             loop:true,
             speed: 400,
             effect:'slide',
             grabCursor:true,
             shortSwipes:true,
-            pagination:'.swiper-container .swiper-pagination',
-            paginationClickable:true,
-            nextButton:'.swiper-button-next',
-            prevButton:'.swiper-button-prev',
+            // direction: 'vertical',
+            mousewheelControl: true
         });
 
         $$("a[data-slide='home']").on('click',function(){
