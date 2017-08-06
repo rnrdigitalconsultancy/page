@@ -1,0 +1,105 @@
+<link rel='icon' href='assets/img/rnr_logo2.png'>
+<link rel="stylesheet" href="assets/lib/framework7/css/framework7.material.min.css">
+<link rel="stylesheet" href="assets/lib/framework7/css/framework7.material.colors.min.css">
+<link rel="stylesheet" href="assets/lib/framework7/css/framework7.icons.css">
+<link rel="stylesheet" href="assets/lib/framework7/css/my-app.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<div class="views">
+	<div class="view view-main">
+		<div class="pages">
+			<div class="page" data-page="home">
+				<div class="page-content">
+					<div class="frontrow" style="background-color: #a9c6cd">
+						<div class="row">
+							<div class="col s12 m6 l4 center" style="padding-top: 50px;margin: 0 auto;">
+								<h1 style="font-size: 40px; border: solid 2px #000; margin-bottom: 50px;">
+									Ready to discuss your project?
+								</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 m6 l4 center" style='text-transform: none;font-size: 20px; ; margin-top: 20px; margin: 0 auto;'>
+                            <button data-popup=".popup-contact" class='button button-fill color-pink button-raised ripple-blue open-popup' style="background: #f74356 !important;margin: 0 auto;">Let us know</button>
+                            </div>
+						</div>
+						<div class="row">
+							<div class="col s12 m6 l4 center" style="margin-top: 5px;margin: 0 auto; margin-bottom: 50px;">
+								<img src="assets/img/work1" style="width:100%; height:auto;" alt="Discuss your project" align="center">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-contact" style="display: none;">
+	<div class="view view-popup navbar-fixed" style="min-height: 500px;">
+	    <div class="navbar">
+	        <div class="navbar-inner">
+	            <div class="left"></div>
+	            <div class="center sliding" style="left: 26.5px;">Contact Us</div>
+	            <div class="right"><a href="#" class="link close-popup"><i class="f7-icons">close</i></a></div>
+	        </div>
+	    </div>
+	    <div class="pages">
+	        <div class="page">
+	            <div class="page-content">
+	                <form id="form_sendMessage" method="get" action="" novalidate="novalidate">
+	                    <div class="list-block" style='margin:0px;'>
+	                        <ul>
+	                            <li>
+	                                <div class="item-content">
+	                                    <div class="item-media"><i class="icon f7-icons">person</i></div>
+	                                    <div class="item-inner">
+	                                        <div class="item-input">
+	                                            <input id="field_name" name="field_name" type="text" data-error=".error_field_name" aria-required="true" aria-invalid="false" class="valid" placeholder="Name">
+	                                        </div>
+	                                    </div>
+	                                    <div class="error_field_name"></div>  
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <div class="item-content">
+	                                    <div class="item-media"><i class="icon f7-icons">email</i></div>
+	                                    <div class="item-inner">
+	                                        <div class="item-input">
+	                                            <input id="field_email" name="field_email" type="email" data-error=".error_field_email" aria-required="true" aria-invalid="false" class="valid" placeholder="E-mail">
+	                                        </div>
+	                                    </div>
+	                                    <div class="error_field_email"></div>  
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <div class="item-content">
+	                                    <div class="item-media"><i class="icon f7-icons">chat</i></div>
+	                                    <div class="item-inner">
+	                                        <div class="item-input">
+	                                            <textarea id="field_message" name="field_message" data-error=".error_field_message" aria-required="true" aria-invalid="false" class="valid" placeholder="Message"></textarea>
+	                                        </div>
+	                                    </div>
+	                                    <div class="error_field_message"></div>  
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <div class="item-content">
+	                                    <div class="item-inner">
+	                                        <div class="item-input">
+	                                            <a class="button button-raised button-fill" type="submit">Send</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </form> 
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/lib/framework7/js/framework7.min.js"></script>
+<script type="text/javascript" src="assets/js/process.js"></script>
