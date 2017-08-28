@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
         <meta name="" e="apple-mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#2196f3">
-        <title>PSU Tabulation System</title>
+        <title>PSU Schedule Plotter</title>
         <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
         <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
         <link rel="stylesheet" href="lib/framework7/css/my-app.css">
@@ -16,32 +16,32 @@
                 <div class="page" style='background:transparent !important;'>
                     <div class="page-content login-screen-content" style='background:transparent !important;'>
                         <div class='row'>
-                            <div class='col-20'>
+                            <div class='col-33'>
                             </div>
-                            <div class='col-35 bg-white' style="position: relative;top: 50px;border: #ccc solid 1px;">
-                                <div class="login-screen-title">PSU Tabulation System</div>
-                                <form id='loginData' method='POST'>
+                            <div class='col-34 bg-white' style="position: relative;top: 50px;border: #ccc solid 1px;">
+                                <div class="login-screen-title">Schedule Plotter</div>
+                                <form>
                                     <div class="list-block">
                                         <div class="list-block-label">
-                                            <p>Welcome to PSU Tabulation System. <br/>You need to sign in to get started.</p>
+                                            <p>Welcome to PSU schedule plotter. You need to sign in to get started.</p>
                                         </div>
                                     </div>
-                                    <div class='content-block'>
-                                        <div class="list-block">
+                                    <div class="list-block">
+                                        <div class='content-block'>
                                             <ul>
                                                 <li class="item-content">
                                                     <div class="item-inner">
-                                                        <div class="item-title label">User Level</div>
+                                                        <div class="item-title label">Username</div>
                                                         <div class="item-input">
-                                                            <input type="text" name="username" placeholder="Your user level">
+                                                            <input type="text" name="username" placeholder="Your username">
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="item-content">
                                                     <div class="item-inner">
-                                                        <div class="item-title label">Access Code</div>
+                                                        <div class="item-title label">Password</div>
                                                         <div class="item-input">
-                                                            <input type="password" name="password" placeholder="Your access code">
+                                                            <input type="password" name="password" placeholder="Your password">
                                                         </div>
                                                     </div>
                                                 </li>
@@ -54,7 +54,7 @@
                                                 <div class='row'>
                                                     <div class='col-33'></div>
                                                     <div class='col-33'>
-                                                        <a data-cmd="getLogin" class="button button-fill color-blue">Sign In</a>
+                                                        <button data-cmd="getLogin" class="button button-fill color-blue">Sign In</button>
                                                     </div>
                                                     <div class='col-33'></div>
                                                 </div>
@@ -63,7 +63,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class='col-20'>
+                            <div class='col-33'>
                             </div>
                         </div>
                     </div>
@@ -74,5 +74,6 @@
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/jquery.particleground.min.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/process.js"></script>
+    <!-- Path to your app js-->
 </html> 
