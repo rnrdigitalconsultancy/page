@@ -12,9 +12,9 @@ class DatabaseClasses extends DataClasses{
 
 	function DBCon(){
 		$host = "localhost";
-		$dataBase = "db_tabulation";
-		$user = "root";
-		$password = "";
+		$dataBase = "db_developers";
+		$user = "user_psudev";
+		$password = "user_psudev7836";
 		try{
 			$PDO = new PDO('mysql:host='.$host.';dbname='.$dataBase, $user, $password);
 			return $PDO; $PDO = null;
@@ -76,6 +76,11 @@ class DatabaseClasses extends DataClasses{
 		else{
 			return $query;
 		}
+	}
+
+	function escape($string){
+		$Data = DatabaseClasses::DBCon();
+		return $Data->quote($string);
 	}
 
 	function PDO_DateAndTime(){
@@ -178,19 +183,6 @@ class DatabaseClasses extends DataClasses{
 			return true;
 	}
 
-	function PDO_StudentIDNumberGenerator($Table,$ID){
-		$Status = true; $RetString = ""; $Zero = '';
-		$Query = DatabaseClasses::PDO_SQLQuery("SELECT * FROM $Table");
-		$Query->execute(); $Num = $Query->rowCount();
-		for($x=0;$x<5-strlen($Num);$x++){
-			$Zero.="0";
-		}
-		$Year = substr(DatabaseClasses::PDO_DateNow(),2,2);
-		$TempNum = $Zero.$Query->rowCount();
-
-		return $Year.'-LN-'.$TempNum;
-	}
-
 	function PDO_DateNow(){
 		$Query = DatabaseClasses::PDO_SQLQuery("SELECT NOW() as Date");
 		$Query->execute();
@@ -198,7 +190,7 @@ class DatabaseClasses extends DataClasses{
 	}
 
 	function db_buckup(){
-		$sql=""; $createsql=""; $dropsql="DROP TABLE "; $subcreatesql=""; $insertsql=""; $subinsertsql="";
+		$sql=""; $createsql=""; $dropsql="DROP TABLE IF EXISTS "; $subcreatesql=""; $insertsql=""; $subinsertsql="";
 		$q1 = DatabaseClasses::PDO(true,"SHOW TABLES");
 		foreach($q1 as $i1 => $v1){
 			$dropsql .= "`{$v1[0]}`";
@@ -218,16 +210,18 @@ class DatabaseClasses extends DataClasses{
 
 			$insertsql="";
 			$q3 = DatabaseClasses::PDO(true,"SELECT * FROM {$v1[0]}");
-			foreach ($q3 as $i3 => $v3) {
-				$subinsertsql="";
-				foreach ($v3 as $_i3 => $_v3) {
-					$subinsertsql .= "'{$_v3}'";
-					if(count($v3)!=($_i3+1)){$subinsertsql .= ", ";}
+			if(count($q3)>0){
+				foreach ($q3 as $i3 => $v3) {
+					$subinsertsql="";
+					foreach ($v3 as $_i3 => $_v3) {
+						$subinsertsql .= "'{$_v3}'";
+						if(count($v3)!=($_i3+1)){$subinsertsql .= ", ";}
+					}
+					$insertsql .= "({$subinsertsql})";
+					if(count($q3)!=($i3+1)){$insertsql .= ",\n";}
 				}
-				$insertsql .= "({$subinsertsql})";
-				if(count($q3)!=($i3+1)){$insertsql .= ",\n";}
+				$insertsql = "INSERT INTO `{$v1[0]}` ({$columns}) VALUES \n{$insertsql};\n\n";				
 			}
-			$insertsql = "INSERT INTO `{$v1[0]}` ({$columns}) VALUES \n{$insertsql};\n\n";
 
 			$sql .= "-- Table structure for `{$v1[0]}`-- \n{$createsql}-- Dumping data for table `{$v1[0]}`-- \n{$insertsql}\n\n";
 		}
@@ -235,6 +229,15 @@ class DatabaseClasses extends DataClasses{
 		$sql = "SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";\nSET time_zone = \"+00:00\";\n\n/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;\n/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;\n/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;\n/*!40101 SET NAMES utf8 */;\n\n{$dropsql};\n\n{$sql}\n/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;\n/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;\n/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;\n\n-- Buckup function --\n-- Developed by Rufo N. Gabrillo Jr. --";
 
 		return $sql;
+	}
+
+	function mail($receiver,$subject,$message){
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= 'From: PSU CSIT Department <psu-csit.com>' . "\r\n";
+
+        $result = mail($receiver,$subject,$message,$headers);
+        return $result;
 	}
 }
 ?>
