@@ -20,7 +20,110 @@ ul {
     padding: 0;
 }
 
+p{
+    font-size: 20px;
+}
 
+p.label{
+    font-size: 15px;
+}
+
+#rnr_team .images{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;   
+    margin-top: 20px; 
+}
+
+#rnr_team .images img{
+    width: 100px;
+}
+
+#rnr_team .topImage{
+    position: absolute;
+}
+
+#rnr_team .topImage img{
+    position: relative;
+    width: 50px;
+    left: -20px;
+    top: -30px;
+    /*background: #fff;*/
+    padding: 5px;    
+}
+
+.rnr-divider{
+    height: 2px;
+    border-left: solid #64c2ec 50px;
+    border-right: solid #f74356 50px;
+    width: 0px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.rnr-button{
+    /*background: #f00 !important;*/
+    background: transparent !important;
+    border: 2px solid #ccc;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    min-width: 150px;
+}
+
+.rnr-button:hover{
+    /*background-color: #f00 !important;*/
+    border: 2px solid #fff;
+    padding: 10px;
+    /*color: #3/33;*/
+    border-radius: 5px;
+}
+
+.line{
+    border:2px solid #ccc;
+    min-height: 260px;
+}
+
+.line small{
+    font-size: 60% !important;
+}
+
+.invert{
+    filter: invert(100%);
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
 
 /*---------------------------------------
    TYPOGRAPHY                
@@ -28,6 +131,19 @@ ul {
 
 
 /* FONTS */
+
+@font-face {
+    font-family: 'rnr-head';
+    !important src: url('fonts/watchword/watchword_bold_demo-webfont.eot');
+    src: url('../fonts/watchword/watchword_bold_demo-webfont.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/watchword/watchword_bold_demo-webfont.woff2') format('woff2'), 
+        url('../fonts/watchword/watchword_bold_demo-webfont.woff') format('woff'), 
+        url('../fonts/watchword/watchword_bold_demo-webfont.ttf') format('truetype'), 
+        url('../fonts/watchword/watchword_bold_demo-webfont.svg#watchword_bold_demo-webfont_2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face {
     font-family: 'walkway_semiboldregular';
@@ -46,6 +162,7 @@ ul {
 
 /* HEADINGS */
 
+
 h1,
 h2,
 h3 {
@@ -61,7 +178,9 @@ h4,
 h5,
 h6 { font-weight: 300 }
 
-
+h1 strong{
+    font-family: 'rnr-head';
+}
 /*---------------------------------------
    LAYOUT          
 -----------------------------------------*/
@@ -910,4 +1029,6 @@ ul.skills{
 
 #fullpage{
     position: absolute !important;
+    width:100% !important;
 }
+

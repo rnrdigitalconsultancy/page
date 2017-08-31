@@ -14,7 +14,7 @@ $(document).ready(function() {
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
-        'anchors': ['why', 'services','portfolio','team','contact'],
+        'anchors': ['home','why', 'services','portfolio','team','contact'],
         'navigationPosition': 'left'
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
@@ -33,51 +33,17 @@ $(document).ready(function() {
     });
 });
 jQuery(window).load(function() {
-    jQuery('#preloader').fadeOut();
+    // jQuery('#preloader').fadeOut();
 });
 
 $(document).on("ready",function(){
-    $("#form_registration").validate({
-        rules: {
-            // field_name: {required: true,maxlength: 200},
-            // field_email: {required: true,maxlength: 100,email:true},
-            // field_phone: {required: true,maxlength: 20},
-            // field_skill: {required: false},
-            // field_address: {required: true,maxlength: 300},
-            // field_dream: {required: true,maxlength: 1000},
-        },
-        errorElement : 'div',
-        errorPlacement: function(error, element) {
-            var placement = $(element).data('error');
-            if(placement){
-                $(placement).append(error)
-            } 
-            else{
-                error.insertAfter(element);
-            }
-        },
-        submitHandler: function (form) {
-            var _form = $(form).serializeArray();
-            var data = system.ajax('harmony/Process.php?set-leads',_form);
-            data.done(function(data){
-                console.log(data);;
-                if(data == 1){
-                    Materialize.toast('Saved.',4000);
-                    system.clearForm();
-                    App.handleLoadPage("#cmd=index;content=list_products");
-                }
-                else{
-                    Materialize.toast('Cannot process request.',4000);
-                }
-            });
-        }
-    });
-
     $("body").particleground({
-        dotColor: '#ccc',
-        lineColor: '#ddd',
-        density:10000,
+        dotColor: '#878892',
+        lineColor: '#65666d',
+        density:7500,
         parallax:true
     });             
-})
 
+    $('.carousel').carousel({fullWidth: true});
+
+})
