@@ -98,37 +98,23 @@ p.label{
 }
 
 .hexagon {
-  position: relative;
-  width: 300px; 
-  height: 173.21px;
-  background-color: #64C7CC;
-  margin: 86.60px 0;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-size: cover;
+    margin: 10px auto;
+    height: 130px;
+    width: 110px;
 }
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
+.hexagon-line {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-size: cover;
+    margin: 10px auto;
+    height: 150px;
+    width: 130px;
 }
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid #64C7CC;
-}
-
 /*---------------------------------------
    TYPOGRAPHY                
 -----------------------------------------*/
-
 
 /* FONTS */
 

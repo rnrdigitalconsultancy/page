@@ -46,4 +46,16 @@ $(document).on("ready",function(){
 
     $('.carousel').carousel({fullWidth: true});
 
-})
+
+    // var data = ['#rnr-parallax1','#rnr-parallax2','#rnr-parallax3','#rnr-parallax4','#rnr-parallax5'];
+    // $.each(data,function(i,v){
+    //     console.log(v);
+    //     var scene = $(v).get(0);
+    //     var parallax = new Parallax(scene);
+    // })
+
+
+    // var scene = $('#rnr-parallax2').get(0);
+    // console.log(scene);
+    // var parallax = new Parallax(scene);
+});
