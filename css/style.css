@@ -28,7 +28,7 @@ p.label{
     font-size: 15px;
 }
 
-#rnr_team .images{
+.rnr_team .images{
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -37,15 +37,15 @@ p.label{
     margin-top: 20px; 
 }
 
-#rnr_team .images img{
+.rnr_team .images img{
     width: 100px;
 }
 
-#rnr_team .topImage{
+.rnr_team .topImage{
     position: absolute;
 }
 
-#rnr_team .topImage img{
+.rnr_team .topImage img{
     position: relative;
     width: 50px;
     left: -20px;
