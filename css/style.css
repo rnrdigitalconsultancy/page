@@ -82,6 +82,12 @@ p.label{
     border-radius: 5px;
 }
 
+.rnr-parallax4 .card{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-align: left;
+}
+
 .line{
     border:2px solid #ccc;
     min-height: 260px;
@@ -100,18 +106,125 @@ p.label{
 .hexagon {
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     background-size: cover;
-    margin: 10px auto;
-    height: 130px;
-    width: 110px;
+    margin: 0px auto;
+    height: 150px;
+    width: 130px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
 }
-
+.hexagon:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
 .hexagon-line {
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     background-size: cover;
-    margin: 10px auto;
+    margin: 0px auto;
     height: 150px;
     width: 130px;
 }
+
+.portfolio-icon{
+    top: 40%; 
+    position: relative;
+}
+
+.portfolio-icon .material-icons{
+    font-size: 40px;
+}
+
+.portfolio-icon .left{
+    position: absolute; 
+    left: -10px;
+}
+
+.portfolio-icon .right{
+    position: absolute; 
+    right: -10px;
+}
+
+.carousel{
+    height: 400px !important;
+}
+
+.carousel .rnr-button{
+    padding: 0px;
+    margin-top: 10px;
+    min-width: 100px;    
+}
+.carousel .logo{
+    width:100px;    
+}
+
+.carousel.carousel-slider .carousel-item p{
+    font-size: 20px !important;
+}
+
+#rnr_team .label{
+    background-color: #0d1216;
+    top: -40px;
+    position: relative;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+#rnr_team .profile{
+    margin-top: 40px; 
+    margin:0 auto; 
+    float:unset; 
+    display: inline-block; 
+    min-width: 150px; 
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#rnr_team .profile .chi{
+    background:url('../images/team/chi.png') no-repeat; 
+    background-size: cover; 
+    display: inline-block;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#rnr_team .profile .chi:hover{
+    background:url('../images/team/chi2.png') no-repeat; 
+    background-size: cover; 
+    display: inline-block;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#rnr_team .profile .chi{
+    background:url('../images/team/chi.png') no-repeat; 
+    background-size: cover; 
+    display: inline-block;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#rnr_team .profile:hover > .hexagon{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#rnr_team .label span{
+    font-size: 15px;
+    line-height: 0px;
+}
+
+#rnr_team .label span.position{
+    font-size: 10px;
+    line-height: 0px;
+}
+
+
 /*---------------------------------------
    TYPOGRAPHY                
 -----------------------------------------*/
@@ -1013,8 +1126,32 @@ ul.skills{
     border:none !important;
 }
 
-#fullpage{
+#fullpage, #modal_services .modal-content{
     position: absolute !important;
     width:100% !important;
+    top:0px;
 }
 
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/google-icon.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

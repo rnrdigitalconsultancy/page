@@ -10,8 +10,18 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+
+        <style type="text/css">
+            #modal_services{
+                max-height: none;
+                top: 0px;
+                bottom:none;
+            }
+        </style>
+
     </head>
     <body class="bg">
         <div id="preloader">
@@ -34,7 +44,7 @@
                             <div class="layer" data-depth="0.3">
                                 <h1><strong>YOUR GATEWAY TO<br/>DIGITAL SUCCESS</strong></h1>
                                 <div class="rnr-divider"></div>
-                                <a class="rnr-button waves-effect waves-light" href="#contact">Do you have a project to discuss?</a>
+                                <p><a class="rnr-button waves-effect waves-light" href="#contact">Do you have a project to discuss?</a></p>
                             </div>
                         </div>
                     </div>
@@ -45,7 +55,7 @@
                             <div class="layer" data-depth="0.3">
                                 <h1>Why RNR?</h1>
                                 <div class="rnr-divider"></div>
-                                <div class="col s12 m10 l8 offset-m1 offset-l2 offset-l2 white-text">
+                                <div class="col s12 m12 l10 offset-l1 white-text">
                                     <p>RNR aims to help SME and Large Enterprises businesses by providing digital solutions that will boost their sales and revenue by means of calculated marketing plan that will fit their business needs. </p>
                                     <p>We are the only Company to offer complete Digital Marketing Package in Pangasinan. RNR will help you leverage the internet to increase your Digital Market presence without high cost spending.</p>
                                 </div>
@@ -59,36 +69,45 @@
                             <div class="layer" data-depth="0.3">
                                 <h1>Services</h1>
                                 <div class="rnr-divider"></div>
-                                <div class="col s12 m10 l8 offset-m1 offset-l2 offset-l2 white-text">
-                                    <div class="row">
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/webcreation.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">Web Creation</p>
+                                <div class="col s12 m12 l10 offset-l1 white-text">
+                                    <p>We make websites, let us help you recreate your brand online</p>
+                                    <p>
+                                        <div class="row">
+                                            <div class="col s12 m4 l4">
+                                                <a href="#services" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">
+                                                    <img src="images/services/webcreation.png" style=" width: 80px;" class="invert"/>
+                                                    <p class="label">Web Creation and Maintenance</p>
+                                                </a>
+                                            </div>
+                                            <div class="col s12 m4 l4">
+                                                <a href="#services" data-cmd="services" data-node="software-solution" data-services="Software Solution">
+                                                    <img src="images/services/software.png" style=" width: 80px;" class="invert"/>
+                                                    <p class="label">Software Solution</p>
+                                                </a>
+                                            </div>
+                                            <div class="col s12 m4 l4">
+                                                <a href="#services" data-cmd="services" data-node="digital-marketing-consultancy" data-services="Digital Marketing Consultancy">
+                                                    <img src="images/services/digital.png" style=" width: 80px;" class="invert"/>
+                                                    <p class="label">Digital Marketing Consultancy</p>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/webmaintenance.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">Web Maintenance Services</p>
+                                        <div class="row">
+                                            <div class="col s12 m4 l4">
+                                                <a href="#services" data-cmd="services" data-node="seo" data-services="SEO">
+                                                    <img src="images/services/seo.png" style=" width: 80px;" class="invert"/>
+                                                    <p class="label">SEO</p>
+                                                </a>
+                                            </div>
+                                            <div class="col s12 m4 l4">
+                                                <a href="#services" data-cmd="services" data-node="social-media-management" data-services="Social Media Management">
+                                                    <img src="images/services/social.png" style=" width: 80px;" class="invert"/>
+                                                    <p class="label">Social Media Management</p>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/software.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">Software Solution</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/digital.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">Digital Marketing Consultancy</p>
-                                        </div>
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/seo.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">SEO</p>
-                                        </div>
-                                        <div class="col s12 m4 l4">
-                                            <img src="images/services/social.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label">Social Media Management</p>
-                                        </div>
-                                    </div>
-                            </div>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,57 +118,79 @@
                             <div class="layer" data-depth="0.3">
                                 <h1>Portfolio</h1>
                                 <div class="rnr-divider"></div>
-                                <div class="col s12 m10 l8 offset-m1 offset-l2 offset-l2 white-text">
-                                    <div class="carousel carousel-slider">
-                                        <a class="carousel-item" href="#one!">
-                                            <div class="row">
-                                                <div class="col s12 m6 l6">
-                                                    <img src="images/portfolio/monitor_portfolio_alto.png" style="width:350px;">
+                                <div class="col s12 m12 l10 offset-l1 white-text">
+                                    <p>
+                                        <div class="carousel carousel-slider" data-indicators="true">
+                                            <a class="carousel-item">
+                                                <div class="row">
+                                                    <div class="card horizontal">
+                                                        <div class="card-image"><img src="images/portfolio/monitor_portfolio_alto.png"></div>
+                                                        <div class="card-stacked">
+                                                            <div class="card-content">
+                                                                <h5><img src="images/clients/altolog.png" class='logo'/></h5>
+                                                                <p class="white-text">An informative Real Estate service site that brings your home buying experience online.</p>
+                                                                <p>
+                                                                    <button class="rnr-button waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col s12 m6 l6 white-text" style="text-align: left;">
-                                                    <h5>Alto Realty Estates</h5>
-                                                    <p>An informative Real Estate service site that brings your home buying experience online.</p>
-                                                    <button class="rnr-button waves-effect waves-light">Visit</button>
+                                            </a>
+                                            <a class="carousel-item">
+                                                <div class="row">
+                                                    <div class="card horizontal">
+                                                        <div class="card-image"><img src="images/portfolio/monitor_portfolio_kaboom.png"></div>
+                                                        <div class="card-stacked">
+                                                            <div class="card-content">
+                                                                <h5><img src="images/clients/kboomlog.png" class='logo'/></h5>
+                                                                <p class="white-text">An E- Commerce site that will bring Employee Engagement to a whole new level</p>
+                                                                <p>
+                                                                    <button class="rnr-button waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </a>
+                                            <a class="carousel-item">
+                                                <div class="row">
+                                                    <div class="card horizontal">
+                                                        <div class="card-image"><img src="images/portfolio/monitor_portfolio_kareer.png"></div>
+                                                        <div class="card-stacked">
+                                                            <div class="card-content">
+                                                                <h5><img src="images/clients/kareerlog.png" class='logo'/></h5>
+                                                                <p class="white-text">a multi-platform application that provides solutions to common problems being encountered by both applicants and employers</p>
+                                                                <p>
+                                                                    <button class="rnr-button waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="carousel-item">
+                                                <div class="row">
+                                                    <div class="card horizontal">
+                                                        <div class="card-image"><img src="images/portfolio/monitor_portfolio_OH.png"></div>
+                                                        <div class="card-stacked">
+                                                            <div class="card-content">
+                                                                <h5><img src="images/clients/ohlog.png" class='logo'/></h5>
+                                                                <p class="white-text">Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery. </p>
+                                                                <p>
+                                                                    <button class="rnr-button waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="portfolio-icon">
+                                                <a href="#portfolio" data-cmd="prev" class="large material-icons left white-text">chevron_left</a>
+                                                <a href="#portfolio" data-cmd="next" class="large material-icons right white-text">chevron_right</a>
                                             </div>
-                                        </a>
-                                        <a class="carousel-item" href="#two!">
-                                            <div class="row">
-                                                <div class="col s12 m6 l6">
-                                                    <img src="images/portfolio/monitor_portfolio_kaboom.png" style="width:350px;">
-                                                </div>
-                                                <div class="col s12 m6 l6 white-text" style="text-align: left;">
-                                                    <h5>Kaboom</h5>
-                                                    <p>An E- Commerce site that will bring Employee Engagement to a whole new level</p>
-                                                    <button class="rnr-button waves-effect waves-light">Visit</button>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="carousel-item" href="#three!">
-                                            <div class="row">
-                                                <div class="col s12 m6 l6">
-                                                        <img src="images/portfolio/monitor_portfolio_kareer.png" style="width:350px;">
-                                                </div>
-                                                <div class="col s12 m6 l6 white-text" style="text-align: left;">
-                                                    <h5>Kareer</h5>
-                                                    <p>a multi-platform application that provides solutions to common problems being encountered by both applicants and employers</p>
-                                                    <button class="rnr-button waves-effect waves-light">Visit</button>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="carousel-item" href="#four!">
-                                            <div class="row">
-                                                <div class="col s12 m6 l6">
-                                                    <img src="images/portfolio/monitor_portfolio_OH.png" style="width:350px;">
-                                                </div>
-                                                <div class="col s12 m6 l6 white-text" style="text-align: left;">
-                                                    <h5>Ohlala</h5>
-                                                    <p>Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery. </p>
-                                                    <button class="rnr-button waves-effect waves-light">Visit</button>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -161,25 +202,60 @@
                             <div class="layer" data-depth="0.3">
                                 <h1>Team</h1>
                                 <div class="rnr-divider"></div>
-                                <div class="col s12 m10 l8 offset-m1 offset-l2 offset-l2 white-text" >
-                                    <div class="row" id="rnr_team">
-                                        <div class="col s12 m3 l3" style="margin-top: 40px; ">
-                                            <div class="hexagon" style="background:url('images/team/chi.png') no-repeat; background-size: cover;">
+                                <div class="col s12 m12 l10 offset-l1 white-text">
+                                    <p>
+                                        <div class="row" id="rnr_team">
+                                            <div class="display_up">
+                                                <div class="profile animated tada">
+                                                    <div class="hexagon chi">
+                                                    </div>
+                                                    <div class="label">
+                                                        <span>Rey Leonard Dumasig</span><br/>
+                                                        <span class="position">CEO</span>
+                                                    </div>
+                                                    <!-- <h6>Rey Leonard Dumasig</h6> -->
+                                                </div>
+                                                <div class="profile animated tada">
+                                                    <div class="hexagon" style="background:url('images/team/rufo.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    </div>
+                                                    <div class="label">
+                                                        <span>Rufo Gabrillo Jr.</span><br/>
+                                                        <span class="position">CTO</span>
+                                                    </div>
+                                                    <!-- <h6>Rufo N. Gabrillo Jr.</h6> -->
+                                                </div>
+                                            </div>
+                                            <div class="display_down">
+                                                <div class="profile animated tada">
+                                                    <div class="hexagon" style="background:url('images/team/jake.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    </div>
+                                                    <div class="label">
+                                                        <span>Zyndale Jake Ramos</span><br/>
+                                                        <span class="position">Graphic Designer</span>
+                                                    </div>
+                                                    <!-- <h6>Zyndale Jake Ramos</h6> -->
+                                                </div>
+                                                <div class="profile animated tada">
+                                                    <div class="hexagon" style="background:url('images/team/renz.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    </div>
+                                                    <div class="label">
+                                                        <span>Renmar Cornista</span><br/>
+                                                        <span class="position">Web Developer</span>
+                                                    </div>
+                                                    <!-- <h6>Renmar Cornista</h6> -->
+                                                </div>
+                                                <div class="profile animated tada">
+                                                    <div class="hexagon" style="background:url('images/team/jonathan.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    </div>
+                                                    <div class="label">
+                                                        <span>Jonathan Millet</span><br/>
+                                                        <span class="position">Web Developer</span>
+                                                    </div>
+                                                    <!-- <h6>Jonathan Millet</h6> -->
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col s12 m3 l3" style="margin-top: 40px;">
-                                            <div class="hexagon" style="background:url('images/team/rufo.png') no-repeat; background-size: cover;">
-                                            </div>
-                                        </div>
-                                        <div class="col s12 m3 l3" style="margin-top: 40px;">
-                                            <div class="hexagon" style="background:url('images/team/jake.png') no-repeat; background-size: cover;">
-                                            </div>
-                                        </div>
-                                        <div class="col s12 m3 l3" style="margin-top: 40px;">
-                                            <div class="hexagon" style="background:url('images/team/renz.png') no-repeat; background-size: cover;">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +267,7 @@
                             <div class="layer" data-depth="0.3">
                                 <h1>Contact Us</h1>
                                 <div class="rnr-divider"></div>
-                                <div class="col s12 m10 l8 offset-m1 offset-l2 offset-l2 white-text">
+                                <div class="col s12 m12 l10 offset-l1 white-text">
                                     <div class="row">
                                         <div class="row">
                                             <form class="col s12" method="post">
@@ -226,10 +302,10 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
-        <div class="wrap">
+        <div class="wrap" style="display: hidden;">
             <div id="social-icons">
                 <ul>
                     <li><a href=""><i class="flaticon-facebook6"></i></a></li>
@@ -238,12 +314,25 @@
                 </ul>
             </div>
         </div>
+        <div class="modal bottom-sheet" id="modal_services">
+            <div class="modal-content">
+                <h1 class="black-text"><span class="title"></span> <a class="modal-action modal-close right"><i class="material-icons">close</i></a></h1>
+                <div class="row">
+                    <div class="col s12 m4 l4 image">
+                    </div>
+                    <div class="col s12 m8 l8">
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.easings.min.js"></script>
         <script src="js/jquery.sidr.min.js"></script>
         <script src="js/jquery.particleground.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <script src="js/parallax.min.js"></script>
+        <script src="js/perfect-scrollbar.min.js"></script>
         <script src="js/validation/jquery.validate.min.js"></script>
         <script src="js/validation/additional-methods.min.js"></script>
         <script src="js/jquery.fullPage.js"></script>
