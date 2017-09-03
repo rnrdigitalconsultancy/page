@@ -48,7 +48,7 @@ $(document).on("ready",function(){
 
     $('.carousel').carousel({fullWidth: true});
 
-    $(".section").height(400).perfectScrollbar({
+    $("#modal_services .modal-content").height($(window).height()).perfectScrollbar({
         suppressScrollX: true,
         wheelPropagation:true
     });
@@ -128,7 +128,6 @@ $(document).on("ready",function(){
         var titleContent = "";
         var descriptionContent = "";
         var imageContent = "";
-        console.log(services[data]);
 
         $('#modal_services').modal('open');
 
@@ -158,6 +157,77 @@ $(document).on("ready",function(){
         $("#modal_services .title").html(titleContent);
         $("#modal_services .image").html(imageContent);
         $("#modal_services .description").html(descriptionContent);
+    });
+
+    $("a[data-cmd='processes']").on('click',function(){
+        var descriptionContent = "";
+        var imageContent = "";
+        $('#modal_services').modal('open');
+
+        $("#modal_services").particleground({
+            dotColor: '#ccc',
+            lineColor: '#eee',
+            density:7500,
+            parallax:true
+        });
+        imageContent = "<img src='images/rnrdigitalconsultancy.png' width='200'>";
+        descriptionContent = "<ul>"+
+                                "<li>Step 1: Information Gathering"+
+                                "   <ol type='a'>"+
+                                "       <li>Set goals for your website</li>"+
+                                "       <li>Define your target market</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 2: Planning"+
+                                "   <ol type='a'>"+
+                                "       <li>Create a Sitemap sketch</li>"+
+                                "       <li>Create a wireframe/mock up site</li>"+
+                                "       <li>Select Technology to be used (Framework, CMS, Programming Language)</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 3: Design"+
+                                "   <ol type='a'>"+
+                                "       <li>Create page layouts</li>"+
+                                "       <li>Review the layouts</li>"+
+                                "       <li>Get client’s feedback on the layouts</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 4: Content Writing and Assembly"+
+                                "   <ol type='a'>"+
+                                "       <li>Create new content</li>"+
+                                "       <li>Get content ready for migration</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 5: Coding"+
+                                "   <ol type='a'>"+
+                                "       <li>Build and deploy</li>"+
+                                "       <li>Add special features and interactivity</li>"+
+                                "       <li>SEO for the website</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 6: Testing, Review and Launch"+
+                                "   <ol type='a'>"+
+                                "       <li>Test the created website</li>"+
+                                "       <li>Upload the website to go on live</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                                "<li>Step 7: Maintenance and Regular Updating"+
+                                "   <ol type='a'>"+
+                                "       <li>Add user report system</li>"+
+                                "       <li>Fix bugs asap</li>"+
+                                "       <li>Keep website up to day</li>"+
+                                "   </ol>"+
+                                "</li>"+
+                             "</ul>";
+
+        $("#modal_services .title").html("Our processes in making brand online");
+        $("#modal_services .image").html(imageContent);
+        $("#modal_services .description").html(descriptionContent);
+    });
+
+    $("button[data-cmd='portfolio']").on('click',function(){
+        var data = $(this).data('site');
+        var win = window.open(data,'_blank');
     });
 
     // var data = ['.rnr-parallax1','.rnr-parallax2','.rnr-parallax3','.rnr-parallax4','.rnr-parallax5','.rnr-parallax6'];

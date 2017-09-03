@@ -20,7 +20,7 @@ $function = new DatabaseClasses;
         $id = $function->PDO_IDGenerator('leads','id');
         $date = $function->PDO_DateAndTime();
         $data = $_POST['data'];
-        
+
         $name = $function->escape($data[0]['value']);
         $email = $function->escape($data[1]['value']);
         $phone = $function->escape($data[2]['value']);
@@ -41,19 +41,9 @@ $function = new DatabaseClasses;
                                     <div style=' font-size: 90px; font-family: Freestyle Script;'>
                                         Thank you!
                                     </div>
-                                    <div style='text-align:left'>
-                                        <ul type='none'>
-                                            <li>Name: {$name}</li>
-                                            <li>Email: {$email}</li>
-                                            <li>Phone Number: {$phone}</li>
-                                            <li>Address: {$address}</li>
-                                            <li>Goal: {$dream}</li>
-                                        </ul>
-                                    </div>
                                     <div style='font-size: 20px; margin-top: 40px; text-transform: initial;'>
                                         <p>Please keep intouch with this email and website for announcement.<br/>For inquiries, please email us at <a href='mailto:info@rnrdigitalconsultancy.com'>info@rnrdigitalconsultancy.com</a></p>
                                     </div>
-                                    <small><i>*Thank you for your trust. Your information will be kept confidential and secured. </i></small>
                                 </div>
                             </div>
                         </div>
