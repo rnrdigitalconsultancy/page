@@ -12,9 +12,9 @@ class DatabaseClasses extends DataClasses{
 
 	function DBCon(){
 		$host = "localhost";
-		$dataBase = "db_developers";
-		$user = "user_psudev";
-		$password = "user_psudev7836";
+		$dataBase = "db_rnrsite";
+		$user = "user_rnrsite";
+		$password = "user_rnrsite7836";
 		try{
 			$PDO = new PDO('mysql:host='.$host.';dbname='.$dataBase, $user, $password);
 			return $PDO; $PDO = null;
@@ -234,7 +234,7 @@ class DatabaseClasses extends DataClasses{
 	function mail($receiver,$subject,$message){
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: PSU CSIT Department <psu-csit.com>' . "\r\n";
+        $headers .= 'From: RNR Digital Consultancy <rnrdigitalconsultancy.com>' . "\r\n";
 
         $result = mail($receiver,$subject,$message,$headers);
         return $result;

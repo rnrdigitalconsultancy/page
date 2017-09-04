@@ -66,7 +66,7 @@
                                 <div class="rnr-divider"></div>
                                 <div class="col s12 m12 l10 offset-l1 white-text">
                                     <p>
-                                        We make websites, let us help you recreate your brand online. 
+                                        We make websites, let us help you recreate your brand online. <br/>
                                         <a class="rnr-button flat waves-effect waves-light" href="#services" data-cmd="processes"><i class="material-icons left">check_box</i> Checkout our step by step processes</a>
                                     </p>
                                     <div class="row" style="margin-top: 50px;">
@@ -264,23 +264,23 @@
                                 <div class="col s12 m12 l10 offset-l1 white-text">
                                     <div class="row">
                                         <div class="row">
-                                            <form class="col s12" method="post">
+                                            <form class="col s12" method="post" id="form_query">
                                                 <div class="row">
                                                     <div class="input-field col s6">
-                                                        <input class="validate" id="first_name" type="text"> <label for="first_name">First Name</label>
+                                                        <input class="validate" id="field_name" name="field_name" type="text"> <label for="field_name">First Name</label>
                                                     </div>
                                                     <div class="input-field col s6">
-                                                        <input class="validate" id="last_name" type="text"> <label for="last_name">Last Name</label>
+                                                        <input class="validate" id="field_lastname" name="field_lastname" type="text"> <label for="field_lastname">Last Name</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="input-field col s12">
-                                                        <input class="validate" id="email" type="email"> <label for="email">Email</label>
+                                                        <input class="validate" id="field_email" name="field_email" type="email"> <label for="field_email">Email</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="input-field col s12">
-                                                        <textarea class="materialize-textarea" id="textarea1"></textarea>
+                                                        <textarea class="materialize-textarea" name="field_message" id="field_message"></textarea>
                                                         <label for="textarea1">Message</label>
                                                     </div>
                                                 </div>
@@ -308,13 +308,13 @@
                 </ul>
             </div>
         </div>
-        <div class="modal bottom-sheet" id="modal_services">
+        <div class="modal" id="modal_services">
             <div class="modal-content">
                 <h1 class="black-text"><span class="title"></span> <a class="modal-action modal-close right"><i class="material-icons">close</i></a></h1>
                 <div class="row">
-                    <div class="col s12 m4 l4 image">
+                    <div class="col s12 image center">
                     </div>
-                    <div class="col s12 m8 l8">
+                    <div class="col s12">
                         <p class="description"></p>
                     </div>
                 </div>
@@ -332,6 +332,7 @@
         <script src="js/jquery.fullPage.js"></script>
         <script src="js/system.js"></script>
         <script src="js/jquery.sidr.min.js"></script>
+        <script src="js/system.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

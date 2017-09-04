@@ -229,13 +229,13 @@ p.label{
     line-height: 0px;
 }
 
-#modal_services{
+/*#modal_services{
     max-height: none;
     top: 0px;
     bottom:none;
     overflow: hidden;
 }
-
+*/
 #modal_services .modal-content{
     overflow: hidden;
 }
@@ -1178,6 +1178,21 @@ ul.skills{
     width:100% !important;
     top:0px;
 }
+
+#modal_services .modal-content{
+    position: relative !important;
+    width:100% !important;
+    top:0px;
+}
+
+#modal_services canvas{
+    position: absolute !important;
+}
+
+#modal_services img{
+    width:30%;
+}
+
 
 /* fallback */
 @font-face {

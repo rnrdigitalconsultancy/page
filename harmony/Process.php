@@ -17,25 +17,23 @@ $function = new DatabaseClasses;
     }
 
     if(isset($_GET['set-leads'])){
-        $id = $function->PDO_IDGenerator('leads','id');
+        $id = $function->PDO_IDGenerator('tbl_leads','id');
         $date = $function->PDO_DateAndTime();
         $data = $_POST['data'];
         
         $name = $function->escape($data[0]['value']);
-        $email = $function->escape($data[1]['value']);
-        $phone = $function->escape($data[2]['value']);
-        $skill = $function->escape($data[3]['value']);
-        $address = $function->escape($data[4]['value']);
-        $dream = $function->escape($data[5]['value']);
+        $lastname = $function->escape($data[1]['value']);
+        $email = $function->escape($data[2]['value']);
+        $message = $function->escape($data[3]['value']);
 
-        $query = $function->PDO(false,"INSERT INTO leads(id,name,email,phone,address,skill,dream,`date`) VALUES ('{$id}',{$name},{$email},{$phone},{$skill},{$address},{$dream},'{$date}')");
+        $query = $function->PDO(false,"INSERT INTO tbl_leads(id,firstname,lastname,email,message,`date`) VALUES ('{$id}',{$name},{$lastname},{$email},{$message},'{$date}')");
         if($query->execute()){
-            $subject =  "PSU Developers Guild - Account sign up";
+            $subject =  "RNR Digital Consultancy";
             $message = "<div class='box' style='width: 800px; height: 550px; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0); center; margin: 0 auto; ; border-radius: 10px; font-family: arial;'>
                         <div class='box' style='width: 500px; margin:auto; '>
                             <div style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 10px;overflow: hidden; border: 1px solid #ccc;'>
                                 <div class='header' style='background: rgb(173, 55, 193); border-top-right-radius: 10px; border-top-left-radius: 10px; padding: 50px 0px 50px 0px; text-align: center;'>
-                                    <img src='http://developers.psu-csit.com/images/side.png' style='width: 100px; ' align='center'>
+                                    <img src='http://test.rnrdigitalconsultancy.com/images/rnrdigitalconsultancy.png' style='width: 100px; ' align='center'>
                                 </div>
                                 <div class='container' style='text-align: center; background: white;padding: 50px;'>
                                     <div style=' font-size: 90px; font-family: Freestyle Script;'>
@@ -43,11 +41,9 @@ $function = new DatabaseClasses;
                                     </div>
                                     <div style='text-align:left'>
                                         <ul type='none'>
-                                            <li>Name: {$name}</li>
+                                            <li>Name: {$name} {$lastname}</li>
                                             <li>Email: {$email}</li>
-                                            <li>Phone Number: {$phone}</li>
-                                            <li>Address: {$address}</li>
-                                            <li>Goal: {$dream}</li>
+                                            <li>Message: {$message}</li>
                                         </ul>
                                     </div>
                                     <div style='font-size: 20px; margin-top: 40px; text-transform: initial;'>

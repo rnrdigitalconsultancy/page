@@ -37,7 +37,16 @@ jQuery(window).load(function() {
 });
 
 $(document).on("ready",function(){
-    $('#modal_services').modal();
+    $('#modal_services').modal({
+        ready:function(e){
+            $.fn.fullpage.setMouseWheelScrolling(false);
+            $.fn.fullpage.setAllowScrolling(false);
+        },
+        complete:function(e){
+            $.fn.fullpage.setMouseWheelScrolling(true);
+            $.fn.fullpage.setAllowScrolling(true);
+        }
+    });
 
     $("body").particleground({
         dotColor: '#878892',
@@ -47,11 +56,6 @@ $(document).on("ready",function(){
     });
 
     $('.carousel').carousel({fullWidth: true});
-
-    $("#modal_services .modal-content").height($(window).height()).perfectScrollbar({
-        suppressScrollX: true,
-        wheelPropagation:true
-    });
 
     // portfolio  carousel
     $("a[data-cmd='prev']").on('click',function(){
@@ -130,6 +134,11 @@ $(document).on("ready",function(){
         var imageContent = "";
 
         $('#modal_services').modal('open');
+
+        $("#modal_services .modal-content").height("400px").perfectScrollbar({
+            suppressScrollX: true,
+            wheelPropagation:true
+        });
 
         $("#modal_services").particleground({
             dotColor: '#ccc',
@@ -228,6 +237,42 @@ $(document).on("ready",function(){
     $("button[data-cmd='portfolio']").on('click',function(){
         var data = $(this).data('site');
         var win = window.open(data,'_blank');
+    });
+
+    $("#form_query").validate({
+        rules: {
+            field_name: {required: true,maxlength: 200},
+            field_lastname: {required: true,maxlength: 20},
+            field_email: {required: true,maxlength: 100,email:true},
+            field_message: {required: true,maxlength: 1000},
+        },
+        errorElement : 'div',
+        errorPlacement: function(error, element) {
+            var placement = $(element).data('error');
+            if(placement){
+                $(placement).append(error)
+            } 
+            else{
+                error.insertAfter(element);
+            }
+        },
+        submitHandler: function (form) {
+            var _form = $(form).serializeArray();
+            console.log(_form);
+            var data = system.ajax('harmony/Process.php?set-leads',_form);
+            data.done(function(data){
+                if(data == 1){
+                    Materialize.toast('Thank you. your message has been sent.',2000);
+                    system.clearForm();
+                    setTimeout(function(){
+                        // window.location.reload(true);
+                    },2000);
+                }
+                else{
+                    Materialize.toast('Cannot process request.',4000);
+                }
+            });
+        }
     });
 
     // var data = ['.rnr-parallax1','.rnr-parallax2','.rnr-parallax3','.rnr-parallax4','.rnr-parallax5','.rnr-parallax6'];
