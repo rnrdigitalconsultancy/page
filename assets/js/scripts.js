@@ -60,10 +60,12 @@ $(document).on("ready",function(){
     // portfolio  carousel
     $("a[data-cmd='prev']").on('click',function(){
         $('.carousel').carousel('prev');
+        console.log("xxx");
     });
 
     $("a[data-cmd='next']").on('click',function(){
         $('.carousel').carousel('next');
+        console.log("xxx");
     });
 
     var services = {
@@ -152,14 +154,14 @@ $(document).on("ready",function(){
             $.each(services[data].services,function(i,v){
                 descriptionContent += "<li><i class='material-icons'>check_box</i> <span>"+v+"</span></li>";
             })
-            imageContent = "<img src='images/services/"+services[data].image+"' width='200'>";
+            imageContent = "<img src='assets/images/services/"+services[data].image+"' width='200'>";
             descriptionContent = services[data].description+"<ul>"+descriptionContent+"</ul>";
         }
         else{
             $.each(services[data].process,function(i,v){
                 descriptionContent += "<li><i class='material-icons'>check_box</i> <span>"+v+"</span></li>";
             })
-            imageContent = "<img src='images/services/"+services[data].image+"' width='200'>";
+            imageContent = "<img src='assets/images/services/"+services[data].image+"' width='200'>";
             descriptionContent = services[data].description+"<ul>"+descriptionContent+"</ul>";
         }
 
@@ -179,7 +181,7 @@ $(document).on("ready",function(){
             density:7500,
             parallax:true
         });
-        imageContent = "<img src='images/rnrdigitalconsultancy.png' width='200'>";
+        imageContent = "<img src='assets/images/rnrdigitalconsultancy.png' width='200'>";
         descriptionContent = "<ul>"+
                                 "<li>Step 1: Information Gathering"+
                                 "   <ol type='a'>"+
@@ -259,13 +261,13 @@ $(document).on("ready",function(){
         submitHandler: function (form) {
             var _form = $(form).serializeArray();
             console.log(_form);
-            var data = system.ajax('harmony/Process.php?set-leads',_form);
+            var data = system.ajax('assets/harmony/Process.php?set-leads',_form);
             data.done(function(data){
                 if(data == 1){
                     Materialize.toast('Thank you. your message has been sent.',2000);
                     system.clearForm();
                     setTimeout(function(){
-                        // window.location.reload(true);
+                        window.location.reload(true);
                     },2000);
                 }
                 else{
