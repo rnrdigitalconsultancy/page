@@ -35,28 +35,30 @@ $(document).ready(function() {
 
 let type = {
     ini:function(){
+        $("#typed").trigger('load');
         let text = "YOUR GATEWAY TO DIGITAL SUCCESS", count = text.length;
-        console.log(count);
-        var c = 0;
+        let c = 0;
         type.animate(c,text);
+        console.log('xxx');
     },
-    animate:function(show,text){
-        console.log(show);
-        if(text.length>=show){
+    animate:function(show,text,sound){
+        $("#typed").trigger('play');
+        if(text.length>show){
             setTimeout(function(){
                 $("#typing_animation").append(text[show]);
                 show++;
                 type.animate(show,text);
-                console.log(text[show]);
-            },100);            
+                // console.log(text[show]);
+            },75);            
+        }
+        else{
+        $("#typed").trigger('stop');
         }
     },
 }
 
 $(document).on("ready",function(){
-
     type.ini();
-
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
