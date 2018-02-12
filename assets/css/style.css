@@ -11,7 +11,7 @@ a {
 }
 body {
     background-size: cover;
-    color: #333;
+    /* color: #333; */
     font-family: Open Sans;
 }
 ul {
@@ -21,6 +21,7 @@ ul {
 
 p{
     font-size: 20px;
+    color: #bbb;
 }
 
 
@@ -43,20 +44,8 @@ p{
 }
 @font-face {
     font-family: 'coco-gothic';
-    !important src: url('fonts/Coco-Gothic/Coco-Gothic-Bold-Italic-trial.ttf');
-    src: url('../fonts/Coco-Gothic/Coco-Gothic-Bold-Italic-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Bold-Italic.ttf') format('truetype'),
-        url('../fonts/Coco-Gothic/Coco-Gothic-Fat-Italic-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Fat-Italic.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Italic-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Italic.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Light-trial.ttf') format('truetype'),  
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Light-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Regular-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Ultralight-trial.ttf') format('truetype'), 
-        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Ultralight.ttf') format('truetype'), 
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/Coco-Gothic/Coco-Gothic-Light-trial.ttf');
+    font-stretch: ultra-expanded;
 }
 
 
@@ -95,7 +84,7 @@ h6 { font-weight: 300 }
 
 h1 strong{
     font-family: 'rnr-head';
-    color: darkgray;
+    color: #aaa;
 }
 /*---------------------------------------
    LAYOUT          
@@ -949,7 +938,7 @@ ul.skills{
 }
 i.mouse{
     background: url(../images/icons/ms.png) center/cover no-repeat !important;
-    /* background-size: 125% !important; */
+    background-size: 60% !important;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -963,6 +952,19 @@ i.mouse{
     margin:  auto;
 }
 .menubar{
-    border-right: darkgrey solid;
+    border-right: darkgrey solid 1.5px;
     padding: 0 15px;
+}
+a.menubar:hover {
+    outline: 0 !important;
+    color: blue !important;
+    font-weight: 900;
+}
+.nav-wrapper i{
+    font-size: 35px !important;
+    margin: 10px 5px 0 0;
+} 
+#side-menu{
+    height: 100% !important;
+    margin: 100px 0;
 }

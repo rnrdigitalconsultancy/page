@@ -157,7 +157,7 @@
         /* font-size: 2.5rem; */
     }
     p{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .rnr-button.flat{
@@ -272,6 +272,7 @@ p.label{
     /* border-radius: 5px; */
     text-transform: uppercase;
     min-width: 200px;
+    font-family: coco-gothic;
 }
 
 .rnr-button:hover{
@@ -352,13 +353,14 @@ p.label{
 }
 
 .rnr-button.flat{
-    padding: 0px;
-    margin-top: 10px;
-    min-width: 100px;  
+    /* padding: 0px; */
+    /* margin-top: 10px; */
+    /* min-width: 100px; */
 }
 
 .rnr-button.flat i{
-    line-height: 30px;  
+    line-height: 0;
+    padding: 0 1px 0 0;
 }
 
 .carousel .logo{
@@ -508,5 +510,7 @@ p.label{
   word-wrap: normal;
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased;  
+  margin-top: -11px;
+  vertical-align:  middle;
+  
