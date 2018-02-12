@@ -33,6 +33,9 @@ $(document).ready(function() {
     });
 });
 jQuery(window).load(function() {
+    setTimeout(function(){
+        $(".loading").addClass('zoomOut').remove();
+    },300);
     // jQuery('#preloader').fadeOut();
 });
 
@@ -48,11 +51,14 @@ $(document).on("ready",function(){
         }
     });
 
+    console.log("im here");
     $("body").particleground({
         dotColor: '#878892',
         lineColor: '#65666d',
-        density:7500,
-        parallax:true
+        density:13000,
+        parallax:false,
+        particleRadius: 4,
+        lineWidth: .75
     });
 
     $('.carousel').carousel({fullWidth: true});
@@ -181,7 +187,7 @@ $(document).on("ready",function(){
             density:7500,
             parallax:true
         });
-        imageContent = "<img src='assets/images/rnrdigitalconsultancy.png' width='200'>";
+        imageContent = "<img src='assets/images/rnrdigitalconsultancy2.png' width='300' class='logo'>";
         descriptionContent = "<ul>"+
                                 "<li>Step 1: Information Gathering"+
                                 "   <ol type='a'>"+

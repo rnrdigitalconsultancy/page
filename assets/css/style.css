@@ -10,7 +10,6 @@ a {
     text-decoration: none;
 }
 body {
-    
     background-size: cover;
     color: #333;
     font-family: Open Sans;
@@ -39,6 +38,23 @@ p{
         url('../fonts/watchword/watchword_bold_demo-webfont.woff') format('woff'), 
         url('../fonts/watchword/watchword_bold_demo-webfont.ttf') format('truetype'), 
         url('../fonts/watchword/watchword_bold_demo-webfont.svg#watchword_bold_demo-webfont_2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'coco-gothic';
+    !important src: url('fonts/Coco-Gothic/Coco-Gothic-Bold-Italic-trial.ttf');
+    src: url('../fonts/Coco-Gothic/Coco-Gothic-Bold-Italic-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Bold-Italic.ttf') format('truetype'),
+        url('../fonts/Coco-Gothic/Coco-Gothic-Fat-Italic-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Fat-Italic.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Italic-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Italic.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Light-trial.ttf') format('truetype'),  
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Light-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Regular-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Ultralight-trial.ttf') format('truetype'), 
+        url('../fonts/Coco-Gothic/Coco-Gothic-Heavy-Ultralight.ttf') format('truetype'), 
     font-weight: normal;
     font-style: normal;
 }
@@ -79,6 +95,7 @@ h6 { font-weight: 300 }
 
 h1 strong{
     font-family: 'rnr-head';
+    color: darkgray;
 }
 /*---------------------------------------
    LAYOUT          
@@ -182,7 +199,7 @@ h1 strong{
 /*Social Icons*/
 
 #social-icons {
-    position: fixed;
+    position: relative;
     bottom: 2%;
 }
 #social-icons ul {
@@ -243,7 +260,7 @@ h1 strong{
 }
 
 .card.horizontal .card-image{
-    max-width: 30% !important;
+    max-width: 40% !important;
 }
 
 /*---------------------------------------
@@ -347,7 +364,8 @@ h1 strong{
 
 /*navigation bullets*/
 
-#fp-nav {
+#fp-nav { 
+    display: none; 
     position: fixed;
     z-index: 100;
     margin-top: -32px;
@@ -566,10 +584,6 @@ h1 strong{
 }
 .fp-controlArrow.fp-prev:hover,
 .fp-controlArrow.fp-next:hover { opacity: 1 }
-
-.fp-controlArrow{
-    top:60% !important;
-}
 
 /*buttons*/
 
@@ -933,4 +947,22 @@ ul.skills li.avatar{
 ul.skills{
     border:none !important;
 }
-
+i.mouse{
+    background: url(../images/icons/ms.png) center/cover no-repeat !important;
+    /* background-size: 125% !important; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display:  block;
+    bottom: 5%;
+}
+.mouse-holder{
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+}
+.menubar{
+    border-right: darkgrey solid;
+    padding: 0 15px;
+}
