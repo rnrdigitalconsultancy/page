@@ -73,8 +73,8 @@ h3 {
     color: #ffffff;
     margin-bottom: 30px;
     font-size: 50px;
-    font-weight: normal;
-    font-family: 'walkway_semiboldregular';
+    font-weight: 900;
+    font-family: walkway_ultraboldregular;
     line-height: 1.2;
     margin-top: 20px;
 }
@@ -967,4 +967,33 @@ a.menubar:hover {
 #side-menu{
     height: 100% !important;
     margin: 100px 0;
+}
+@keyframes typing-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#typing_animation:after{
+    content: " ";
+    animation: typing-animation 1s infinite;
+    border-right: 1px solid #fff;
+    /* margin: auto; */
+}
+#typing_animation{
+    font-family: 'rnr-head' !important;
+    color: #bbb !important;
+}
+/*services*/
+ul.services-menu{
+    text-align: left;
+}
+.services-menu li{
+    padding: 20px 0;
+}
+.services-menu li i{
+    margin-right: 5%;
+    font-size: 20px;
 }

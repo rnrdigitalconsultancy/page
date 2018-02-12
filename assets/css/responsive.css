@@ -360,7 +360,7 @@ p.label{
 
 .rnr-button.flat i{
     line-height: 0;
-    padding: 0 1px 0 0;
+    margin: -2px 0 0 5px;
 }
 
 .carousel .logo{
@@ -499,9 +499,9 @@ p.label{
 
 .material-icons {
   font-family: 'Material Icons';
-  font-weight: normal;
+  font-weight: unset;
   font-style: normal;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;

@@ -32,14 +32,31 @@ $(document).ready(function() {
         }
     });
 });
-jQuery(window).load(function() {
-    setTimeout(function(){
-        $(".loading").addClass('zoomOut').remove();
-    },300);
-    // jQuery('#preloader').fadeOut();
-});
+
+let type = {
+    ini:function(){
+        let text = "YOUR GATEWAY TO DIGITAL SUCCESS", count = text.length;
+        console.log(count);
+        var c = 0;
+        type.animate(c,text);
+    },
+    animate:function(show,text){
+        console.log(show);
+        if(text.length>=show){
+            setTimeout(function(){
+                $("#typing_animation").append(text[show]);
+                show++;
+                type.animate(show,text);
+                console.log(text[show]);
+            },100);            
+        }
+    },
+}
 
 $(document).on("ready",function(){
+
+    type.ini();
+
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
@@ -71,7 +88,6 @@ $(document).on("ready",function(){
 
     $('.carousel').carousel({fullWidth: true});
 
-    // portfolio  carousel
     $("a[data-cmd='prev']").on('click',function(){
         $('.carousel').carousel('prev');
         console.log("xxx");
