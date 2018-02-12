@@ -243,7 +243,7 @@ h1 strong{
 }
 
 .card.horizontal .card-image{
-    max-width: 30% !important;
+    max-width: 40% !important;
 }
 
 /*---------------------------------------
@@ -566,10 +566,6 @@ h1 strong{
 }
 .fp-controlArrow.fp-prev:hover,
 .fp-controlArrow.fp-next:hover { opacity: 1 }
-
-.fp-controlArrow{
-    top:60% !important;
-}
 
 /*buttons*/
 
@@ -934,3 +930,17 @@ ul.skills{
     border:none !important;
 }
 
+@keyframes typing-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#typing_animation:after{
+    content: " ";
+    animation: typing-animation 1s infinite;
+    border-right: 1px solid #fff;
+    /* margin: auto; */
+}

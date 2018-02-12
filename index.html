@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>RNR DIGITAL CONSULTANCY</title>
         <link rel="icon" href="assets/images/rnrdigitalconsultancy.png">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullpage.min.css" />
@@ -37,7 +37,7 @@
                 <div class="section"> <!-- header -->
                     <div class="row center rnr-parallax1">
                         <div class="layer" data-depth="0.3">
-                            <h1><strong>YOUR GATEWAY TO<br/>DIGITAL SUCCESS</strong></h1>
+                            <h1 id="typing_animation"></h1>
                             <div class="rnr-divider"></div>
                             <p><a class="rnr-button waves-effect waves-light" href="#contact">Do you have a project to discuss?</a></p>
                         </div>
@@ -65,7 +65,7 @@
                                     We make websites, let us help you recreate your brand online. <br/>
                                     <a class="rnr-button flat waves-effect waves-light" href="#services" data-cmd="processes"><i class="material-icons left">check_box</i> Checkout our step by step processes</a>
                                 </p>
-                                <div data-display='services-grid' class="row" style="margin-top: 50px;">
+                                <div data-display="services-grid" class="row" style="margin-top: 50px;">
                                     <div class="col m5ths">
                                         <a href="#services" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">
                                             <img src="assets/images/services/webcreation.png" style=" width: 80px;" class="invert"/>
@@ -97,35 +97,45 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div data-display='services-slider' class="row" style="margin-top: 50px;">
+                                <div data-display="services-slider" class="row" style="margin-top: 50px;">
                                     <div class="slide" data-anchor="service1">
                                         <div class="row">
-                                            <img src="assets/images/services/webcreation.png" style=" width: 80px;" class="invert"/>
-                                            <p class="label" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Web Creation and Maintenance</p>
+                                            <a href="#services" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">
+                                                <img src="assets/images/services/webcreation.png" style=" width: 80px;" class="invert"/>
+                                                <p class="white-text" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Web Creation and Maintenance</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="slide" data-anchor="service2">
                                         <div class="row">
-                                            <img src="assets/images/services/software.png" style=" width: 80px;" class="invert"/>
-                                            <p data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Software Solution</p>
+                                            <a href="#services" data-cmd="services" data-node="software-solution" data-services="Software Solution">
+                                                <img src="assets/images/services/software.png" style=" width: 80px;" class="invert"/>
+                                                <p class="white-text" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Software Solution</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="slide" data-anchor="service3">
                                         <div class="row">
-                                            <img src="assets/images/services/digital.png" style=" width: 80px;" class="invert"/>
-                                            <p data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Digital Marketing Consultancy</p>
+                                            <a href="#services" data-cmd="services" data-node="digital-marketing-consultancy" data-services="Digital Marketing Consultancy">
+                                                <img src="assets/images/services/digital.png" style=" width: 80px;" class="invert"/>
+                                                <p class="white-text" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Digital Marketing Consultancy</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="slide" data-anchor="service4">
                                         <div class="row">
-                                            <img src="assets/images/services/seo.png" style=" width: 80px;" class="invert"/>
-                                            <p data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">SEO</p>
+                                            <a href="#services" data-cmd="services" data-node="seo" data-services="SEO">
+                                                <img src="assets/images/services/seo.png" style=" width: 80px;" class="invert"/>
+                                                <p class="white-text" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">SEO</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="slide" data-anchor="service5">
                                         <div class="row">
-                                            <img src="assets/images/services/social.png" style=" width: 80px;" class="invert"/>
-                                            <p data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Social Media Management</p>
+                                            <a href="#services" data-cmd="services" data-node="social-media-management" data-services="Social Media Management">
+                                                <img src="assets/images/services/social.png" style=" width: 80px;" class="invert"/>
+                                                <p class="white-text" data-cmd="services" data-node="web-creation-and-maintenance" data-services="Web Creation and Maintenance">Social Media Management</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,18 +149,18 @@
                             <h1>Portfolio</h1>
                             <div class="rnr-divider"></div>
                             <div class="col s12 m12 l10 offset-l1 white-text">
-                                <div data-display='portfolio-grid'">
+                                <div data-display="portfolio-grid">
                                     <div class="carousel carousel-slider" data-indicators="true">
                                         <a class="carousel-item">
                                             <div class="row">
                                                 <div class="card horizontal">
-                                                    <div class="card-image"><img src="assets/images/portfolio/monitor_portfolio_alto.png"></div>
+                                                    <div class="card-image"><img src="assets/images/portfolio/alts.png"></div>
                                                     <div class="card-stacked">
                                                         <div class="card-content">
-                                                            <h5><img src="assets/images/clients/altolog.png" class='logo'/></h5>
+                                                            <h5><img src="assets/images/clients/altolog.png" class="logo"></h5>
                                                             <p class="white-text">An informative Real Estate service site that brings your home buying experience online.</p>
                                                             <p>
-                                                                <button data-cmd='portfolio' data-site="http://aldrinaltorealty.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                <button data-cmd="portfolio" data-site="http://aldrinaltorealty.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -163,10 +173,10 @@
                                                     <div class="card-image"><img src="assets/images/portfolio/kabs.png"></div>
                                                     <div class="card-stacked">
                                                         <div class="card-content">
-                                                            <h5><img src="assets/images/clients/kboomlog.png" class='logo'/></h5>
+                                                            <h5><img src="assets/images/clients/kboomlog.png" class="logo"></h5>
                                                             <p class="white-text">An E- Commerce site that will bring Employee Engagement to a whole new level</p>
                                                             <p>
-                                                                <button data-cmd='portfolio' data-site="https://www.kaboomrewards.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                <button data-cmd="portfolio" data-site="https://www.kaboomrewards.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -176,13 +186,13 @@
                                         <a class="carousel-item">
                                             <div class="row">
                                                 <div class="card horizontal">
-                                                    <div class="card-image"><img src="assets/images/portfolio/monitor_portfolio_kareer.png"></div>
+                                                    <div class="card-image"><img src="assets/images/portfolio/kars.png"></div>
                                                     <div class="card-stacked">
                                                         <div class="card-content">
-                                                            <h5><img src="assets/images/clients/kareerlog.png" class='logo'/></h5>
+                                                            <h5><img src="assets/images/clients/kareerlog.png" class="logo"></h5>
                                                             <p class="white-text">a multi-platform application that provides solutions to common problems being encountered by both applicants and employers</p>
                                                             <p>
-                                                                <button data-cmd='portfolio' data-site="https://www.kareer-ph.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                <button data-cmd="portfolio" data-site="https://www.kareer-ph.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -192,13 +202,13 @@
                                         <a class="carousel-item">
                                             <div class="row">
                                                 <div class="card horizontal">
-                                                    <div class="card-image"><img src="assets/images/portfolio/monitor_portfolio_OH.png"></div>
+                                                    <div class="card-image"><img src="assets/images/portfolio/ohs.png"></div>
                                                     <div class="card-stacked">
                                                         <div class="card-content">
-                                                            <h5><img src="assets/images/clients/ohlog.png" class='logo'/></h5>
+                                                            <h5><img src="assets/images/clients/ohlog.png" class="logo"></h5>
                                                             <p class="white-text">Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery. </p>
                                                             <p>
-                                                                <button data-cmd='portfolio' data-site="https://www.oohlalaahosiery.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                                                <button data-cmd="portfolio" data-site="https://www.oohlalaahosiery.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -211,33 +221,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div data-display='portfolio-slider'>
-                                    <div class="slide" data-anchor='portfolio1'>
+                                <div data-display="portfolio-slider">
+                                    <div class="slide" data-anchor="portfolio1">
                                         <div class="row">
-                                            <h5><img src="assets/images/portfolio/monitor_portfolio_alto.png" /></h5>
+                                            <h5><img src="assets/images/portfolio/alts.png" /></h5>
                                             <p class="white-text">An informative Real Estate service site that brings your home buying experience online.</p>
-                                            <button data-cmd='portfolio' data-site="http://aldrinaltorealty.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                            <button data-cmd="portfolio" data-site="http://aldrinaltorealty.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                         </div>
                                     </div>
-                                    <div class="slide" data-anchor='portfolio2'>
+                                    <div class="slide" data-anchor="portfolio2">
                                         <div class="row">
                                             <h5><img src="assets/images/portfolio/kabs.png"></h5>
                                             <p class="white-text">An E- Commerce site that will bring Employee Engagement to a whole new level</p>
-                                            <button data-cmd='portfolio' data-site="https://www.kaboomrewards.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                            <button data-cmd="portfolio" data-site="https://www.kaboomrewards.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                         </div>
                                     </div>
-                                    <div class="slide" data-anchor='portfolio3'>
+                                    <div class="slide" data-anchor="portfolio3">
                                         <div class="row">
-                                            <h5><img src="assets/images/portfolio/monitor_portfolio_kareer.png"></h5>
+                                            <h5><img src="assets/images/portfolio/kars.png"></h5>
                                             <p class="white-text">a multi-platform application that provides solutions to common problems being encountered by both applicants and employers</p>
-                                            <button data-cmd='portfolio' data-site="https://www.kareer-ph.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                            <button data-cmd="portfolio" data-site="https://www.kareer-ph.com" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                         </div>
                                     </div>
-                                    <div class="slide" data-anchor='portfolio4'>
+                                    <div class="slide" data-anchor="portfolio4">
                                         <div class="row">
-                                            <h5><img src="assets/images/portfolio/monitor_portfolio_OH.png"></h5>
+                                            <h5><img src="assets/images/portfolio/ohs.png"></h5>
                                             <p class="white-text">Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery. </p>
-                                            <button data-cmd='portfolio' data-site="https://www.oohlalaahosiery.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
+                                            <button data-cmd="portfolio" data-site="https://www.oohlalaahosiery.com/" class="rnr-button flat waves-effect waves-light"><i class="material-icons left">arrow_forward</i> Visit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +262,7 @@
                             <div class="rnr-divider"></div>
                             <div class="col s12 m12 l10 offset-l1 white-text">
                                 <div class="row" id="rnr_team">
-                                    <div data-display='team-grid' class="row" style="margin-top: 50px;">
+                                    <div data-display="team-grid" class="row" style="margin-top: 50px;">
                                         <div class="display_up">
                                             <div class="profile animated tada">
                                                 <div class="hexagon chi">
@@ -264,7 +274,7 @@
                                                 <!-- <h6>Rey Leonard Dumasig</h6> -->
                                             </div>
                                             <div class="profile animated tada">
-                                                <div class="hexagon" style="background:url('assets/images/team/rufo.png') no-repeat; background-size: cover; display: inline-block;">
+                                                <div class="hexagon" style="background:url(assets/images/team/rufo.png) no-repeat; background-size: cover; display: inline-block;">
                                                 </div>
                                                 <div class="label">
                                                     <span>Rufo Gabrillo Jr.</span><br/>
@@ -275,7 +285,7 @@
                                         </div>
                                         <div class="display_down">
                                             <div class="profile animated tada">
-                                                <div class="hexagon" style="background:url('assets/images/team/jake.png') no-repeat; background-size: cover; display: inline-block;">
+                                                <div class="hexagon" style="background:url(assets/images/team/jake.png) no-repeat; background-size: cover; display: inline-block;">
                                                 </div>
                                                 <div class="label">
                                                     <span>Zyndale Jake Ramos</span><br/>
@@ -284,7 +294,7 @@
                                                 <!-- <h6>Zyndale Jake Ramos</h6> -->
                                             </div>
                                             <div class="profile animated tada">
-                                                <div class="hexagon" style="background:url('assets/images/team/renz.png') no-repeat; background-size: cover; display: inline-block;">
+                                                <div class="hexagon" style="background:url(assets/images/team/renz.png) no-repeat; background-size: cover; display: inline-block;">
                                                 </div>
                                                 <div class="label">
                                                     <span>Renmar Cornista</span><br/>
@@ -293,7 +303,7 @@
                                                 <!-- <h6>Renmar Cornista</h6> -->
                                             </div>
                                             <div class="profile animated tada">
-                                                <div class="hexagon" style="background:url('assets/images/team/jonathan.png') no-repeat; background-size: cover; display: inline-block;">
+                                                <div class="hexagon" style="background:url(assets/images/team/jonathan.png) no-repeat; background-size: cover; display: inline-block;">
                                                 </div>
                                                 <div class="label">
                                                     <span>Jonathan Millet</span><br/>
@@ -303,8 +313,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-display='team-slider' class="row" style="margin-top: 50px;">
-                                        <div class="slide" data-anchor='team1'>
+                                    <div data-display="team-slider" class="row" style="margin-top: 50px;">
+                                        <div class="slide" data-anchor="team1">
                                             <div class="row">
                                                 <div class="profile animated tada">
                                                     <div class="hexagon chi">
@@ -316,10 +326,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="slide" data-anchor='team2'>
+                                        <div class="slide" data-anchor="team2">
                                             <div class="row">
                                                 <div class="profile animated tada">
-                                                    <div class="hexagon" style="background:url('assets/images/team/rufo.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    <div class="hexagon" style="background:url(assets/images/team/rufo.png) no-repeat; background-size: cover; display: inline-block;">
                                                     </div>
                                                     <div class="label">
                                                         <span>Rufo Gabrillo Jr.</span><br/>
@@ -328,10 +338,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="slide" data-anchor='team3'>
+                                        <div class="slide" data-anchor="team3">
                                             <div class="row">
                                                 <div class="profile animated tada">
-                                                    <div class="hexagon" style="background:url('assets/images/team/jake.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    <div class="hexagon" style="background:url(assets/images/team/jake.png) no-repeat; background-size: cover; display: inline-block;">
                                                     </div>
                                                     <div class="label">
                                                         <span>Zyndale Jake Ramos</span><br/>
@@ -340,10 +350,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="slide" data-anchor='team4'>
+                                        <div class="slide" data-anchor="team4">
                                             <div class="row">
                                                 <div class="profile animated tada">
-                                                    <div class="hexagon" style="background:url('assets/images/team/renz.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    <div class="hexagon" style="background:url(assets/images/team/renz.png) no-repeat; background-size: cover; display: inline-block;">
                                                     </div>
                                                     <div class="label">
                                                         <span>Renmar Cornista</span><br/>
@@ -352,10 +362,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="slide" data-anchor='team5'>
+                                        <div class="slide" data-anchor="team5">
                                             <div class="row">
                                                 <div class="profile animated tada">
-                                                    <div class="hexagon" style="background:url('assets/images/team/jonathan.png') no-repeat; background-size: cover; display: inline-block;">
+                                                    <div class="hexagon" style="background:url(assets/images/team/jonathan.png) no-repeat; background-size: cover; display: inline-block;">
                                                     </div>
                                                     <div class="label">
                                                         <span>Jonathan Millet</span><br/>
