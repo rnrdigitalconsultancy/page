@@ -990,6 +990,7 @@ a.menubar:hover {
     font-family: 'rnr-head' !important;
     color: #bbb !important;
 }
+
 /*services*/
 ul.services-menu{
     text-align: left;
@@ -999,72 +1000,55 @@ ul.services-menu{
     font-family: 'coco-gothicUltralight';
     font-size: 12px;
 }
+
 i.dot{
     font-family: 'Material Icons';
     font-weight: unset;
     font-style: normal;
     font-size: 16px;
     position: absolute;
-    margin-top: 0% !important;
-    left: 4% !important;
+    z-index: 1;
+    margin: 0%;
+    left: 4%;
+    content: "";
 }
-i.web{
+
+li i.dot:hover{
+    display: none;
+}
+
+li i:after:hover{
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+li#web i:after:hover{
     background: url(../images/icons/web_creation.png) center/cover no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    margin-top: -3%;
 }
-i.software{
+li#software i:after:hover{
     background: url(../images/icons/software_solution.png) center/cover no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    margin-top: -3%;
 }
-i.digital{
+li#digital i:after:hover{
     background: url(../images/icons/digital_marketing.png) center/cover no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    margin-top: -3%;
 }
-i.seo{
+li#seo i:after:hover{
     background: url(../images/icons/seo.png) center/cover no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    margin-top: -3%;
 }
-i.social{
+li#social i:after:hover{
     background: url(../images/icons/social_media.png) center/cover no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    margin-top: -3%;
 }
