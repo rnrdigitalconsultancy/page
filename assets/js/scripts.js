@@ -78,6 +78,49 @@ let dot ={
 }
 
 $(document).on("ready",function(){
+
+    type.ini();
+    // dot.ini();
+    $('#modal_services').modal({
+        ready:function(e){
+            $.fn.fullpage.setMouseWheelScrolling(false);
+            $.fn.fullpage.setAllowScrolling(false);
+        },
+        complete:function(e){
+            $.fn.fullpage.setMouseWheelScrolling(true);
+            $.fn.fullpage.setAllowScrolling(true);
+        }
+    });
+
+    $("body").particleground({
+        dotColor: '#878892',
+        lineColor: '#65666d',
+        density:18000,
+        parallax:false,
+        particleRadius: 5,
+        lineWidth: .5
+    });
+
+    $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+    }
+  );
+
+    $('.carousel').carousel({fullWidth: true});
+
+    $("a[data-cmd='prev']").on('click',function(){
+        $('.carousel').carousel('prev');
+        console.log("xxx");
+    });
+
+    $("a[data-cmd='next']").on('click',function(){
+        $('.carousel').carousel('next');
+        console.log("xxx");
+    });
+
     var services = {
         "web-creation-and-maintenance":{
             "description":"We provide web maintenance services such as:",
