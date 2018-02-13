@@ -15,8 +15,8 @@ body {
     font-family: Open Sans;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
+    /* list-style-type: none; */
+    /* padding: 0; */
 }
 
 p{
@@ -975,9 +975,81 @@ a.menubar:hover {
     content: " ";
     animation: typing-animation 1s infinite;
     border-right: 1px solid #fff;
-    /* margin: auto; */
 }
 #typing_animation{
     font-family: 'rnr-head' !important;
     color: #bbb !important;
+}
+
+/*services*/
+table.services-menu td{
+    padding: 20px 0px !important;
+}
+table.services-menu tr td:nth-child(1){
+    padding: 0px 0px 0px 0px !important;
+    text-align:  center;
+}
+.services-menu li{
+    font-family: 'coco-gothicUltralight';
+    /* font-size: 12px; */
+    /* height: 40px; */
+    background: #ccc;
+    /* top: 0; */
+    /* bottom:  0; */
+    position: relative;
+    /* margin: auto; */
+    /* vertical-align:  middle; */
+}
+
+.services-menu li span{
+    /* width: 100%; */
+    /* vertical-align:  middle; */
+    /* margin: auto; */
+}
+
+p.dot{
+    font-family: 'Material Icons';
+    font-weight: unset;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    content: "";
+    width:40px;
+    height:40px;
+    top: 50%;
+}
+
+tr p.dot:hover{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+tr:nth-child(1) p.dot:hover{
+    background: url(../images/icons/web_creation.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+}
+tr:nth-child(2) p.dot:hover{
+    background: url(../images/icons/software_solution.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+}
+tr:nth-child(3) p.dot:hover{
+    background: url(../images/icons/digital_marketing.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+}
+tr:nth-child(4) p.dot:hover{
+    background: url(../images/icons/seo.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+}
+tr:nth-child(5) p.dot:hover{
+    background: url(../images/icons/social_media.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
 }
