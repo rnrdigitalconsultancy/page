@@ -56,9 +56,30 @@ let type = {
         }
     },
 }
+let dot ={
+    ini:function () {
+        console.log("ota");
+        $('#web').on('mouseover',function () {
+            console.log("in");
+            $('#web').css('font-size','20px');
+            $('#web').css('font-family','coco-gothic');
+            $('#web i.dot').addClass('hide');
+            $('i.web').removeClass('hide');
+        });
+        $('#web').on('mouseout',function () {
+            console.log("out");
+            $('#web').css('font-size','14px');
+            $('#web').css('font-family','coco-gothicUltralight');
+            $('#web i.dot').removeClass('hide');
+            $('i.web').addClass('hide');
+        });
+    }
+
+}
 
 $(document).on("ready",function(){
     type.ini();
+    dot.ini();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
@@ -74,11 +95,10 @@ $(document).on("ready",function(){
     $("body").particleground({
         dotColor: '#878892',
         lineColor: '#65666d',
-        density:13000,
+        density:17000,
         parallax:false,
-        particleRadius: 4,
-        lineWidth: .75,
-        parallaxMultiplier: 7
+        particleRadius: 2,
+        lineWidth: .25
     });
     $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300

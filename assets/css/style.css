@@ -47,7 +47,11 @@ p{
     src: url('../fonts/Coco-Gothic/Coco-Gothic-Light-trial.ttf');
     font-stretch: ultra-expanded;
 }
-
+@font-face {
+    font-family: 'coco-gothicUltraLight';
+    src: url('../fonts/Coco-Gothic/Coco-Gothic-Ultralight-trial.ttf');
+    font-stretch: ultra-expanded;
+}
 
 @font-face {
     font-family: 'walkway_semiboldregular';
@@ -74,8 +78,7 @@ h3 {
     margin-bottom: 30px;
     font-size: 50px;
     font-weight: 900;
-    font-family: walkway_ultraboldregular;
-    line-height: 1.2;
+    font-family: 'coco-gothicUltralight';
     margin-top: 20px;
 }
 h4,
@@ -959,10 +962,11 @@ a.menubar:hover {
     outline: 0 !important;
     color: blue !important;
     font-weight: 900;
+    font-family: rnr-head;
 }
 .nav-wrapper i{
     font-size: 35px !important;
-    margin: 10px 5px 0 0;
+    /* margin: 10px 5px 0 0; */
 } 
 #side-menu{
     height: 100% !important;
@@ -991,9 +995,76 @@ ul.services-menu{
     text-align: left;
 }
 .services-menu li{
-    padding: 20px 0;
+    padding: 20px 0px 20px 40px;
+    font-family: 'coco-gothicUltralight';
+    font-size: 12px;
 }
-.services-menu li i{
-    margin-right: 5%;
-    font-size: 20px;
+i.dot{
+    font-family: 'Material Icons';
+    font-weight: unset;
+    font-style: normal;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 0% !important;
+    left: 4% !important;
+}
+i.web{
+    background: url(../images/icons/web_creation.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    margin-top: -3%;
+}
+i.software{
+    background: url(../images/icons/software_solution.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    margin-top: -3%;
+}
+i.digital{
+    background: url(../images/icons/digital_marketing.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    margin-top: -3%;
+}
+i.seo{
+    background: url(../images/icons/seo.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    margin-top: -3%;
+}
+i.social{
+    background: url(../images/icons/social_media.png) center/cover no-repeat !important;
+    background-size: 25px !important;
+    background-color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0%;
+    margin-top: -3%;
 }

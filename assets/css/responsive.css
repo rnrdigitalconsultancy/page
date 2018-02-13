@@ -9,7 +9,7 @@
 }
 
 .bg{
-    background-color: black;
+    background-color: #000000;
 }
 
 #modal_services .modal-content h1{
@@ -135,7 +135,7 @@
 }
 @media (min-width: 320px) and (max-width: 601px) { /* Smartphones */
     #display{
-        padding-left: 20px; 
+        padding-left: 30px;
         padding-right: 20px;
     }
     .services .col{
@@ -501,7 +501,7 @@ p.label{
   font-family: 'Material Icons';
   font-weight: unset;
   font-style: normal;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -512,5 +512,6 @@ p.label{
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;  
   margin-top: -11px;
-  vertical-align:  middle;
+  vertical-align: middle;
+  /* margin-left: -25%; */
   
