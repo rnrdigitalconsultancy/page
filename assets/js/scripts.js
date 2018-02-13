@@ -95,10 +95,10 @@ $(document).on("ready",function(){
     $("body").particleground({
         dotColor: '#878892',
         lineColor: '#65666d',
-        density:17000,
+        density:18000,
         parallax:false,
-        particleRadius: 2,
-        lineWidth: .25
+        particleRadius: 5,
+        lineWidth: .5
     });
     $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
