@@ -56,6 +56,7 @@ let type = {
         }
     },
 }
+
 let dot ={
     ini:function () {
         console.log("ota");
@@ -79,7 +80,7 @@ let dot ={
 
 $(document).on("ready",function(){
     type.ini();
-    dot.ini();
+    // dot.ini();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
@@ -91,7 +92,6 @@ $(document).on("ready",function(){
         }
     });
 
-    console.log("im here");
     $("body").particleground({
         dotColor: '#878892',
         lineColor: '#65666d',
@@ -100,6 +100,7 @@ $(document).on("ready",function(){
         particleRadius: 5,
         lineWidth: .5
     });
+
     $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
       edge: 'right', // Choose the horizontal origin
