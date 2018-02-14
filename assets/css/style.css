@@ -972,6 +972,9 @@ a.menubar:hover {
         opacity: 1;
     }
 }
+.iScrollVerticalScrollbar {
+    right: -8% !important;
+}
 #typing_animation:after{
     content: " ";
     animation: typing-animation 1s infinite;

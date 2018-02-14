@@ -207,7 +207,7 @@
     }
 
     .rnr-parallax4 div[data-display='portfolio-slider'] img{
-        width: 100%;
+        width: 99%;
     }
 
     .rnr-parallax4 div[data-display='portfolio-slider']  .carousel p{
@@ -360,6 +360,9 @@
     }
     .foot i{
         margin-bottom: -6px;
+    }
+    .portfolio img{
+        width: 100%;
     }
 }
 
