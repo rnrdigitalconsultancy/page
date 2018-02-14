@@ -356,13 +356,16 @@
     }
     .foot{
         text-align: center !important;
-        position:  relative;
+        position: unset;
     }
     .foot i{
         margin-bottom: -6px;
     }
     .portfolio img{
         width: 100%;
+    }
+    .portfolio td{
+        padding: 0px 5px !important;
     }
 }
 

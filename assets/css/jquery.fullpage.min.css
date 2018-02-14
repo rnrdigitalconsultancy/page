@@ -99,7 +99,7 @@ html.fp-enabled {
 
 .fp-scrollable {
 	overflow: hidden;
-	position: relative
+	position: relative;
 }
 
 .fp-scroller {

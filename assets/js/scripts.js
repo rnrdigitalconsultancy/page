@@ -14,7 +14,7 @@ $(document).ready(function() {
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
-        'anchors': ['home','why', 'services','portfolio','contact'],
+        'anchors': ['home','why', 'services','portfolio','contact','footer'],
         'navigationPosition': 'left',
         'scrollOverflow': true,
     });
