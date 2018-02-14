@@ -59,7 +59,6 @@ let type = {
 
 let dot ={
     ini:function(){
-        console.log("ota");
         $('#web').on('mouseover',function () {
             console.log("in");
         });
@@ -70,7 +69,6 @@ let dot ={
 }
 
 $(document).on("ready",function(){
-
     type.ini();
     dot.ini();
     $('#modal_services').modal({
@@ -94,12 +92,11 @@ $(document).on("ready",function(){
     });
 
     $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 300
-      edge: 'right', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true, // Choose whether you can drag to open on touch screens,
-    }
-  );
+        menuWidth: 300,
+        edge: 'right',
+        closeOnClick: true,
+        draggable: true,
+    });
 
     $('.carousel').carousel({fullWidth: true});
 
@@ -110,7 +107,6 @@ $(document).on("ready",function(){
 
     $("a[data-cmd='next']").on('click',function(){
         $('.carousel').carousel('next');
-        console.log("xxx");
     });
 
     var services = {

@@ -22,6 +22,7 @@ ul {
 p{
     font-size: 14px;
     color: #bbb;
+    /* margin: 0px 0px 0px 40px; */
 }
 
 
@@ -982,58 +983,88 @@ a.menubar:hover {
 }
 
 /*services*/
+#section_services{
+    height: 100%;
+}
+
+.services-line{
+    height: 100%;
+}
+.services-line::before{
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    /* left: 28%; */
+    margin: -80px 0px 0px 30px;
+    width: 1px;
+    height: 350px;
+    display:  block;
+}
 table.services-menu td{
-    padding: 10px 0px !important;
+    padding: 0px 0px !important;
     font-family: 'coco-gothicUltralight';
 }
 table.services-menu tr td:nth-child(1){
-    padding: 0px 0px 0px 0px !important;
+    margin: 0px 10px 0px 0px !important;
     text-align:  center;
+    line-height: 60px;
+    text-align: center;
+}
+
+table.services-menu tr td:nth-child(1) p{
+    margin: 0px 40px 0px 0px !important;
+    text-align:  center;
+    top: 50%;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
 p.dot{
     font-family: 'Material Icons';
     font-weight: unset;
     font-style: normal;
-    font-size: 16px;
+    font-size: 25px;
     position: relative;
     z-index: 1;
     content: "";
-    width:40px;
-    /* height:40px; */
-    top: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
 
 tr p.dot:hover{
+    font-size: 0px;
     display: block;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     z-index: 1000;
 }
 
 tr:nth-child(1) p.dot:hover{
-    background: url(../images/icons/web_creation.png) center/cover no-repeat !important;
-    background-size: 25px !important;
+    background: url(../images/icons/web_creation.png) center no-repeat !important;
+    background-size: 40px !important;
     background-color: #ffffff !important;
 }
 tr:nth-child(2) p.dot:hover{
-    background: url(../images/icons/software_solution.png) center/cover no-repeat !important;
-    background-size: 25px !important;
+    background: url(../images/icons/software_solution.png) center no-repeat !important;
+    background-size: 40px !important;
     background-color: #ffffff !important;
 }
 tr:nth-child(3) p.dot:hover{
-    background: url(../images/icons/digital_marketing.png) center/cover no-repeat !important;
-    background-size: 25px !important;
+    background: url(../images/icons/digital_marketing.png) center no-repeat !important;
+    background-size: 40px !important;
     background-color: #ffffff !important;
 }
 tr:nth-child(4) p.dot:hover{
-    background: url(../images/icons/seo.png) center/cover no-repeat !important;
-    background-size: 25px !important;
+    background: url(../images/icons/seo.png) center no-repeat !important;
+    background-size: 40px !important;
     background-color: #ffffff !important;
 }
 tr:nth-child(5) p.dot:hover{
-    background: url(../images/icons/social_media.png) center/cover no-repeat !important;
-    background-size: 25px !important;
+    background: url(../images/icons/social_media.png) center no-repeat !important;
+    background-size: 40px !important;
     background-color: #ffffff !important;
 }
