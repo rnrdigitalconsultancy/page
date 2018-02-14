@@ -140,7 +140,7 @@
     }
     .nav-wrapper i{
         font-size: 35px !important;
-        padding: 1px .75rem;
+        padding: 20px 10px 0 0;
     } 
     #side-menu{
         height: 100% !important;
@@ -238,7 +238,7 @@
         width: 80px;
     }
     .nav-wrapper{
-        padding: 0 .75rem !important;
+        padding: 0px .75rem !important;
     }
     .nav-wrapper i{
         font-size: 35px !important;
@@ -321,15 +321,18 @@
         left: 0%;
         margin-top: -5px;
     }
-    .rnr-parallax6 ul{
+    .rnr-parallax5 ul{
         text-align: left;
         padding-left: 60px !important;
     }
-    .rnr-parallax6 li{
+    .rnr-parallax5 li{
         height: 35px;
     }
-    .rnr-parallax6 p{
+    .rnr-parallax5 p{
         color: white !important;
+    }
+    .rnr-parallax6{
+        text-align: left !important;
     }
 }
 

@@ -98,7 +98,7 @@ h1 strong{
 
 .fp-section {
     position: relative;
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -983,28 +983,12 @@ a.menubar:hover {
 
 /*services*/
 table.services-menu td{
-    padding: 20px 0px !important;
+    padding: 10px 0px !important;
+    font-family: 'coco-gothicUltralight';
 }
 table.services-menu tr td:nth-child(1){
     padding: 0px 0px 0px 0px !important;
     text-align:  center;
-}
-.services-menu li{
-    font-family: 'coco-gothicUltralight';
-    /* font-size: 12px; */
-    /* height: 40px; */
-    background: #ccc;
-    /* top: 0; */
-    /* bottom:  0; */
-    position: relative;
-    /* margin: auto; */
-    /* vertical-align:  middle; */
-}
-
-.services-menu li span{
-    /* width: 100%; */
-    /* vertical-align:  middle; */
-    /* margin: auto; */
 }
 
 p.dot{
@@ -1016,7 +1000,7 @@ p.dot{
     z-index: 1;
     content: "";
     width:40px;
-    height:40px;
+    /* height:40px; */
     top: 50%;
 }
 

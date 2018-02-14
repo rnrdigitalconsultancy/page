@@ -62,17 +62,9 @@ let dot ={
         console.log("ota");
         $('#web').on('mouseover',function () {
             console.log("in");
-            $('#web').css('font-size','20px');
-            $('#web').css('font-family','coco-gothic');
-            $('#web i.dot').addClass('hide');
-            $('i.web').removeClass('hide');
         });
         $('#web').on('mouseout',function () {
             console.log("out");
-            $('#web').css('font-size','14px');
-            $('#web').css('font-family','coco-gothicUltralight');
-            $('#web i.dot').removeClass('hide');
-            $('i.web').addClass('hide');
         });
     }
 }
@@ -80,7 +72,7 @@ let dot ={
 $(document).on("ready",function(){
 
     type.ini();
-    // dot.ini();
+    dot.ini();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
@@ -181,8 +173,6 @@ $(document).on("ready",function(){
             }
         }
     }
-
-    type.ini();
 
     $('#modal_services').modal({
         ready:function(e){
