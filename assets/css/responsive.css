@@ -5,7 +5,7 @@
 
 #social-icons, #logo {
     width:100%;
-    text-align: center;
+    text-align: left;
 }
 
 .bg{
@@ -140,7 +140,7 @@
     }
     .nav-wrapper i{
         font-size: 35px !important;
-        padding: 20px 10px 0 0;
+        /* padding: 20px 10px 0 0; */
     } 
     #side-menu{
         height: 100% !important;
@@ -321,6 +321,12 @@
         left: 0%;
         margin-top: -5px;
     }
+    .rnr-parallax4{
+        height: 52%;
+    }
+    .rnr-parallax5{
+        padding-bottom: 69px;
+    }
     .rnr-parallax5 ul{
         text-align: left;
         padding-left: 60px !important;
@@ -333,6 +339,26 @@
     }
     .rnr-parallax6{
         text-align: left !important;
+    }
+    .rnr-parallax6 a{
+        font-size: 14px !important;
+        color: #aaa !important;
+    }
+    .rnr-parallax6 li{
+        padding: 3px 0;
+        color:  white;
+    }
+    .footer{
+        padding-bottom: 5px;
+    }
+    .footer .button{
+         text-align: center !important; 
+    }
+    .foot{
+        text-align: center !important;
+    }
+    .foot i{
+        margin-bottom: -6px;
     }
 }
 
