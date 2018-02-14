@@ -356,6 +356,7 @@
     }
     .foot{
         text-align: center !important;
+        position:  relative;
     }
     .foot i{
         margin-bottom: -6px;
