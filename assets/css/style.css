@@ -84,7 +84,7 @@ h3 {
 }
 h4,
 h5,
-h6 { font-weight: 300 }
+h6 {font-weight: bold;color:  white;font-size: 24px !important;}
 
 h1 strong{
     font-family: 'rnr-head';
@@ -371,14 +371,14 @@ h1 strong{
 #fp-nav li .active span,
 .fp-slidesNav .active span { background: #fff }
 .fp-slidesNav {
-    position: absolute;
+    position: relative;
     z-index: 4;
-    /* margin-left: -523px !important; */
-    text-align: left;
-    left: 50%;
+    margin-left: 0px !important;
+    text-align: center;
+    left: 0%;
     opacity: 1;
-    top: 50%;
-    margin-top: 45px;
+    top: -5%;
+    margin-top: 0px;
 }
 .fp-slidesNav.top { top: 17px }
 #fp-nav ul,

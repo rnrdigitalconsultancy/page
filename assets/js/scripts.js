@@ -14,8 +14,9 @@ $(document).ready(function() {
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
-        'anchors': ['home','why', 'services','portfolio','team','contact'],
-        'navigationPosition': 'left'
+        'anchors': ['home','why', 'services','portfolio','contact'],
+        'navigationPosition': 'left',
+        'scrollOverflow': true,
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
