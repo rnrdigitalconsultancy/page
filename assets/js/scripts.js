@@ -63,11 +63,18 @@ let type = {
 
 let dot ={
     ini:function(){
-        $('#web').on('mouseover',function () {
-            console.log("in");
-        });
-        $('#web').on('mouseout',function () {
-            console.log("out");
+        var randomLinks = $('p.txt');
+        var original = randomLinks.css('color');
+        randomLinks.hover(function() { //mouseover
+            $(this).animate({
+                'font-size': '20px !important',
+                'paddingLeft': '20px'
+            },1000);
+        },function() { //mouseout
+            $(this).animate({
+                'font-size': '14px !important',
+                'paddingLeft': '0'
+            },1000);
         });
     }
 }

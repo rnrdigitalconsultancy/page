@@ -1016,7 +1016,7 @@ table.services-menu tr td:nth-child(1){
 }
 
 table.services-menu tr td:nth-child(1) p{
-    margin: 0px 40px 0px 0px !important;
+    margin: 0px 10px 0px 0px !important;
     text-align:  center;
     top: 50%;
     position: relative;
@@ -1037,6 +1037,7 @@ p.dot{
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    color: white;
 }
 
 tr p.dot:hover{
@@ -1051,23 +1052,48 @@ tr:nth-child(1) p.dot:hover{
     background-size: 40px !important;
     background-color: #ffffff !important;
 }
+/*tr:nth-child(1) p.txt:hover{
+    font-size: 17px !important;
+    font-family: 'coco-gothic' !important;
+    color: white !important;
+}*/
 tr:nth-child(2) p.dot:hover{
     background: url(../images/icons/software_solution.png) center no-repeat !important;
     background-size: 40px !important;
     background-color: #ffffff !important;
 }
+/*tr:nth-child(2) p.txt:hover{
+    font-size: 17px !important;
+    font-family: 'coco-gothic' !important;
+    color: white !important;
+}*/
 tr:nth-child(3) p.dot:hover{
     background: url(../images/icons/digital_marketing.png) center no-repeat !important;
     background-size: 40px !important;
     background-color: #ffffff !important;
 }
+/*tr:nth-child(3) p.txt:hover{
+    font-size: 17px !important;
+    font-family: 'coco-gothic' !important;
+    color: white !important;
+}*/
 tr:nth-child(4) p.dot:hover{
     background: url(../images/icons/seo.png) center no-repeat !important;
     background-size: 40px !important;
     background-color: #ffffff !important;
 }
+/*tr:nth-child(4) p.txt:hover{
+    font-size: 17px !important;
+    font-family: 'coco-gothic' !important;
+    color: white !important;
+}*/
 tr:nth-child(5) p.dot:hover{
     background: url(../images/icons/social_media.png) center no-repeat !important;
     background-size: 40px !important;
     background-color: #ffffff !important;
 }
+/*tr:nth-child(5) p.txt:hover{
+    font-size: 17px !important;
+    font-family: 'coco-gothic' !important;
+    color: white !important;
+}*/
