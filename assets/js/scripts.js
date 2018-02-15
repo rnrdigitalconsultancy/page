@@ -17,6 +17,9 @@ $(document).ready(function() {
         'anchors': ['home','why', 'services','portfolio','contact','footer'],
         'navigationPosition': 'left',
         'scrollOverflow': true,
+        'dragAndMove': true,
+        'autoScrolling': true,
+        'fitToSection': true,
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {

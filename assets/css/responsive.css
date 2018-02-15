@@ -147,7 +147,7 @@
         margin: 100px 0;
     }
 }
-@media (min-width: 320px) and (max-width: 601px) { /* Smartphones */
+@media (min-width: 320px) and (max-width: 640px) { /* Smartphones */
     #display{
         padding-left: 25px;
         padding-right: 25px;
@@ -356,7 +356,7 @@
     }
     .foot{
         text-align: center !important;
-        position: unset;
+        position: relative;
     }
     .foot i{
         margin-bottom: -6px;
@@ -366,6 +366,43 @@
     }
     .portfolio td{
         padding: 0px 5px !important;
+    }
+    .services img{
+        width: 200px;
+        height: 200p;
+    }
+    .services .left{
+        width: 30%;
+        height: 0px;
+    }
+    .services .right{
+        width: 65%;
+        text-align: left !important;
+    }
+    .services .contents{
+        margin-top: 55px;
+    }
+    .contents h6{
+        font-size: 14px !important;
+    }
+    .contents p{
+        font-size: 12px !important;
+        width:  100%;
+    }
+    .team img{
+        width: 200px;
+        height: 200p;
+    }
+    .team .left{
+        width: 30%;
+        height: 0px;
+    }
+    .team .right{
+        width: 65%;
+        text-align: left !important;
+    }
+    .team .contents{
+        margin-top: 55px;
     }
 }
 
@@ -660,4 +697,4 @@ p.label{
   margin-top: -11px;
   vertical-align: middle;
   /* margin-left: -25%; */
-  
+  
