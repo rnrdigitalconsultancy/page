@@ -8,10 +8,8 @@ var system = function(){
 			    $('.tooltipped').tooltip({delay: 50});
 			});
 			setTimeout(function(){
-				system.loading(true);
-				$('#content-login').addClass('animated slideInUp');
-			},1000);
-			login.ini();
+				$('body').removeClass('loading');
+			},50);
 		},
 		ajax:function(url,data){
 	        return $.ajax({

@@ -1,10 +1,12 @@
+system.ini();
+
 $(document).ready(function() {
     (function() {
         [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
             new CBPFWTabs(el);
         });
     })();
-    $('#main-nav').sidr();
+    // $('#main-nav').sidr();
     $('#fullpage').fullpage({
         'verticalCentered': true,
         'easing': 'easeInOutCirc',
@@ -25,16 +27,16 @@ $(document).ready(function() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('body').addClass('browser-mobile');
     }
-    $(document).mouseup(function(e) {
-        if ($(".sidr-open ")[0]) {
-            var container = $("#sidr");
-            if (!container.is(e.target) // if the target of the click isn't the container...
-                && container.has(e.target).length === 0) // ... nor a descendant of the container
-            {
-                $(".sidr-open #main-nav").click();
-            }
-        }
-    });
+    // $(document).mouseup(function(e) {
+    //     if ($(".sidr-open ")[0]) {
+    //         var container = $("#sidr");
+    //         if (!container.is(e.target) // if the target of the click isn't the container...
+    //             && container.has(e.target).length === 0) // ... nor a descendant of the container
+    //         {
+    //             $(".sidr-open #main-nav").click();
+    //         }
+    //     }
+    // });
 });
 
 let type = {
@@ -43,7 +45,7 @@ let type = {
         let text = "YOUR GATEWAY TO DIGITAL SUCCESS", count = text.length;
         let c = 0;
         type.animate(c,text);
-        console.log('xxx');
+        type.show();
     },
     animate:function(show,text,sound){
         $("#typed").trigger('play');
@@ -52,36 +54,34 @@ let type = {
                 $("#typing_animation").append(text[show]);
                 show++;
                 type.animate(show,text);
-                // console.log(text[show]);
-            },75);            
+            },75);         
         }
         else{
         $("#typed").trigger('stop');
         }
     },
+    show:function(){
+        $('nav').removeClass('load');
+    }
 }
 
 let dot ={
-    ini:function(){
-        var randomLinks = $('p.txt');
-        var original = randomLinks.css('color');
-        randomLinks.hover(function() { //mouseover
-            $(this).animate({
-                'font-size': '20px !important',
-                'paddingLeft': '20px'
-            },1000);
-        },function() { //mouseout
-            $(this).animate({
-                'font-size': '14px !important',
-                'paddingLeft': '0'
-            },1000);
-        });
+    random:function () {
+        timer = setTimeout(function(){
+            dot.show();
+            dot.random();
+        },2500);
+    },
+    show:function(){
+        let r = Math.floor(Math.random()*4)+1;
+        $(`tr`).removeClass('active');
+        $(`tr:nth-child(${r})`).addClass('active');
     }
 }
 
 $(document).on("ready",function(){
     type.ini();
-    dot.ini();
+    dot.random();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
@@ -192,14 +192,14 @@ $(document).on("ready",function(){
         }
     });
 
-    $("body").particleground({
-        dotColor: '#878892',
-        lineColor: '#65666d',
-        density:17000,
-        parallax:false,
-        particleRadius: 5,
-        lineWidth: .5
-    });
+    // $("body").particleground({
+    //     dotColor: '#878892',
+    //     lineColor: '#65666d',
+    //     density:17000,
+    //     parallax:false,
+    //     particleRadius: 5,
+    //     lineWidth: .5
+    // });
 
     $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
