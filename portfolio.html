@@ -14,11 +14,11 @@
         <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     </head>
-    <body class="bg">
-        <!-- <div class="overlay"></div> -->
-        <!-- <div class="wrap"></div> -->
-        <div id="fullpage" style="position: absolute;">
-            <nav class="row" style="position: sticky; top: 0px; background: transparent !important; box-shadow: none;">
+    <body class="bg loading">
+        <div class="overlay"></div>
+        <div class="wrap"></div>
+        <div id="fullpage" style="position: relative;">
+            <nav class="row" style="position: inherit; top: 0px; background: transparent !important; box-shadow: none;">
                 <div class="nav-wrapper col left">
                     <a class="brand-logo" href="#"><img src="assets/images/rnr digital consultancy WHITE.png" style=" width: 80px;" /></a>
                 </div>
@@ -28,8 +28,8 @@
                     <a class="menubar" href="portfolio.html">PORTFOLIO</a>
                     <a class="menubar" href="team.html">ABOUT US</a>
                 </div>
-                <div class="nav-wrapper col right show-on-medium-and-down hide-on-large-only">
-                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <div class="nav-wrapper show-on-medium-and-down hide-on-large-only">
+                    <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
             <div id="slide-out" class="side-nav" style="transform: translateX(0px);">
@@ -42,7 +42,7 @@
             </div>
             <div class="row" id="display">
                 <div class="section">
-                    <div class="row center rnr-parallax3">
+                    <div class="row center portfolio-parallax">
                         <div class="layer" data-depth="0.3">
                             <h1>Portfolio</h1>
                             <div class="col s12 m8 l6 offset-m2 offset-l3 white-text">

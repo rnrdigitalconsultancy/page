@@ -219,6 +219,10 @@
         font-size: 15px !important;
     }
 
+    .rnr-parallax4 h1{
+        margin-bottom: 0px !important;
+    }
+
     .rnr-parallax5 div[data-display='team-grid']{
         display: none;
     }
@@ -276,7 +280,8 @@
         margin-top: -5px;
     }
     .rnr-parallax4{
-        height: 52%;
+        height: 55%;
+        padding: 20% 0 !important;
     }
     .rnr-parallax5{
         padding-bottom: 69px;
@@ -303,7 +308,7 @@
         color:  white;
     }
     .footer{
-        padding-bottom: 5px;
+        padding-bottom: px;
     }
     .footer .button{
          text-align: center !important; 
@@ -311,6 +316,7 @@
     .foot{
         text-align: center !important;
         position: relative;
+        margin-top: 34px;
     }
     .foot i{
         margin-bottom: -6px;
@@ -651,5 +657,4 @@ p.label{
   -webkit-font-smoothing: antialiased;
   margin-top: -11px;
   vertical-align: middle;
-  /* margin-left: -25%; */
-  
+  /* margin-left: -25%        

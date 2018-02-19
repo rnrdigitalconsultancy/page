@@ -45,7 +45,6 @@ let type = {
         let text = "YOUR GATEWAY TO DIGITAL SUCCESS", count = text.length;
         let c = 0;
         type.animate(c,text);
-        type.show();
     },
     animate:function(show,text,sound){
         $("#typed").trigger('play');
@@ -58,10 +57,13 @@ let type = {
         }
         else{
         $("#typed").trigger('stop');
+            type.show();
         }
     },
     show:function(){
-        $('nav').removeClass('load');
+        $('nav.load').slideDown( 300 ).delay( 1000 ).fadeIn( 400 ).animate({opacity:'1'});
+        $('p.load').slideDown( 300 ).delay( 2000 ).fadeIn( 400 ).animate({opacity:'1'});
+
     }
 }
 
@@ -100,13 +102,6 @@ $(document).on("ready",function(){
         parallax:false,
         particleRadius: 5,
         lineWidth: .5
-    });
-
-    $('.button-collapse').sideNav({
-        menuWidth: 300,
-        edge: 'right',
-        closeOnClick: true,
-        draggable: true,
     });
 
     $('.carousel').carousel({fullWidth: true});
@@ -192,15 +187,6 @@ $(document).on("ready",function(){
         }
     });
 
-    // $("body").particleground({
-    //     dotColor: '#878892',
-    //     lineColor: '#65666d',
-    //     density:17000,
-    //     parallax:false,
-    //     particleRadius: 5,
-    //     lineWidth: .5
-    // });
-
     $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
       edge: 'right', // Choose the horizontal origin
@@ -266,12 +252,12 @@ $(document).on("ready",function(){
         var imageContent = "";
         $('#modal_services').modal('open');
 
-        $("#modal_services").particleground({
-            dotColor: '#ccc',
-            lineColor: '#eee',
-            density:7500,
-            parallax:true
-        });
+        // $("#modal_services").particleground({
+        //     dotColor: '#ccc',
+        //     lineColor: '#eee',
+        //     density:7500,
+        //     parallax:true
+        // });
         imageContent = "<img src='assets/images/rnrdigitalconsultancy2.png' width='300' class='logo'>";
         descriptionContent = "<ul>"+
                                 "<li>Step 1: Information Gathering"+
@@ -323,7 +309,7 @@ $(document).on("ready",function(){
                              "</ul>";
 
         $("#modal_services .title").html("Our processes in making brand online");
-        $("#modal_services .image").html(imageContent);
+        // $("#modal_services .image").html(imageContent);
         $("#modal_services .description").html(descriptionContent);
     });
 
