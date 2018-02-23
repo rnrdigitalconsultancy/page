@@ -19,7 +19,7 @@
         <div class="overlay"></div>
         <div class="wrap"></div>
         <div id="fullpage" style="position: relative;">
-            <nav class="row load" style="position: inherit; top: 0px; background: transparent !important; box-shadow: none;">
+            <nav class="row load" style="position: inherit; top: 0px; background: transparent !important; box-shadow: none; z-index: 1;">
                 <div class="nav-wrapper col left">
                     <a class="brand-logo" href="#"><img src="assets/images/rnr digital consultancy WHITE.png" style=" width: 80px;" /></a>
                 </div>
@@ -27,13 +27,14 @@
                     <a class="menubar" href="index.html">HOME</a>
                     <a class="menubar" href="services.html">SERVICES</a>
                     <a class="menubar" href="portfolio.html">PORTFOLIO</a>
-                    <a class="menubar" href="team.html">ABOUT US</a>
+                    <a class="menubar about" href="team.html">ABOUT US</a>
                 </div>
                 <div class="nav-wrapper show-on-medium-and-down hide-on-large-only">
                     <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
             <div id="slide-out" class="side-nav" style="transform: translateX(0px);">
+                <a href="#" class="btn-flat btn-floating black-text darken-4 menu right" onclick="$(this).sideNav('hide');"><i class="material-icons">close</i></a>
                 <ul id="side-menu">
                   <li><a class="menubar" href="index.html">HOME</a></li>
                   <li><a class="menubar" href="services.html">SERVICES</a></li>
@@ -75,31 +76,31 @@
                                 <p>
                                     <a class="rnr-button flat waves-effect waves-light" href="#services" data-cmd="processes">OUR PROCESSES<i class="material-icons">keyboard_arrow_down</i></a>
                                 </p>
-                                <div class="services-line">
-                                    <table class="services-menu">
-                                        <tr>
-                                            <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
-                                            <td><p class="txt">Web Creation</p></td>
-                                        </tr>
-                                        <tr>
-                                            <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
-                                            <td><p class="txt">Software Solution</p></td>
-                                        </tr>
-                                        <tr>
-                                            <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
-                                            <td><p class="txt">Digital Marketing Consultancy</p></td>
-                                        </tr>
-                                        <tr>
-                                            <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
-                                            <td><p class="txt">Search Engine Optimization</p></td>
-                                        </tr>
-                                        <tr>
-                                            <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
-                                            <td><p class="txt">Social Media Management</p></td>
-                                        </tr>
-                                    </table>
-                                </div>
                             </div>
+                        </div>
+                        <div class="services-line">
+                            <table class="services-menu">
+                                <tr>
+                                    <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
+                                    <td><p class="txt">Web Creation</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
+                                    <td><p class="txt">Software Solution</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
+                                    <td><p class="txt">Digital Marketing Consultancy</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
+                                    <td><p class="txt">Search Engine Optimization</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="30px" class="back"><p class="dot">fiber_manual_record</p></td>
+                                    <td><p class="txt">Social Media Management</p></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -145,38 +146,38 @@
                                 <li><p><i class="material-icons contact-icons">phone_in_talk</i>0912345678</p></li>
                                 <li><p><i class="material-icons contact-icons">room</i>Unit 8 Viliran Compound, P. Moran St, Lingayen, Pangasinan,Philippines</p></li>
                             </ul>
-                            <div class="col s12 m8 l6 offset-l3 offset-m2 white-text">
-                                <div class="row">
-                                    <form class="col s12" method="post" id="form_query">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input class="validate" id="field_name" name="field_name" type="text"> <label for="field_name">First Name</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input class="validate" id="field_lastname" name="field_lastname" type="text"> <label for="field_lastname">Last Name</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input class="validate" id="field_email" name="field_email" type="email"> <label for="field_email">Email</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <textarea class="materialize-textarea" name="field_message" id="field_message"></textarea>
-                                                <label for="textarea1">Message</label>
-                                            </div>
+                        </div>
+                        <div class="form col s12 m8 l6 offset-l3 offset-m2 white-text">
+                            <div class="row">
+                                <form class="col s12" method="post" id="form_query">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_name" name="field_name" type="text"> <label for="field_name">First Name</label>
                                         </div>
-                                        <div class="row">
-                                            <div class="col s12">
-                                                <button class="rnr-button waves-effect waves-light">SEND MESSAGE</button>
-                                            </div>
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_lastname" name="field_lastname" type="text"> <label for="field_lastname">Last Name</label>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_email" name="field_email" type="email"> <label for="field_email">Email</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea" name="field_message" id="field_message"></textarea>
+                                            <label for="textarea1">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <button class="rnr-button waves-effect waves-light">SEND MESSAGE</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                     <div class="footer-section"> <!-- footer -->
                         <div class="row center rnr-parallax6">
-                            <div class="layer" data-depth="0.3">
-                                <div class="footer">
+                            <div class="row layer" data-depth="0.3">
+                                <div class="footer menu">
                                     <h4>Menu</h4>
                                     <ul>
                                         <li><a href="index.html">Home</a></li>
@@ -185,27 +186,27 @@
                                         <li><a href="team.html">About Us</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer">
+                                <div class="footer services">
                                     <h4>Our Services</h4>
                                     <ul>
-                                        <li><a href="#">Web Creation</a></li>
-                                        <li><a href="#">Software Solution</a></li>
-                                        <li><a href="#">Digital Marketing Consultancy</a></li>
-                                        <li><a href="#">Search Engine Optimization</a></li>
-                                        <li><a href="#">Social Media Management</a></li>
+                                        <li><a href="web.html">Web Development and Maintenance</a></li>
+                                        <li><a href="software.html">Software Solution</a></li>
+                                        <li><a href="marketing.html">Digital Marketing Consultancy</a></li>
+                                        <li><a href="seo.html">Search Engine Optimization</a></li>
+                                        <li><a href="social.html">Social Media Management</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer">
+                                <div class="footer connect">
                                     <h4>Connect With Us</h4>
-                                    <div id="social-icons">
-                                        <ul>
-                                            <li><a href=""><i class="flaticon-facebook6"></i></a></li>
-                                            <li><a href=""><i class="flaticon-social19"></i></a></li>
-                                            <li><a href=""><i class="flaticon-google16"></i></a></li>
-                                        </ul>
+                                    <div>
+                                        <a href=""><i class="fb"></i></a>
+                                        <a href=""><i class="tw"></i></a>
+                                        <a href=""><i class="ig"></i></a>
+                                        <a href=""><i class="in"></i></a>
+                                        <a href=""><i class="gg"></i></a>
                                     </div>
                                 </div>
-                                <div class="footer">
+                                <div class="footer newsletter">
                                     <h4>Subscribe For our Newsletter</h4>
                                     <!-- <div class="col s12 m8 l6 offset-l3 offset-m2 white-text"> -->
                                     <div class="row">
@@ -227,12 +228,12 @@
                                     </div>
                                     <!-- </div> -->
                                 </div>
-                                <div class="footer foot">
-                                    <ul>
-                                        <li><a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a></li>
-                                        <li><small><i class="material-icons">copyright</i>2018 All Rights Reserved. RNR Digital Consultancy</small></li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div class="footer foot">
+                                <ul>
+                                    <li class="terms"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></li>
+                                    <li class="copyright"><small><i class="material-icons">copyright</i>2018 All Rights Reserved. RNR Digital Consultancy</small></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

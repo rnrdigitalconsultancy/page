@@ -22,7 +22,7 @@ ul {
 p{
     font-size: 14px;
     color: #bbb;
-    /* margin: 0px 0px 0px 40px; */
+    /* margin: 0px 10%; */
 }
 
 
@@ -77,7 +77,7 @@ h2,
 h3 {
     color: #ffffff;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: 900;
     font-family: 'coco-gothicUltralight';
     margin-top: 30px;
@@ -217,7 +217,7 @@ h1 strong{
     font-style: normal;
     font-weight: normal;
     opacity: 1;
-    display: block;
+    display: none;
     font-variant: normal;
     font-size: 13px;
     border: 1px solid #fff;
@@ -961,12 +961,24 @@ i.mouse{
 .menubar{
     border-right: darkgrey solid 1.5px;
     padding: 0 15px;
+    font-family: 'coco-gothic' !important;
+    letter-spacing: 4px;
+    font-size: 12px;
 }
 a.menubar:hover {
     outline: 0 !important;
     color: blue !important;
     font-weight: 900;
     font-family: rnr-head;
+}
+a.menubar:active {
+    outline: 0 !important;
+    color: blue !important;
+    font-weight: 900;
+    font-family: rnr-head;
+}
+a.menubar.about {
+    border-right: 0 !important;
 }
 @keyframes typing-animation {
     0% {
@@ -992,24 +1004,26 @@ a.menubar:hover {
 /*services*/
 #section_services{
     height: 100%;
+    margin-left: 15%;
 }
 
 .services-line{
     height: 100%;
 }
-.services-line::before{
-    content: "";
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    margin: -17px 0px -19px 30px;
-    width: 0.2%;
-    height: 250px;
-    display:  block;
+#modal_services .modal-content{
+    position: relative !important;
+    width:100% !important;
+    top:0px;
 }
-table.services-menu td{
-    padding: 0px 0px !important;
-    font-family: 'coco-gothicUltralight';
+
+#modal_services canvas{
+    position: absolute !important;
+    display:  none;
+}
+.modal {
+    width: 90%;
+    background-color: black !important;
+    border: white solid 1px;
 }
 table.services-menu tr td:nth-child(1){
     margin: 0px 10px 0px 0px !important;
@@ -1029,11 +1043,16 @@ table.services-menu tr td:nth-child(1) p{
     text-align: center;
 }
 
+p.txt {
+    font-size: 18px;
+    font-weight:  200;
+}
+
 p.dot{
     font-family: 'Material Icons';
     font-weight: unset;
     font-style: normal;
-    font-size: 25px;
+    font-size: 21px;
     position: relative;
     content: "";
     display: inline-block;
@@ -1041,30 +1060,12 @@ p.dot{
     line-height: normal;
     color: white;
 }
-/*tr p.dot:hover{
-    font-size: 0px;
-    display: block;
-    border-radius: 50%;
-    z-index: 1000;
-}*/
-tr.active p.txt{
-    font-size: 17px !important;
-    font-family: 'coco-gothic' !important;
-    color: white !important;
-}
 tr.active p.dot{
     font-size: 0px !important;
 }
 
-/*tr.active {
-    -webkit-animation: svg-zoom-in 1s;
-    -ms-animation: svg-zoom-in 1s;
-    -moz-animation: svg-zoom-in 1s;
-    -o-animation: svg-zoom-in 1s;
-}*/
-
 tr.active:nth-child(1) p.dot{
-    background: url(../images/icons/web_creation.png) center no-repeat !important;
+    background: url(../images/services/webmaintenance.png) center no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
     border-radius: 50%;
@@ -1073,7 +1074,7 @@ tr.active:nth-child(1) p.dot{
     height: 45px;
 }
 tr.active:nth-child(2) p.dot{
-    background: url(../images/icons/software_solution.png) center no-repeat !important;
+    background: url(../images/services/software.png) center no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
     border-radius: 50%;
@@ -1082,7 +1083,7 @@ tr.active:nth-child(2) p.dot{
     height: 45px;
 }
 tr.active:nth-child(3) p.dot{
-    background: url(../images/icons/digital_marketing.png) center no-repeat !important;
+    background: url(../images/services/digital.png) center no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
     border-radius: 50%;
@@ -1091,7 +1092,7 @@ tr.active:nth-child(3) p.dot{
     height: 45px;
 }
 tr.active:nth-child(4) p.dot{
-    background: url(../images/icons/seo.png) center no-repeat !important;
+    background: url(../images/services/seo.png) center no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
     border-radius: 50%;
@@ -1100,7 +1101,7 @@ tr.active:nth-child(4) p.dot{
     height: 45px;
 }
 tr.active:nth-child(5) p.dot{
-    background: url(../images/icons/social_media.png) center no-repeat !important;
+    background: url(../images/services/social.png) center no-repeat !important;
     background-size: 25px !important;
     background-color: #ffffff !important;
     border-radius: 50%;
@@ -1114,7 +1115,7 @@ tr.active:nth-child(1) td.back:before{
     background-color: transparent;
     border: 1px solid #fff;
     position: absolute;
-    margin: 0px;
+    margin: 2px 0px 0 0;
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -1129,7 +1130,7 @@ tr.active:nth-child(2) td.back:before{
     background-color: transparent;
     border: 1px solid #fff;
     position: absolute;
-    margin: 0px;
+    margin: 2px 0px 0 0;
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -1144,10 +1145,10 @@ tr.active:nth-child(3) td.back:before{
     background-color: transparent;
     border: 1px solid #fff;
     position: absolute;
-    margin: 0px;
+    margin: 2px 0px 0 0;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     -webkit-animation: svg-pulse 1s infinite;
     -ms-animation: svg-zoom-in 1s;
     -moz-animation: svg-pulse 1s infinite;
@@ -1159,7 +1160,7 @@ tr.active:nth-child(4) td.back:before{
     background-color: transparent;
     border: 1px solid #fff;
     position: absolute;
-    margin: 0px;
+    margin: 2px 0px 0 0;
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -1174,7 +1175,7 @@ tr.active:nth-child(5) td.back:before{
     background-color: transparent;
     border: 1px solid #fff;
     position: absolute;
-    margin: 0px;
+    margin: 2px 0px 0 0;
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -1183,10 +1184,156 @@ tr.active:nth-child(5) td.back:before{
     -moz-animation: svg-pulse 1s infinite;
     -o-animation: svg-pulse 1s infinite;
 }
+i.contact-icons{
+    color: white;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    left: 0%;
+    margin-top: -5px;
+}
+/*.carousel.carousel-slider{
+    display: none;
+}*/
+.rnr-parallax5 p{
+    color: white !important;
+    margin-bottom: 50px;
+}
+.rnr-parallax5{
+    padding-bottom: 25px;
+    margin: 0 70px;
+}
+.rnr-parallax5 ul{
+    text-align: left;
+    padding-left: 60px !important;
+}
+.rnr-parallax5 li{
+    height: 35px;
+}
+.rnr-parallax5 i{
+    left: 5%;
+}
 
+.form label{
+    font-weight: 900;
+}
+.rnr-parallax6 .footer{
+    text-align: left; 
+}
 .loading{
     opacity: 0;
 }
 .load{
     opacity: 0;
+}
+.connect a{
+    margin: 5px 5px !important;
+}
+.services a{
+    font-family: 'coco-gothicUltralight' !important;
+}
+.menu a{
+    font-family: 'coco-gothicUltralight' !important;
+}
+.connect i{
+    padding: 10px;
+}
+
+.fb{
+    background: url(../images/icons/fb_icon.png) center no-repeat !important;
+    background-size: contain !important;
+}
+.tw {
+    background: url(../images/icons/te.png) center no-repeat !important;
+    background-size: contain !important;
+}
+.ig {
+    background: url(../images/icons/ig_icon.png) center no-repeat !important;
+    background-size: contain !important;
+}
+.in {
+    background: url(../images/icons/in.png) center no-repeat !important;
+    background-size: contain !important;
+}
+.gg {
+    background: url(../images/icons/gplus_icon.png) center no-repeat !important;
+    background-size: contain !important;
+}
+.portfolio h6 {
+    text-align: left;
+    margin: 20px;
+}
+.portfolio p {
+    text-align: left;
+    margin: 26px !important;
+    color: white;
+    width: 70%;
+    font-size: 16px;
+}
+.portfolio a.rnr-button {
+    position:  absolute;
+    bottom: 15%;
+    left: 10%;
+}
+.info{
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 19%;
+    width: 36.5%;
+    padding: 15px;
+    margin: 10px;
+}
+.deegeelab{
+    top: 14%;
+    left: 10%;
+    opacity: 0;
+}
+.deegeelab:hover{
+    opacity: 1;
+}
+.kaboom{
+    top: 14%;
+    left: 52%;
+    opacity: 0;
+}
+.kaboom:hover{
+    opacity: 1;
+}
+.kareer{
+    top: 33%;
+    left: 10%;
+    opacity: 0;
+}
+.kareer:hover{
+    opacity: 1;
+}
+.oh{
+    top: 33%;
+    left: 52%;
+    opacity: 0;
+}
+.oh:hover{
+    opacity: 1;
+}
+.psu{
+    top: 52%;
+    left: 10%;
+    opacity: 0;
+}
+.psu:hover{
+    opacity: 1;
+}
+.alto{
+    left: 52%;
+    top: 52%;
+    opacity: 0;
+}
+.alto:hover{
+    opacity: 1;
 }

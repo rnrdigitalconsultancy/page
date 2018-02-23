@@ -80,10 +80,21 @@ let dot ={
         $(`tr:nth-child(${r})`).addClass('active');
     }
 }
+let portfolio ={
+    ini:function(){
+        $("img#dglb").mouseover(function() {
+            $("div.deegeelab").css({'opacity':'1'}).fadeIn(500);
+        });
+        $("img#dglb").mouseout(function() {
+            $("div.deegeelab").css({'opacity':'0'}).fadeOut(500);
+        });
+    }
+}
 
 $(document).on("ready",function(){
     type.ini();
     dot.random();
+    portfolio.ini();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);

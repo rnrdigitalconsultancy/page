@@ -18,9 +18,11 @@
     border-bottom:  1px solid white;
     font-family: 'rnr-head' !important;
     margin-bottom: 10px !important;
+    padding-bottom: 20px;
 }
 .description{
     color: white;
+    /* padding: 0 120px; */
 }
 .rnr-parallax4 div[data-display='portfolio-grid']{
 
@@ -41,41 +43,91 @@
 .rnr-parallax4 div[data-display='portfolio-grid'] img{
     width: 100%;
 }
-
-@media (min-width: 1141px) { /* Desktop */
-    #display{
-        padding-left: 100px; 
-        padding-right: 100px;
-    }
-    .services .col{
-        margin-top: 40px;
-    }
-    .rnr-parallax3 div[data-display='services-slider']{
-        display: none;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider']{
-        display: none;
-    }
-    .rnr-parallax5 div[data-display='team-slider']{
-        display: none;
-    }
-    .fp-slidesNav{
-        display: none;
-    }
-    .portfolio-grid .slide{
-
-    }
-    #modal_services img{
-        width: 100px;
-    }
-    /*.rnr-parallax4 div[data-display='portfolio-grid'] {
-        display: none;
-    }*/
+.nav-wrapper {
+    padding: 10px 1.75rem;
 }
-@media (max-width: 1140px) { /* Desktop */
+.rnr-parallax1{
+    padding-top: 5%;
+}
+.rnr-parallax2 p{
+    font-size: 20px;
+    margin: 0px 10%;
+}
+.rnr-parallax3 .layer{
+    float: left;
+    width: 55%;
+}
+.rnr-parallax3 h1{
+    margin: 0 0px 0 15%;
+    text-align: left;
+}
+.rnr-parallax3 .col p{
+    text-align: left;
+    margin: 5px 0;
+}
+.rnr-parallax3 .col{
+    width: 100%;
+}
+.services-line{
+    float: right;
+    width: 45%;
+}
+.services-line::before {
+    height: 390px;
+    top: 50%;
+    margin: -190px 0px 0 30px;
+}
+table.services-menu td{
+    padding: 18px 0px;
+}
+.services-line::before{
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin: -190px 0 0 30px;
+    width: 0.1%;
+    height: 380px;
+    display:  block;
+}
+.rnr-parallax5{
+    padding-top: 20px !important;
+}
+.rnr-parallax5 .layer{
+    float: left;
+    text-align: left;
+    width: 50%;
+    padding: 0 50px 0 0;
+}
+.form {
+    float: right;
+    text-align: right;
+    width: 50% !important;
+    margin-top: 50px;
+    margin-left: 0 !important;
+    padding: 0 0 0 50px;
+}
+.form button{
+    /* float: right; */
+}
+div#slide-out {
+    width: 225px !important;
+    border-left: solid grey 1px;
+}
+#slide-out a.menu {
+    margin: 17px 17px 0px 0;
+}
+.menu i.material-icons {
+    font-size: 2.5rem;
+    line-height: 25px;
+}
+#side-menu li:hover {
+    background-color: #a9a9a94f;
+}
+@media (min-width: 994px) { /* Desktop */
     #display{
-        padding-left: 100px; 
-        padding-right: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .services .col{
         margin-top: 40px;
@@ -88,13 +140,13 @@
         top: 30%;
     }
     .rnr-parallax3 div[data-display='services-slider']{
-        display: none;
+        /*display: none;*/
     }
     .rnr-parallax4 div[data-display='portfolio-slider']{
         display: none;
     }
     .rnr-parallax5 div[data-display='team-slider']{
-        display: none;
+        /*display: none;*/
     }
     .fp-slidesNav{
         display: none;
@@ -102,14 +154,322 @@
     #modal_services img{
         width: 100px;
     }
+    .rnr-parallax6 .layer{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding: 25px 0 10px 0;
+        /* border-top:  1px solid #bbb; */
+    }
+    .rnr-parallax6 .layer .footer{
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 1px;
+    }  
+    .rnr-parallax6 .layer .menu{
+        width: 10%;
+        margin-left: 20px;
+        left: auto;
+        right: auto;
+    } 
+    .rnr-parallax6 .layer .services{
+        width: 14.666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .rnr-parallax6 .layer .connect{
+        width: 36%;
+        left: auto;
+        right: auto;
+    }
+    .rnr-parallax6 .layer .newsletter{
+        width: 37%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+        padding-left: 30px;
+        border-left: 1px solid #bbb;
+    }
+    .newsletter button{
+        float: right;
+    }
+    .rnr-parallax6 .foot{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 25px;
+        border-bottom: 1px solid #bbb;
+    }
+    .rnr-parallax6 .foot li{
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 1px;
+    }
+    .rnr-parallax6 .foot .terms{
+        float: right;
+        color:  white;
+    }
+    .rnr-parallax6 .foot .copyright{
+        float: left;
+        color: white ;
+        font-size: 14px ;
+    }
+    .copyright small{
+        color: white ;
+        font-size: 11px ;
+    }
+    .copyright small i{
+        margin: -5px 5px 0 0;
+    }
+    .rnr-parallax6 .footer li{
+        font-weight: lighter;
+        margin: 0px 0;
+    }
+    .rnr-parallax6{
+        padding-top: 0;
+        border-top: 1px solid #bbb;
+    }
+    .footer-section h4 {
+        font-size: 14px !important;
+    }
+    .foot li {
+        padding: 15px 0;
+    }
+    form#form_newsletter input {
+        font-size: 12px !important;
+    }
+    form#form_newsletter label {
+        font-size: 12px !important;
+    }
+    .footer-section li {
+        margin: 0px 0px !important;
+    }
+    .footer-section li a{
+        font-size: 11px !important;
+    }
+    form#form_newsletter button {
+        min-width: 80px !important;
+        padding: 5px !important;
+        font-size: 10px !important;
+    }
+    tr.active p.txt{
+        font-size: 26px !important;
+        font-family: 'coco-gothic' !important;
+        color: white !important;
+        margin: 0 0 !important;
+        padding-top: 6px;
+    }
+    .footer-section {
+        position: relative !important;
+    }
+    .service .view {
+        margin-left: 0 !important;
+        width: 50% !important;
+    }
+    .row.center.rnr-parallax3.container.services-list {
+        width: 80%;
+    }
+    .layer.service {
+        width: 100%;
+    }
+    .row.center.rnr-parallax3.container.portfolio {
+        width: 80%;
+    }
+    .row.center.rnr-parallax3.container.about {
+        width: 80%;
+    }
+    .layer.about {
+        width: 100%;
+    }
+    .about .view{
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .services-view {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .row.center.rnr-parallax3.container.wide {
+        width: 80%;
+    }
+    .wide .layer {
+        width: 100%;
+    }
+    .wide .layer .view {
+        margin: 19px 10% !important;
+    }
+    .row.center.rnr-parallax3.container{
+        padding: 15% 0!important;
+    }
+    .rnr-parallax3 .layer .portfolio {
+        width: 100% !important;
+    }
+    .container .layer h1 {
+        text-align: center !important;
+        margin: 0;
+    }
+    .col.service img {
+        width: 125px !important;
+    }
+    .services img {
+        width: 299px !important;
+    }
+    .col.service h6 {
+        font-family: 'coco-gothic' !important;
+        margin: 19px 0 !important;
+        text-align: center;
+    }
+    .service span {
+        color: #bbb !important;
+    }
+    .services .left{
+        width: 30%;
+        height: 0px;
+    }
+    .services .right{
+        width: 75% !important;
+    }
+    .services .contents{
+        margin-top: 79px;
+    }
+    .contents h6{
+        font-size: 20px !important;
+        width: 80%!important;
+        text-align:  left;
+    }
+    .contents p {
+        font-size: 16px;
+        width: 80%;
+    }
+    .services li.row:nth-child(1) {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .services li.row:nth-child(2) {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .services li.row:nth-child(3) {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .services li.row:nth-child(4) {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .services li.row:nth-child(5) {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .layer.portfolio {
+        width: 100%;
+    }
+    .portfolio .view {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .portfolio li {
+        margin: 15px;
+    }
+    .portfolio img {
+        width: 100%;
+        border: solid white 0.5px;
+    }
+    .portfolio li:nth-child(1) {
+        width: 45%;
+        float: left;
+    }
+    .portfolio li:nth-child(2) {
+        width: 45%;
+        float: right;
+    }
+    .portfolio li:nth-child(3) {
+        width: 45%;
+        float: left;
+    }
+    .portfolio li:nth-child(4) {
+        width: 45%;
+        float: right;
+    }
+    .portfolio li:nth-child(5) {
+        width: 45%;
+        float: left;
+    }
+    .portfolio li:nth-child(6) {
+        width: 45%;
+        float: right;
+    }
+    .team .contents {
+        margin-top: 45px;
+    }
+    .team .left {
+        width: 62%;
+        height: 0px;
+        z-index: 1;
+        position: relative;
+        top: 47px;
+    }
+    .team .right {
+        width: 50%;
+    }
+    .team .left p {
+        margin: 0 0 !important;
+    }
+    .team img{
+        width: 250px;
+    }
+    .team li.row:nth-child(1) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .team li.row:nth-child(2) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .team li.row:nth-child(3) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .team li.row:nth-child(4) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .team li.row:nth-child(5) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
 }
-@media (max-width: 993px) { /* Tables */
+@media (min-width: 641px) and (max-width: 993px) { /* Tables */
+    .footer-section.pages {
+        top: 0 !important;
+    }
+    .footer-section {
+        position: relative !important;
+        top: 140px !important;
+    }
+    div.rnr-parallax3.services-list {
+        margin: 0 0 0 0 !important;
+        width: 100%;
+    }   
     #display{
-        padding-left: 50px; 
-        padding-right: 50px;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
     }
     .services .col{
-        margin-top: 20px;
+        margin-top: 0;
     }
     #display_right{
         display: block;
@@ -122,17 +482,15 @@
         margin:0 auto;
         top: 40%;
     }
-    .rnr-parallax3 div[data-display='services-slider']{
-        display: none;
+    .rnr-parallax4 div[data-display='portfolio-slider'] {
+        display: block !important;
     }
-    .rnr-parallax4 div[data-display='portfolio-slider']{
-        display: none;
+    .rnr-parallax4 div[data-display='portfolio-slider'] img {
+        width: 100%;
     }
-    .rnr-parallax5 div[data-display='team-slider']{
-        display: none;
-    }
-    .fp-slidesNav{
-        display: none;
+    .slide .fp-tableCell {
+        height: 100% !important;
+        padding: 0px 100px !important;
     }
     #modal_services img{
         width: 90px;
@@ -151,11 +509,357 @@
         height: 100% !important;
         margin: 100px 0;
     }
+    .rnr-parallax2 .col{
+        padding: 0 90px !important;
+    }
+    .rnr-parallax2 p {
+        font-size: 14px !important;
+        margin: 0px !important;
+    }
+    .row.center.rnr-parallax3.container {
+        padding: 30% 0!important;
+    }
+    .rnr-parallax3 .layer{
+        float: left !important;
+        width: 45% !important;
+    }
+    .rnr-parallax3 h1{
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .rnr-parallax3 .col p{
+        text-align: left !important;
+        margin: 12px 0 !important;
+    }
+    .rnr-parallax3 .col{
+        width: 100%;
+    }
+    #section_services {
+        margin-left: 0% !important;
+    }
+    .services-line{
+        float: right !important;
+        width: 50% !important;
+    }
+    .services-line::before {
+        height: 390px !important;
+        top: 50% !important;
+        margin: -190px 0px 0 30px !important;
+    }
+    table.services-menu td{
+        padding: 18px 0px !important;
+    }
+    p.txt {
+        font-size: 15px !important;
+        font-weight:  200;
+    }
+    tr.active p.txt{
+        font-size: 19px !important;
+        font-family: 'coco-gothic' !important;
+        color: white !important;
+        margin: 0 0 !important;
+    }
+    tr.active:nth-child(1) td.back:before{
+        margin: 1px 0 0 0 !important;
+    }
+    tr.active:nth-child(2) td.back:before{
+        margin: 1px 0 0 0 !important;
+    }
+    tr.active:nth-child(3) td.back:before{
+        margin: 1px 0 0 0 !important;
+    }
+    tr.active:nth-child(4) td.back:before{
+        margin: 1px 0 0 0 !important;
+    }
+    tr.active:nth-child(5) td.back:before{
+        margin: 1px 0 0 0 !important;
+    }
+    .rnr-parallax4{
+            padding-top: 25% !important;
+    }
+    .fp-slidesNav{
+        top: 0px !important;
+    }
+    .rnr-parallax4 a{
+            top: 100px !important;
+    }
+    .rnr-parallax5{
+        padding-top: 10% !important;
+        margin: 0 auto !important;
+    }
+    .rnr-parallax5 i{
+        left: 0% !important;
+    }
+    .rnr-parallax5 p {
+        margin-bottom: 1rem !important;
+    }
+    .rnr-parallax5 .layer{
+        float: left;
+        text-align: left;
+        width: 50%;
+        padding: 0 !important;
+    }
+    .form {
+        float: right !important;
+        text-align: left;
+        width: 50% !important;
+        margin-top: 50px;
+        padding: 0 !important;
+    }
+    .form button{
+        float: right;
+    }
+    .rnr-parallax6 .layer{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    .rnr-parallax6 .layer .footer{
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 1px;
+    }  
+    .rnr-parallax6 .layer .menu{
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    } 
+    .rnr-parallax6 .layer .services{
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .rnr-parallax6 .layer .connect{
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .rnr-parallax6 .layer .newsletter{
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .newsletter button{
+        float: right;
+    }
+    .rnr-parallax6 .foot{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .rnr-parallax6 .foot li{
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 1px;
+    }
+    .rnr-parallax6 .foot .terms{
+        float: right;
+    }
+    .rnr-parallax6 .foot .copyright{
+        float: left;
+        color: white !important;
+        font-size: 14px !important;
+    }
+    .copyright small{
+        color: white !important;
+        font-size: 10px !important;
+    }
+    .copyright small i{
+        margin: -5px 5px 0 0;
+    }
+    .rnr-parallax6 .footer li{
+        font-weight: lighter;
+        margin: 10px 0;
+    }
+    .rnr-parallax6{
+        padding-top: 0 !important;
+    }
+    .footer-section h4 {
+        font-size: 14px !important;
+    }
+    .foot li {
+        padding: 15px 0;
+    }
+    form#form_newsletter input {
+        font-size: 12px !important;
+    }
+    form#form_newsletter label {
+        font-size: 12px !important;
+    }
+    .footer-section li {
+        margin: 0px 0px !important;
+    }
+    .footer-section li a{
+        font-size: 11px !important;
+    }
+    form#form_newsletter button {
+        min-width: 80px !important;
+        padding: 5px !important;
+        font-size: 10px !important;
+    }
+    .rnr-parallax3 .layer.service {
+        width: 100% !important;
+    }
+    .layer.service h1 {
+        text-align: center !important;
+    }
+    .col.service img {
+        width: 125px !important;
+    }
+    .services img {
+        width: 250px !important;
+    }
+    .col.service h6 {
+        font-family: 'coco-gothic' !important;
+        margin: 19px 0 !important;
+        text-align: center;
+    }
+    .service span {
+        color: #bbb !important;
+    }
+    .services .left{
+        width: 30%;
+        height: 0px;
+    }
+    .services .right{
+        width: 70% !important;
+    }
+    .services .contents{
+        margin-top: 65px;
+    }
+    .contents h6{
+        font-size: 14px !important;
+        width: 95%!important;
+        text-align:  left;
+    }
+    .contents span{
+        font-size: 12px !important;
+        width:  100%;
+    }
+    .services li.row:nth-child(1) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .services li.row:nth-child(2) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .services li.row:nth-child(3) {
+        width: 50%;
+        float: left;
+        right: 47%;
+        position: relative;
+    }
+    .services li.row:nth-child(4) {
+        width: 50%;
+        float: right;
+        top: -180px;
+        position: relative;
+    }
+    .services li.row:nth-child(5) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .container .layer {
+        width: 100% !important;
+    }
+    .container .layer h1 {
+        text-align: center !important;
+    }
+
+    .team .contents {
+        margin-top: 45px;
+    }
+    .team .left {
+        width: 62%;
+        height: 0px;
+        z-index: 1;
+        position: relative;
+        top: 47px;
+    }
+    .team .right {
+        width: 50%;
+    }
+    .team .left p {
+        margin: 0 0 !important;
+    }
+    .team img{
+        width: 150px;
+    }
+    .team li.row:nth-child(1) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .team li.row:nth-child(2) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .team li.row:nth-child(3) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .team li.row:nth-child(4) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .team li.row:nth-child(5) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .portfolio li {
+    margin: 15px;
+    }
+    .portfolio img {
+        width: 100%;
+        border: solid white 0.5px;
+    }
+    .portfolio li:nth-child(1) {
+        width: 44%;
+        float: left;
+    }
+    .portfolio li:nth-child(2) {
+        width: 44%;
+        float: right;
+    }
+    .portfolio li:nth-child(3) {
+        width: 44%;
+        float: left;
+    }
+    .portfolio li:nth-child(4) {
+        width: 44%;
+        float: right;
+    }
+    .portfolio li:nth-child(5) {
+        width: 44%;
+        float: left;
+    }
+    .portfolio li:nth-child(6) {
+        width: 44%;
+        float: right;
+    }
+    .info{
+        display: none !important;
+    }
 }
 @media (min-width: 320px) and (max-width: 640px) { /* Smartphones */
     #display{
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
     .services .col{
         margin-top: 0px;
@@ -168,15 +872,11 @@
         font-size: 30px;
     }
 
-    .rnr-parallax2{
-        /*text-align: left !important;*/
-    }
-
-    h1{
-        /* font-size: 2.5rem; */
-    }
     p{
         font-size: 14px !important;
+    }
+    .rnr-parallax2 p {
+        margin: 0 !important;
     }
 
     .rnr-button.flat{
@@ -185,6 +885,9 @@
 
     .rnr-button.flat i{
         line-height: 45px;
+    }
+    .row.center.rnr-parallax3.container {
+        padding: 30% 0 !important;
     }
 
     .rnr-parallax3 div[data-display='services-grid']{
@@ -208,7 +911,7 @@
     }
 
     .rnr-parallax4 div[data-display='portfolio-slider']{
-        display: block;
+        display: block  !important;
     }
 
     .rnr-parallax4 div[data-display='portfolio-slider'] img{
@@ -254,9 +957,12 @@
     } 
     #side-menu{
         height: 100% !important;
-        margin: 100px 0;
+        margin: 60px 0;
     }
     /*services*/
+    #section_services {
+        margin-left: 0% !important;
+    }
     ul.services-menu{
         text-align: left;
     }
@@ -265,36 +971,93 @@
         font-family: 'coco-gothicUltralight';
         font-size: 12px;
     }
-    /*contact*/
-    i.contact-icons{
-        color: white;
-        border: 1px solid;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        font-size: 25px;
-        text-align: center;
-        padding-top: 4px;
+    .services-line::before{
+        content: "";
+        background: #fff;
         position: absolute;
-        left: 0%;
-        margin-top: -5px;
+        top: 50%;
+        margin: -55px 0px 0px 30px;
+        width: 0.2%;
+        height: 240px;
+        display:  block;
     }
+    table.services-menu td{
+         padding: 0px; 
+        font-family: 'coco-gothicUltralight';
+    }
+    tr.active p.txt{
+        font-size: 17px !important;
+        font-family: 'coco-gothic' !important;
+        color: white !important;
+        margin: 0 0 !important;
+    }
+    tr.active:nth-child(1) td.back:before{
+        margin: 0 !important;
+    }
+    tr.active:nth-child(2) td.back:before{
+        margin: 0 !important;
+    }
+    tr.active:nth-child(3) td.back:before{
+        margin: 0 !important;
+    }
+    tr.active:nth-child(4) td.back:before{
+        margin: 0 !important;
+    }
+    tr.active:nth-child(5) td.back:before{
+        margin: 0 !important;
+    }
+    .rnr-parallax3 .layer {
+         float: inherit !important;
+         width: 100% !important;
+         text-align:  center;
+    }
+    .rnr-parallax3 h1{
+        text-align: center !important;
+        margin: 0 !important;
+    }
+    .rnr-parallax3 .col p {
+        text-align: left !important;
+        font-size:  12px !important;
+    }
+    .services-line {
+        float: unset;
+        width: 100% !important;
+    }
+    /*contact*/
     .rnr-parallax4{
         height: 55%;
         padding: 20% 0 !important;
     }
     .rnr-parallax5{
         padding-bottom: 69px;
+        margin: 0 auto !important;
     }
     .rnr-parallax5 ul{
         text-align: left;
         padding-left: 60px !important;
     }
+    .rnr-parallax5 i{
+        left: 0% !important;
+    }
     .rnr-parallax5 li{
         height: 35px;
     }
-    .rnr-parallax5 p{
-        color: white !important;
+    .rnr-parallax5 p {
+        margin-bottom: 1rem !important;
+    }
+    .rnr-parallax5 .layer {
+        float: left !important;
+        text-align: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .form {
+        float: right !important;
+        text-align: left !important;
+        width:  100% !important;
+        margin-top: 50px;
+        margin-left: 0 !important;
+        padding: 0 !important;
     }
     .rnr-parallax6{
         text-align: left !important;
@@ -302,16 +1065,18 @@
     .rnr-parallax6 a{
         font-size: 14px !important;
         color: #aaa !important;
+        font-family: 'coco-gothic' !important;
+        font-weight: bolder;
     }
     .rnr-parallax6 li{
         padding: 3px 0;
         color:  white;
     }
-    .footer{
-        padding-bottom: px;
-    }
     .footer .button{
          text-align: center !important; 
+    }
+    .footer h4 {
+        font-size: 20px !important;
     }
     .foot{
         text-align: center !important;
@@ -321,14 +1086,26 @@
     .foot i{
         margin-bottom: -6px;
     }
+    form#form_newsletter button {
+        /* min-width: 80px !important; */
+        padding: 5px !important;
+        nt; */
+        nt; */
+        font-size: 10px !important;
+    }
     .portfolio img{
         width: 100%;
+        border: solid white 0.5px;
+        margin: 5px 0;
     }
     .portfolio td{
         padding: 0px 5px !important;
     }
+    #section_services p {
+        text-align: center !important;
+    }
     .services img{
-        width: 200px;
+        width: 250px;
         height: 200p;
     }
     .services .left{
@@ -336,33 +1113,53 @@
         height: 0px;
     }
     .services .right{
-        width: 65%;
-        text-align: left !important;
+        width: 66%;
+        /* text-align: left !important; */
     }
     .services .contents{
-        margin-top: 55px;
+        margin-top: 64px;
     }
     .contents h6{
         font-size: 14px !important;
+        /* width: 195px !important; */
+        text-align:  left;
     }
-    .contents p{
+    .contents span{
         font-size: 12px !important;
         width:  100%;
+        color: #bbb !important; */
+        text-align:;
     }
     .team img{
-        width: 200px;
-        height: 200p;
+        width: 150px;
     }
     .team .left{
-        width: 30%;
+        width: 61%;
         height: 0px;
+        z-index: 1;
+        position: relative;
+        top: 47px;
     }
     .team .right{
-        width: 65%;
+        width: 50%;
         text-align: left !important;
     }
     .team .contents{
-        margin-top: 55px;
+        margin-top: 45px;
+    }
+    .col.service img {
+        width: 100px !important;
+    }
+    .col.service h6 {
+    font-family: 'coco-gothicUltralight';
+    margin: 25px 0;
+    }
+    .col.service span {
+        color: #bbb !important;
+        font-size: 13px !important;
+    }
+    .info{
+        display: none !important;
     }
 }
 
@@ -620,17 +1417,6 @@ p.label{
     width:100% !important;
     position: absolute !important;
     /* top: 0px !important; */
-}
-
-#modal_services .modal-content{
-    position: relative !important;
-    width:100% !important;
-    top:0px;
-}
-
-#modal_services canvas{
-    position: absolute !important;
-    display:  none;
 }
 
 /* fallback */
