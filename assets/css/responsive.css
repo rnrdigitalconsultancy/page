@@ -24,6 +24,9 @@
     color: white;
     /* padding: 0 120px; */
 }
+.description li {
+    padding: 5px 0;
+}
 .rnr-parallax4 div[data-display='portfolio-grid']{
 
 }
