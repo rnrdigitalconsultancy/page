@@ -252,6 +252,7 @@ div#slide-out {
     }
     .footer-section li a{
         font-size: 11px !important;
+        color: darkgray;
     }
     form#form_newsletter button {
         min-width: 80px !important;
