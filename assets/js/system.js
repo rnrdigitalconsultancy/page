@@ -5,11 +5,11 @@ var system = function(){
 		ini:function(){
 			$("body").append("<script>console.log('%cDeveloped By: RNR Digital Consultancy (2017) http://rnrdigitalconsultancy.com ,,|,_', 'background:#f74356;color:#64c2ec;font-size:20px;')</script>");
 			$(document).ready(function(){
-			    $('.tooltipped').tooltip({delay: 50});
+			    $('.tooltipped').tooltip({delay: 100});
 			});
 			setTimeout(function(){
 				$('body').removeClass('loading');
-			},50);
+			},100);
 		},
 		ajax:function(url,data){
 	        return $.ajax({

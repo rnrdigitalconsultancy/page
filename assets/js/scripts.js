@@ -1,5 +1,5 @@
 system.ini();
-
+let idleTimerID = 0, timer = 0;
 $(document).ready(function() {
     (function() {
         [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
@@ -27,16 +27,7 @@ $(document).ready(function() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('body').addClass('browser-mobile');
     }
-    // $(document).mouseup(function(e) {
-    //     if ($(".sidr-open ")[0]) {
-    //         var container = $("#sidr");
-    //         if (!container.is(e.target) // if the target of the click isn't the container...
-    //             && container.has(e.target).length === 0) // ... nor a descendant of the container
-    //         {
-    //             $(".sidr-open #main-nav").click();
-    //         }
-    //     }
-    // });
+
 });
 
 let type = {
@@ -72,12 +63,57 @@ let dot ={
         timer = setTimeout(function(){
             dot.show();
             dot.random();
-        },2500);
+        },2000);
+        return timer;
     },
     show:function(){
         let r = Math.floor(Math.random()*4)+1;
         $(`tr`).removeClass('active');
         $(`tr:nth-child(${r})`).addClass('active');
+    },
+    hover:function () {
+        $(`tr`).mouseover(function(){
+            let node = $(this).data('node');
+            $(`tr:nth-child(${node})`).addClass('active');
+        });
+        $(`tr`).mouseout(function(){
+            let node = $(this).data('node');
+            $(`tr:nth-child(${node})`).removeClass('active');
+        });
+    }
+}
+let _idle = {
+    ini:function(){
+        this.setup();
+    },
+    setup:function(){
+        document.addEventListener("mousemove", _idle.reset);
+        document.addEventListener("mousedown", _idle.reset);
+        document.addEventListener("keypress", _idle.reset);
+        document.addEventListener("DOMMouseScroll", _idle.reset);
+        document.addEventListener("mousewheel", _idle.reset);
+        document.addEventListener("touchmove", _idle.reset);
+        document.addEventListener("MSPointerMove", _idle.reset);
+     
+        this.startTimer();            
+    },
+    startTimer:function(){
+        idleTimerID = window.setTimeout(_idle.inactive, 2000);
+    },
+    reset:function(e){
+        window.clearTimeout(idleTimerID);
+        _idle.active(e);
+    },
+    inactive:function(){
+        dot.show();
+        dot.random();
+    },
+    active:function(e){
+        if(e.target.nodeName != "tr"){
+        }
+        window.clearTimeout(timer);
+        window.clearTimeout(idleTimerID);
+        this.startTimer();
     }
 }
 let portfolio ={
@@ -93,7 +129,8 @@ let portfolio ={
 
 $(document).on("ready",function(){
     type.ini();
-    dot.random();
+    dot.hover();
+    _idle.ini();
     portfolio.ini();
     $('#modal_services').modal({
         ready:function(e){
@@ -222,6 +259,7 @@ $(document).on("ready",function(){
         var titleContent = "";
         var descriptionContent = "";
         var imageContent = "";
+        console.log(data);
 
         $('#modal_services').modal('open');
 
@@ -263,12 +301,10 @@ $(document).on("ready",function(){
         var imageContent = "";
         $('#modal_services').modal('open');
 
-        // $("#modal_services").particleground({
-        //     dotColor: '#ccc',
-        //     lineColor: '#eee',
-        //     density:7500,
-        //     parallax:true
-        // });
+        $("#modal_services .modal-content").height("400px").perfectScrollbar({
+            suppressScrollX: true,
+            wheelPropagation:true
+        });
         imageContent = "<img src='assets/images/rnrdigitalconsultancy2.png' width='300' class='logo'>";
         descriptionContent = "<ul>"+
                                 "<li>Step 1: Information Gathering"+

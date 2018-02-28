@@ -187,6 +187,15 @@
 	IsoGrid.prototype._initEvents = function() {
 		var self = this;
 
+		var portfolio={
+			"dglb":"Deegeelab aims to help SME and Large Enterprises businesses by providing digital solutions that will boost their sales and revenue by means of calculated marketing plan that will fit their business needs.",
+			"kaboom":"An E- Commerce site that will bring Employee Engagement to a whole new level.",
+			"kareer":"A multi-platform application that provides solutions to common problems being encountered by both applicants and employers.",
+			"oh":"Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery.",
+			"psu":"Training ground for Future Web Developers, Mobile Developers, and Graphic Artist from the North.",
+			"alto":"An informative Real Estate service site that brings your home buying experience online."
+
+		}
 		var scrollHandler = function() {
 				requestAnimationFrame(function() {
 					if (!self.didscroll) {
@@ -197,6 +206,27 @@
 			},
 			mouseenterHandler = function(ev) {
 				self._expandSubItems(ev.target);
+				var id = ev.target.id;
+
+				if( id == 'dglb'){
+					$('#service-info').html(portfolio.dglb);
+				}
+				else if( id == 'kaboom'){
+					$('#service-info').html(portfolio.kaboom);
+				}
+				else if( id == 'kareer'){
+					$('#service-info').html(portfolio.kareer);
+				}
+				else if( id == 'oh'){
+					$('#service-info').html(portfolio.oh);
+				}
+				else if( id == 'psu'){
+					$('#service-info').html(portfolio.psu);
+				}
+				else if( id == 'alto'){
+					$('#service-info').html(portfolio.alto);
+				}
+
 			},
 			mouseleaveHandler = function(ev) {
 				self._collapseSubItems(ev.target);
@@ -230,8 +260,6 @@
 		subItems.forEach(function(subitem, pos) {
 			dynamics.stop(subitem);
 			dynamics.animate(subitem, self.options.stackItemsAnimation.properties(pos), self.options.stackItemsAnimation.options(pos, subItemsTotal));
-			var $img = $(subitem);
-			console.log($img.filter('img'));
 		});
 		
 	};

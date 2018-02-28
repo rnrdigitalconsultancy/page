@@ -1021,7 +1021,7 @@ a.menubar.about {
     display:  none;
 }
 .modal {
-    width: 90%;
+    width: 50%;
     background-color: black !important;
     border: white solid 1px;
 }
