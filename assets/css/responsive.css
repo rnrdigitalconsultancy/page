@@ -53,8 +53,9 @@
     padding-top: 5%;
 }
 .rnr-parallax2 p{
-    font-size: 20px;
+    /*font-size: 20px;*/
     margin: 0px 10%;
+    /*letter-spacing: 1px;*/
 }
 .rnr-parallax3 .layer{
     float: left;
@@ -67,6 +68,7 @@
 .rnr-parallax3 .col p{
     text-align: left;
     margin: 5px 0;
+    letter-spacing: 1px !important;
 }
 .rnr-parallax3 .col{
     width: 100%;
@@ -89,7 +91,7 @@ table.services-menu td{
     position: absolute;
     top: 50%;
     margin: -190px 0 0 30px;
-    width: 0.1%;
+    width: 0.05em;
     height: 380px;
     display:  block;
 }
@@ -111,7 +113,8 @@ table.services-menu td{
     padding: 0 0 0 50px;
 }
 .form button{
-    /* float: right; */
+    float: right;
+    top: 20px;
 }
 div#slide-out {
     width: 225px !important;
@@ -127,21 +130,34 @@ div#slide-out {
 #side-menu li:hover {
     background-color: #a9a9a94f;
 }
+.terms a {
+    color: #fff !important;
+}
 @media (min-width: 994px) { /* Desktop */
     #display{
-        padding-left: 25px;
-        padding-right: 25px;
+        /* padding-left: 25px; */
+        /* padding-right: 25px; */
     }
     .row.center.rnr-parallax4 {
         float: left;
         position: relative;
         left: 5%;
-        width:  50%;
-        top: 5%;
+        width: 60%;
+        top: 8%;
         text-align:  left;
     }
+    h4#service-title {
+        font-family: 'coco-gothic';
+        letter-spacing: 2px;
+        color: #bbb;
+    }
     p#service-info {
-        font-size: 16px;
+        font-size: 18px !important;
+        width:  70%;
+    }
+    .brand-logo img {
+        top: -10px;
+        position: relative;
     }
     .rnr-parallax4 a.rnr-button {
         text-align: center;
@@ -176,7 +192,6 @@ div#slide-out {
         margin-right: auto;
         margin-bottom: 0;
         padding: 25px 0 10px 0;
-        /* border-top:  1px solid #bbb; */
     }
     .rnr-parallax6 .layer .footer{
         float: left;
@@ -191,23 +206,23 @@ div#slide-out {
         right: auto;
     } 
     .rnr-parallax6 .layer .services{
-        width: 14.666667%;
+        width: 16.666667%;
         margin-left: auto;
         left: auto;
         right: auto;
     }
     .rnr-parallax6 .layer .connect{
-        width: 36%;
+        width: 34%;
         left: auto;
         right: auto;
     }
     .rnr-parallax6 .layer .newsletter{
         width: 37%;
-        margin-left: auto;
+        margin-left: 0;
         left: auto;
         right: auto;
         padding-left: 30px;
-        border-left: 1px solid #bbb;
+        border-left: 0.05em solid #222;
     }
     .newsletter button{
         float: right;
@@ -217,7 +232,7 @@ div#slide-out {
         margin-right: auto;
         margin-bottom: 0;
         margin-top: 25px;
-        border-bottom: 1px solid #bbb;
+        border-bottom: 0.05em solid #222;
     }
     .rnr-parallax6 .foot li{
         float: left;
@@ -235,8 +250,9 @@ div#slide-out {
         font-size: 14px ;
     }
     .copyright small{
-        color: white ;
-        font-size: 11px ;
+        color: white;
+        font-size: 14px;
+        font-family: 'Calibri';
     }
     .copyright small i{
         margin: -5px 5px 0 0;
@@ -247,26 +263,41 @@ div#slide-out {
     }
     .rnr-parallax6{
         padding-top: 0;
-        border-top: 1px solid #bbb;
+        border-top: 0.05em solid #222;
     }
     .footer-section h4 {
-        font-size: 14px !important;
+        font-size: 16px !important;
+        font-family:  'Calibri';
+        letter-spacing: 1px;
     }
     .foot li {
         padding: 15px 0;
     }
     form#form_newsletter input {
-        font-size: 12px !important;
+        h4#service-title {      font-family: 'coco-gothic';
+        letter-spacing: 2px;
+        color: #bbb;  }
+        h4#service-title {      font-family: 'coco-gothic';
+        letter-spacing: 2px;
+        color: #bbb;  }
+        font-size: 14px !important;
+        font-family: 'Calibri';
+        letter-spacing: 1px;
+        font-size:  14px !important;
     }
     form#form_newsletter label {
-        font-size: 12px !important;
+        font-size: 14px !important;
+        font-family: 'Calibri';
+        letter-spacing: 1px;
     }
     .footer-section li {
         margin: 0px 0px !important;
     }
     .footer-section li a{
-        font-size: 11px !important;
-        color: darkgray;
+        font-size: 14px !important;
+        color: #777;
+        letter-spacing: 1px;
+        font-family: 'Calibri';
     }
     form#form_newsletter button {
         min-width: 80px !important;
@@ -282,6 +313,8 @@ div#slide-out {
     }
     .footer-section {
         position: relative !important;
+        padding: 0 35px;
+        background-color: black;
     }
     .service .view {
         margin-left: 0 !important;
@@ -476,15 +509,27 @@ div#slide-out {
     }
     .footer-section {
         position: relative !important;
-        top: 140px !important;
+        top: 70px !important;
+        padding: 0px 40px;
+        background-color:  black;
     }
     div.rnr-parallax3.services-list {
         margin: 0 0 0 0 !important;
         width: 100%;
+    }
+    h4#service-title {
+        display: none !important;
+    }
+    #service-info{
+        display: none !important;
+    }
+    .brand-logo img {
+        top: -5px !important;
+        position: relative;
     }   
     #display{
-        padding-left: 50px !important;
-        padding-right: 50px !important;
+        /* padding-left: 50px !important; */
+        /* padding-right: 50px !important; */
     }
     .services .col{
         margin-top: 0;
@@ -500,6 +545,9 @@ div#slide-out {
         margin:0 auto;
         top: 40%;
     }
+    .row.center.rnr-parallax3 {
+        padding: 0 50px !important;
+    }
     .rnr-parallax4 div[data-display='portfolio-slider'] {
         display: block !important;
     }
@@ -508,7 +556,7 @@ div#slide-out {
     }
     .slide .fp-tableCell {
         height: 100% !important;
-        padding: 0px 100px !important;
+        padding: 0px 155px !important;
     }
     .modal{
         width: 70% !important;
@@ -532,12 +580,12 @@ div#slide-out {
         margin: 100px 0;
     }
     .rnr-parallax2 .col{
-        padding: 0 90px !important;
+        padding: 0 !important;
     }
-    .rnr-parallax2 p {
+    /*.rnr-parallax2 p {
         font-size: 14px !important;
         margin: 0px !important;
-    }
+    }*/
     .row.center.rnr-parallax3.container {
         padding: 30% 0!important;
     }
@@ -606,30 +654,40 @@ div#slide-out {
             top: 100px !important;
     }
     .rnr-parallax5{
-        padding-top: 10% !important;
-        margin: 0 auto !important;
+        margin: 85px 35px!important;
+        height: 40% !important;
+        padding-bottom: 25px !important;
     }
     .rnr-parallax5 i{
-        left: 0% !important;
+        left: 4% !important;
     }
     .rnr-parallax5 p {
         margin-bottom: 1rem !important;
+        font-size: 16px !important;
+        color: white !important;
     }
     .rnr-parallax5 .layer{
         float: left;
         text-align: left;
         width: 50%;
-        padding: 0 !important;
+        padding: 0 5px !important;
     }
     .form {
         float: right !important;
         text-align: left;
         width: 50% !important;
         margin-top: 50px;
-        padding: 0 !important;
+        padding: 0 5px !important;
     }
     .form button{
         float: right;
+        top: 20px;
+    }
+    .form label {
+        font-size: 16px !important;
+    }
+    input:not([type]), input[type=text]:not(.browser-default), input[type=email]:not(.browser-default),textarea.materialize-textarea{
+         font-size: 16px !important;
     }
     .rnr-parallax6 .layer{
         margin-left: auto;
@@ -719,7 +777,8 @@ div#slide-out {
         margin: 0px 0px !important;
     }
     .footer-section li a{
-        font-size: 11px !important;
+        font-size: 12px !important;
+        color: #777;
     }
     form#form_newsletter button {
         min-width: 80px !important;
@@ -880,9 +939,19 @@ div#slide-out {
 }
 @media (min-width: 320px) and (max-width: 640px) { /* Smartphones */
     #display{
-        padding-left: 25px !important;
-        padding-right: 25px !important;
+        /* padding-left: 25px !important; */
+        /* padding-right: 25px !important; */
     }
+    h4#service-title {
+        display: none !important;
+    }
+    #service-info{
+        display: none !important;
+    }
+    .brand-logo img {
+        top: -5px !important;
+        position:  relative;
+    } 
     .services .col{
         margin-top: 0px;
     }
@@ -895,10 +964,10 @@ div#slide-out {
     }
 
     p{
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     .rnr-parallax2 p {
-        margin: 0 !important;
+        margin: 0 5% !important;
     }
 
     .rnr-button.flat{
@@ -907,6 +976,9 @@ div#slide-out {
 
     .rnr-button.flat i{
         line-height: 45px;
+    }
+    .row.center.rnr-parallax3 {
+        padding: 0 20px !important;
     }
     .row.center.rnr-parallax3.container {
         padding: 30% 0 !important;
@@ -961,6 +1033,7 @@ div#slide-out {
 
     .slide .fp-tableCell{
         height: 100% !important;
+        padding: 0px 20px !important;
     }
 
     .fp-controlArrow{
@@ -1010,8 +1083,12 @@ div#slide-out {
          padding: 0px; 
         font-family: 'coco-gothicUltralight';
     }
+    p.txt {
+        font-size: 12px !important;
+        font-weight:  200;
+    }
     tr.active p.txt{
-        font-size: 17px !important;
+        font-size: 16px !important;
         font-family: 'coco-gothic' !important;
         color: white !important;
         margin: 0 0 !important;
@@ -1042,7 +1119,7 @@ div#slide-out {
     }
     .rnr-parallax3 .col p {
         text-align: left !important;
-        font-size:  12px !important;
+        font-size: 16px !important;
     }
     .services-line {
         float: unset;
@@ -1054,15 +1131,16 @@ div#slide-out {
         padding: 20% 0 !important;
     }
     .rnr-parallax5{
-        padding-bottom: 69px;
-        margin: 0 auto !important;
+        padding-bottom: 40px !important;
+        margin: 40px 5%!important;
+        height: 60% !important;
     }
     .rnr-parallax5 ul{
         text-align: left;
         padding-left: 60px !important;
     }
     .rnr-parallax5 i{
-        left: 0% !important;
+        left: 6% !important;
     }
     .rnr-parallax5 li{
         height: 35px;
@@ -1084,6 +1162,12 @@ div#slide-out {
         margin-left: 0 !important;
         padding: 0 !important;
     }
+    input:not([type]), input[type=text]:not(.browser-default), input[type=email]:not(.browser-default),textarea.materialize-textarea{
+         font-size: 14px !important;
+    }
+    .form label {
+        font-size: 14px !important;
+    }
     .rnr-parallax6{
         text-align: left !important;
     }
@@ -1096,6 +1180,12 @@ div#slide-out {
     .rnr-parallax6 li{
         padding: 3px 0;
         color:  white;
+    }
+    .footer-section {
+        position: relative !important;
+        /* top: 70px !important; */
+        padding: 0px 20px;
+        background-color: black;
     }
     .footer .button{
          text-align: center !important; 
@@ -1231,21 +1321,22 @@ p.label{
     /*background: #f00 !important;*/
     background: transparent !important;
     border: 1px solid darkgray;
-    padding: 7px;
-    color: darkgray;
-    /* border-radius: 5px; */
-    text-transform: uppercase;
-    min-width: 200px;
+    padding: 7px 21px;
+    color: #777;
+    border-radius: 2px;
+    /* text-transform: uppercase; */
+    /* min-width: 200px; */
     font-family: coco-gothic;
     letter-spacing: 3px;
+    font-size:  16px;
 }
 
 .rnr-button:hover{
     /*background-color: #f00 !important;*/
     border: 1px solid #fff;
-    padding: 10px;
+    padding: 10px 21px;
     /*color: #3/33;*/
-    /* border-radius: 5px; */
+    color: #777;
 }
 
 .rnr-parallax4 .card{

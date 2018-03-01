@@ -20,9 +20,12 @@ ul {
 }
 
 p{
-    font-size: 14px;
+    font-size: 20px;
     color: #bbb;
     /* margin: 0px 10%; */
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: 'Calibri';
 }
 
 
@@ -927,6 +930,9 @@ input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:n
 
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     margin: 0 0 5px 0 !important;
+    font-family: 'Calibri';
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 ul.skills li.avatar{
@@ -967,9 +973,9 @@ i.mouse{
 }
 a.menubar:hover {
     outline: 0 !important;
-    color: blue !important;
-    font-weight: 900;
-    font-family: rnr-head;
+    color: #00ceff !important;
+    font-weight: bolder;
+    font-family: rnr-head !i;
 }
 a.menubar:active {
     outline: 0 !important;
@@ -1044,8 +1050,9 @@ table.services-menu tr td:nth-child(1) p{
 }
 
 p.txt {
-    font-size: 18px;
+    font-size: 16px;
     font-weight:  200;
+    font-family: 'coco-gothic' !important;
 }
 
 p.dot{
@@ -1201,26 +1208,31 @@ i.contact-icons{
     display: none;
 }*/
 .rnr-parallax5 p{
-    color: white !important;
-    margin-bottom: 50px;
+    /* color: white !important; */
+    /* margin-bottom: 50px; */
 }
 .rnr-parallax5{
     padding-bottom: 25px;
-    margin: 0 70px;
+    margin: 150px 121px;
+    height: 60%;
 }
 .rnr-parallax5 ul{
     text-align: left;
-    padding-left: 60px !important;
+    padding-left: 50px !important;
 }
 .rnr-parallax5 li{
     height: 35px;
 }
 .rnr-parallax5 i{
-    left: 5%;
+    left: 9%;
+    margin-top: 0;
 }
 
 .form label{
     font-weight: 900;
+    font-family: 'Calibri';
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .rnr-parallax6 .footer{
     text-align: left; 
@@ -1235,11 +1247,10 @@ i.contact-icons{
     margin: 5px 5px !important;
 }
 .services a{
-    font-family: 'coco-gothicUltralight' !important;
-    color: darkgray;
+    font-family: 'Calibri';
 }
 .menu a{
-    font-family: 'coco-gothicUltralight' !important;
+    font-family: 'Calibri';
 }
 .connect i{
     padding: 10px;
@@ -1337,4 +1348,4 @@ i.contact-icons{
 }
 .alto:hover{
     opacity: 1;
-}
+ 

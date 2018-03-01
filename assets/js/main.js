@@ -188,12 +188,16 @@
 		var self = this;
 
 		var portfolio={
-			"dglb":"Deegeelab aims to help SME and Large Enterprises businesses by providing digital solutions that will boost their sales and revenue by means of calculated marketing plan that will fit their business needs.",
-			"kaboom":"An E- Commerce site that will bring Employee Engagement to a whole new level.",
-			"kareer":"A multi-platform application that provides solutions to common problems being encountered by both applicants and employers.",
-			"oh":"Australia’s leading Hosiery brand, providing corporate image with elegant style hosiery.",
-			"psu":"Training ground for Future Web Developers, Mobile Developers, and Graphic Artist from the North.",
-			"alto":"An informative Real Estate service site that brings your home buying experience online."
+			"dglb1":"DEEGEELAB",
+			"dglb":"An Australian company that provides various digital solutions to small and medium enterprises.",
+			"kaboom1":"KABOOM REWARDS",
+			"kaboom":"A social media reward platform that that aims to bring employee engagement to a whole new level.",
+			"kareer1":"KAREER",
+			"kareer":"A portal that aims to solve the common problems encountered by both job applicants and employers.",
+			"oh1":"OH! HOSIERY",
+			"oh":"Australia's top hosiery brand that provides comfortable, chic and affordable hosiery to aviation and corporate women.",
+			"alto1":"ALDRIN ALTO REALTY",
+			"alto":"A company that offers real estate services in Manila. The website serves as an online brochure for their prospects."
 
 		}
 		var scrollHandler = function() {
@@ -210,21 +214,23 @@
 
 				if( id == 'dglb'){
 					$('#service-info').html(portfolio.dglb);
+					$('#service-title').html(portfolio.dglb1);
 				}
 				else if( id == 'kaboom'){
 					$('#service-info').html(portfolio.kaboom);
+					$('#service-title').html(portfolio.kaboom1);
 				}
 				else if( id == 'kareer'){
 					$('#service-info').html(portfolio.kareer);
+					$('#service-title').html(portfolio.kareer1);
 				}
 				else if( id == 'oh'){
 					$('#service-info').html(portfolio.oh);
-				}
-				else if( id == 'psu'){
-					$('#service-info').html(portfolio.psu);
+					$('#service-title').html(portfolio.oh1);
 				}
 				else if( id == 'alto'){
 					$('#service-info').html(portfolio.alto);
+					$('#service-title').html(portfolio.alto1);
 				}
 
 			},
