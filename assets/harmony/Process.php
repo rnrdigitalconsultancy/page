@@ -63,5 +63,29 @@ $function = new DatabaseClasses;
             print_r($Data);
         }
     }
+    if(isset($_GET['set-member'])){
+        $id = $function->PDO_IDGenerator('tbl_newsletter','id');
+        $date = $function->PDO_DateAndTime();
+        $data = $_POST['data'];
+        $name = $function->escape($data[0]['value']);
+        $email = $function->escape($data[1]['value']);
+        $query = $function->PDO(false,"INSERT INTO tbl_newsletter(id,name,email,`date`,`status`) VALUES ('{$id}',{$name},{$email},'{$date}','')");
+        if($query->execute()){
+            echo 1;
+        }
+        else{
+            $Data = $query->errorInfo();
+            print_r($Data);
+        }
+    }
+    if(isset($_GET['do-export'])){
+        $status = $function->PDO_DateAndTime();
+        $_filename = "members.csv";
+        $filename = "../{$_filename}";
+        $query = $function->PDO(true,"SELECT tbl_newsletter.name, tbl_newsletter.email FROM `tbl_newsletter` WHERE status = ''");
+        $result = json_encode($query);
+        $csv = $Functions->saveImage($filename,$result);
+        print_r($csv);
 
+    }
 ?>

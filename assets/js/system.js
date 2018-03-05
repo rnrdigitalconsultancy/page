@@ -91,5 +91,11 @@ var system = function(){
             });
             return data;
         },
+        export:function(){
+        	var data = system.ajax('assets/harmony/Process.php?do-export');
+        	data.done(function(data){
+                console.log(data);
+            });
+        }
 	}
 }();

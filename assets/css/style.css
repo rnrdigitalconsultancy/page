@@ -24,7 +24,7 @@ p{
     color: #bbb;
     /* margin: 0px 10%; */
     letter-spacing: 1px;
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'Calibri';
 }
 
@@ -80,14 +80,14 @@ h2,
 h3 {
     color: #ffffff;
     margin-bottom: 30px;
-    font-size: 31px;
+    font-size: 32px;
     font-weight: 900;
     font-family: 'coco-gothicUltralight';
     margin-top: 30px;
 }
 h4,
 h5,
-h6 {font-weight: bold;color:  white;font-size: 24px !important;}
+h6 {font-weight: bold;color: #fff;font-size: 24px !important;}
 
 h1 strong{
     font-family: 'rnr-head';
@@ -931,7 +931,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:n
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     margin: 0 0 5px 0 !important;
     font-family: 'Calibri';
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
@@ -1231,8 +1231,9 @@ i.contact-icons{
 .form label{
     font-weight: 900;
     font-family: 'Calibri';
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
+    top: -8px;
 }
 .rnr-parallax6 .footer{
     text-align: left; 
@@ -1244,7 +1245,7 @@ i.contact-icons{
     opacity: 0;
 }
 .connect a{
-    margin: 5px 5px !important;
+    margin: 8px !important;
 }
 .services a{
     font-family: 'Calibri';
@@ -1252,8 +1253,11 @@ i.contact-icons{
 .menu a{
     font-family: 'Calibri';
 }
+.connect i:hover {
+    padding-top: 20px;
+}
 .connect i{
-    padding: 10px;
+    padding: 15px;
 }
 
 .fb{
@@ -1285,7 +1289,7 @@ i.contact-icons{
     margin: 26px !important;
     color: white;
     width: 70%;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 .portfolio a.rnr-button {
     position:  absolute;
@@ -1342,10 +1346,15 @@ i.contact-icons{
     opacity: 1;
 }
 .alto{
-    left: 52%;
+    left: 10%;
     top: 52%;
     opacity: 0;
 }
 .alto:hover{
     opacity: 1;
- 
+}
+.contents i {
+    color: #fff;
+    margin: 0;
+    padding: 0 10px 2px 0;
+}

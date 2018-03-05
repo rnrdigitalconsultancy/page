@@ -67,7 +67,7 @@
 }
 .rnr-parallax3 .col p{
     text-align: left;
-    margin: 5px 0;
+    margin: 0px !important;
     letter-spacing: 1px !important;
 }
 .rnr-parallax3 .col{
@@ -152,7 +152,7 @@ div#slide-out {
         color: #bbb;
     }
     p#service-info {
-        font-size: 18px !important;
+        /* font-size: 18px !important; */
         width:  70%;
     }
     .brand-logo img {
@@ -163,7 +163,7 @@ div#slide-out {
         text-align: center;
     }
     .services .col{
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
     #display_right img{
         width:80%;
@@ -206,13 +206,13 @@ div#slide-out {
         right: auto;
     } 
     .rnr-parallax6 .layer .services{
-        width: 16.666667%;
+        width: 20.666667%;
         margin-left: auto;
         left: auto;
         right: auto;
     }
     .rnr-parallax6 .layer .connect{
-        width: 34%;
+        width: 30%;
         left: auto;
         right: auto;
     }
@@ -266,7 +266,7 @@ div#slide-out {
         border-top: 0.05em solid #222;
     }
     .footer-section h4 {
-        font-size: 16px !important;
+        font-size: 18px !important;
         font-family:  'Calibri';
         letter-spacing: 1px;
     }
@@ -283,18 +283,21 @@ div#slide-out {
         font-size: 14px !important;
         font-family: 'Calibri';
         letter-spacing: 1px;
-        font-size:  14px !important;
+        font-size: 15px !important;
     }
     form#form_newsletter label {
-        font-size: 14px !important;
+        font-size: 15px !important;
         font-family: 'Calibri';
         letter-spacing: 1px;
     }
     .footer-section li {
         margin: 0px 0px !important;
     }
+    .footer-section li a:hover {
+        color: #00ceff !important;
+    }
     .footer-section li a{
-        font-size: 14px !important;
+        font-size: 15px !important;
         color: #777;
         letter-spacing: 1px;
         font-family: 'Calibri';
@@ -302,7 +305,7 @@ div#slide-out {
     form#form_newsletter button {
         min-width: 80px !important;
         padding: 5px !important;
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
     tr.active p.txt{
         font-size: 26px !important;
@@ -318,7 +321,7 @@ div#slide-out {
     }
     .service .view {
         margin-left: 0 !important;
-        width: 50% !important;
+        width: 80% !important;
     }
     .row.center.rnr-parallax3.container.services-list {
         width: 80%;
@@ -366,7 +369,7 @@ div#slide-out {
         width: 125px !important;
     }
     .services img {
-        width: 299px !important;
+        width: 400px !important;
     }
     .col.service h6 {
         font-family: 'coco-gothic' !important;
@@ -377,23 +380,24 @@ div#slide-out {
         color: #bbb !important;
     }
     .services .left{
-        width: 30%;
-        height: 0px;
+        width: 18%;
     }
     .services .right{
-        width: 75% !important;
+        width: 82% !important;
+        position:  relative;
+        top: 95px;
     }
     .services .contents{
-        margin-top: 79px;
+        /* margin-top: 0 !important; */
     }
     .contents h6{
         font-size: 20px !important;
-        width: 80%!important;
+        width: 75%!important;
         text-align:  left;
     }
     .contents p {
         font-size: 16px;
-        width: 80%;
+        width: 100%;
     }
     .services li.row:nth-child(1) {
         width: 100%;
@@ -402,7 +406,7 @@ div#slide-out {
     }
     .services li.row:nth-child(2) {
         width: 100%;
-        float: left;
+        /* float: left; */
         position: relative;
     }
     .services li.row:nth-child(3) {
@@ -502,6 +506,11 @@ div#slide-out {
         float: left;
         position: relative;
     }
+    .team li.row:nth-child(6) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
 }
 @media (min-width: 641px) and (max-width: 993px) { /* Tables */
     .footer-section.pages {
@@ -514,8 +523,8 @@ div#slide-out {
         background-color:  black;
     }
     div.rnr-parallax3.services-list {
-        margin: 0 0 0 0 !important;
-        width: 100%;
+        margin: 0 1!important;
+        width: 90%;
     }
     h4#service-title {
         display: none !important;
@@ -599,7 +608,8 @@ div#slide-out {
     }
     .rnr-parallax3 .col p{
         text-align: left !important;
-        margin: 12px 0 !important;
+        margin: 0 !important;
+        font-size: 14px;
     }
     .rnr-parallax3 .col{
         width: 100%;
@@ -806,14 +816,14 @@ div#slide-out {
         color: #bbb !important;
     }
     .services .left{
-        width: 30%;
+        width: 28%;
         height: 0px;
     }
     .services .right{
         width: 70% !important;
     }
     .services .contents{
-        margin-top: 65px;
+        margin-top: 45px;
     }
     .contents h6{
         font-size: 14px !important;
@@ -825,29 +835,29 @@ div#slide-out {
         width:  100%;
     }
     .services li.row:nth-child(1) {
-        width: 50%;
+        width: 48%;
         float: left;
         position: relative;
     }
     .services li.row:nth-child(2) {
-        width: 50%;
+        width: 48%;
         float: right;
         position: relative;
     }
     .services li.row:nth-child(3) {
-        width: 50%;
+        width: 48%;
         float: left;
-        right: 47%;
+        /* right: 47%; */
         position: relative;
     }
     .services li.row:nth-child(4) {
-        width: 50%;
+        width: 48%;
         float: right;
-        top: -180px;
+        /* top: -180px; */
         position: relative;
     }
     .services li.row:nth-child(5) {
-        width: 50%;
+        width: 48%;
         float: left;
         position: relative;
     }
@@ -900,6 +910,11 @@ div#slide-out {
     .team li.row:nth-child(5) {
         width: 50%;
         float: left;
+        position: relative;
+    }
+    .team li.row:nth-child(6) {
+        width: 50%;
+        float: right;
         position: relative;
     }
     .portfolio li {
@@ -1119,7 +1134,7 @@ div#slide-out {
     }
     .rnr-parallax3 .col p {
         text-align: left !important;
-        font-size: 16px !important;
+        font-size: 12px !important;
     }
     .services-line {
         float: unset;
@@ -1228,11 +1243,11 @@ div#slide-out {
         height: 0px;
     }
     .services .right{
-        width: 66%;
+        width: 70%;
         /* text-align: left !important; */
     }
     .services .contents{
-        margin-top: 64px;
+        margin-top: 47px;
     }
     .contents h6{
         font-size: 14px !important;
@@ -1254,6 +1269,7 @@ div#slide-out {
         z-index: 1;
         position: relative;
         top: 47px;
+        left: 30px;
     }
     .team .right{
         width: 50%;
@@ -1334,9 +1350,9 @@ p.label{
 .rnr-button:hover{
     /*background-color: #f00 !important;*/
     border: 1px solid #fff;
-    padding: 10px 21px;
+    /* padding: 10px 21px; */
     /*color: #3/33;*/
-    color: #777;
+    color: #fff !important;
 }
 
 .rnr-parallax4 .card{
@@ -1547,7 +1563,7 @@ p.label{
   font-family: 'Material Icons';
   font-weight: unset;
   font-style: normal;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -1559,4 +1575,4 @@ p.label{
   -webkit-font-smoothing: antialiased;
   margin-top: -11px;
   vertical-align: middle;
-  /* margin-left: -25%        
+}

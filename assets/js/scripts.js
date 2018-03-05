@@ -401,6 +401,41 @@ $(document).on("ready",function(){
         }
     });
 
+    $("#form_newsletter").validate({
+        rules: {
+            field_name: {required: true,maxlength: 200},
+            field_email: {required: true,maxlength: 100,email:true},
+        },
+        errorElement : 'div',
+        errorPlacement: function(error, element) {
+            var placement = $(element).data('error');
+            if(placement){
+                $(placement).append(error)
+            } 
+            else{
+                error.insertAfter(element);
+            }
+        },
+        submitHandler: function (form) {
+            var _form = $(form).serializeArray();
+            console.log(_form);
+            var data = system.ajax('assets/harmony/Process.php?set-member',_form);
+            data.done(function(data){
+                console.log(data);
+                if(data == 1){
+                    Materialize.toast('Thank you subscribing to our newsletter.',2000);
+                    system.clearForm();
+                    // setTimeout(function(){
+                    //     window.location.reload(true);
+                    // },2000);
+                }
+                else{
+                    Materialize.toast('Cannot process request.',4000);
+                }
+            });
+        }
+    });
+    
     // var data = ['.rnr-parallax1','.rnr-parallax2','.rnr-parallax3','.rnr-parallax4','.rnr-parallax5','.rnr-parallax6'];
     // $.each(data,function(i,v){
     //     var scene = $(v).get(0);
