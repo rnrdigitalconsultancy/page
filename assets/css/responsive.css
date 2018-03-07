@@ -158,6 +158,9 @@ div#slide-out {
 .othan{
     background: url(../images/team/jonathan.png) center no-repeat;
 }
+.jolo{
+    background: url(../images/team/jolo.png) center no-repeat;
+}
 @media (min-width: 994px) { /* Desktop */
     #display{
         /* padding-left: 25px; */
@@ -556,10 +559,18 @@ div#slide-out {
         float: left;
         position: relative;
     }
+    .team li.row:nth-child(8) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
     .img{
         background-size: cover !important;
         width: 287px;
         height: 310px;
+    }
+    .privacy {
+        width: 80%;
     }
 }
 @media (min-width: 641px) and (max-width: 993px) { /* Tables */
@@ -974,6 +985,11 @@ div#slide-out {
         float: left;
         position: relative;
     }
+    .team li.row:nth-child(8) {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
     .portfolio li {
     margin: 15px;
     }
@@ -1061,6 +1077,9 @@ div#slide-out {
         background-size: cover;
         width: 175px;
         height: 185px;
+    }
+    .privacy {
+        width: 100% !important;
     }
 }
 @media (min-width: 320px) and (max-width: 640px) { /* Smartphones */
@@ -1199,10 +1218,10 @@ div#slide-out {
         content: "";
         background: #fff;
         position: absolute;
-        top: 50%;
-        margin: -55px 0px 0px 30px;
+        top: 42%;
+        margin: -55px 0px 0px 29px;
         width: 0.2%;
-        height: 240px;
+        height: 275px;
         display:  block;
     }
     table.services-menu td{
@@ -1246,7 +1265,7 @@ div#slide-out {
     .rnr-parallax3 .col p {
         text-align: left !important;
         font-size: 16px !important;
-        width: 75%;
+        width: 100%;
     }
     .services-line {
         float: unset;
@@ -1362,7 +1381,7 @@ div#slide-out {
         margin-top: 47px;
     }
     .contents h6{
-        font-size: 14px !important;
+        font-size: 18px !important;
         /* width: 195px !important; */
         text-align:  left;
     }
@@ -1450,6 +1469,9 @@ div#slide-out {
         padding: 5px !important;
         bottom: 14% !important;
         left: 5% !important;
+    }
+    .privacy {
+        width: 100% !important;
     }
 }
 
@@ -1585,7 +1607,7 @@ p.label{
 
 .rnr-button.flat{
     /* padding: 0px; */
-    /* margin-top: 10px; */
+    margin-top: 10px;
     /* min-width: 100px; */
 }
 

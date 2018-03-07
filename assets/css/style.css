@@ -1072,7 +1072,9 @@ tr.active p.dot{
     -o-transition: background 0.3s ease-in;
     transition: background 0.3s ease-in;
 }
-
+tr.active{
+    height: 91px !important;
+}
 tr.active:nth-child(1) p.dot{
     background: url(../images/services/webmaintenance.png) center no-repeat !important;
     background-size: 25px !important;
