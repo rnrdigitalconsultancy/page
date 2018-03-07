@@ -141,6 +141,9 @@ div#slide-out {
     background: url(../images/team/rufo.png) center no-repeat;
 }
 .errol{
+    background: url(../images/team/errol1.png) center no-repeat;
+}
+.errol:hover{
     background: url(../images/team/errol.png) center no-repeat;
 }
 .sab{
