@@ -76,12 +76,11 @@ let dot ={
         $(`tr:nth-child(${r})`).addClass('active');
     },
     hover:function () {
-        $(`tr`).mouseover(function(){
+        $(`tr`).mouseenter(function(){
             $(`tr`).removeClass('active');
             let node = $(this).data('node');
             $(`tr:nth-child(${node})`).addClass('active');
-        });
-        $(`tr`).mouseout(function(){
+        }).mouseleave(function(){
             let node = $(this).data('node');
             $(`tr:nth-child(${node})`).removeClass('active');
         });

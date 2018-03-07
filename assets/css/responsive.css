@@ -350,10 +350,10 @@ div#slide-out {
         /* padding-top: 6px; */
         font-weight: lighter !important;
         position: relative;
-         -webkit-transition: font-size 500ms ease-Out;
-        -moz-transition: font-size 500ms ease-Out;
-        -o-transition: font-size 500ms ease-Out;
-        transition: font-size 500ms ease-Out;
+         -webkit-transition: font-size 0.3s ease-in;
+        -moz-transition: font-size 0.3s ease-in;
+        -o-transition: font-size 0.3s ease-in;
+        transition: font-size 0.3s ease-in;
     }
     .footer-section {
         position: relative !important;
