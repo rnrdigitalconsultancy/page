@@ -172,7 +172,7 @@ div#slide-out {
         text-align:  left;
     }
     h4#service-title {
-        font-family: 'coco-gothic';
+        font-family: 'coco-gothic' !important;
         letter-spacing: 2px;
         color: #bbb;
     }
@@ -285,7 +285,7 @@ div#slide-out {
     .copyright small{
         color: white;
         font-size: 20px;
-        font-family: 'Calibri';
+        font-family: 'Calibri' !important;
     }
     .copyright small i{
         margin: -5px 5px 0 0;
@@ -301,19 +301,17 @@ div#slide-out {
     }
     .footer-section h4 {
         /* font-size: 18px !important; */
-        font-family:  'Calibri';
-        letter-spacing: 1px;
+        font-family: 'calibri' !important;
     }
     .foot li {
         padding: 15px 0;
     }
+    h4#service-title {      
+        font-family: 'coco-gothic' !important;
+        letter-spacing: 2px;
+        color: #bbb;  
+    }
     form#form_newsletter input {
-        h4#service-title {      font-family: 'coco-gothic';
-        letter-spacing: 2px;
-        color: #bbb;  }
-        h4#service-title {      font-family: 'coco-gothic';
-        letter-spacing: 2px;
-        color: #bbb;  }
         font-size: 14px !important;
         font-family: 'Calibri';
         letter-spacing: 1px;
@@ -516,7 +514,6 @@ div#slide-out {
     }
     .team .right {
         width: 50%;
-        background: url(assets/images/team/errol.png);
     }
     .team .left p {
         margin: 0 0 !important;
@@ -1402,7 +1399,7 @@ div#slide-out {
         width: 100px !important;
     }
     .col.service h6 {
-    font-family: 'coco-gothicUltralight';
+    font-family: 'coco-gothicUltralight' !important;
     margin: 25px 0;
     }
     .col.service span {
@@ -1504,7 +1501,7 @@ p.label{
     border-radius: 2px;
     /* text-transform: uppercase; */
     /* min-width: 200px; */
-    font-family: coco-gothic;
+    font-family: coco-gothic !important;
     letter-spacing: 3px;
     font-size: 16px;
 }
