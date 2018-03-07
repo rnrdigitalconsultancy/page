@@ -1286,7 +1286,7 @@ i.contact-icons{
     background-size: contain !important;
 }
 .portfolio h6 {
-    text-align: left;
+    text-align: center;
     margin: 20px;
 }
 .portfolio p {
@@ -1299,7 +1299,10 @@ i.contact-icons{
 .portfolio a.rnr-button {
     position:  absolute;
     bottom: 15%;
-    left: 10%;
+    left: 3%;
+    border: 2px solid #fff;
+    /* padding: 10px 21px; */
+    color: #fff !important;
 }
 .info{
     position: absolute;
@@ -1356,6 +1359,14 @@ i.contact-icons{
     opacity: 0;
 }
 .alto:hover{
+    opacity: 1;
+}
+.hope{
+    left: 52%;
+    top: 50.5%;
+    opacity: 0;
+}
+.hope:hover{
     opacity: 1;
 }
 .contents i {

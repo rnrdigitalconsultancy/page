@@ -265,7 +265,7 @@ div#slide-out {
         margin-right: auto;
         margin-bottom: 0;
         margin-top: 25px;
-        border-bottom: 0.05em solid #222;
+        border-bottom: 0.1em solid #222;
     }
     .rnr-parallax6 .foot li{
         float: left;
@@ -1038,17 +1038,24 @@ div#slide-out {
         top: 49% !important;
         width: 38% !important;
     }
+    .hope {
+        left: 51.5% !important;
+        height: 13% !important;
+        top: 49% !important;
+        width: 38% !important;
+    }
     .portfolio h6 {
         margin: 0 0 10px 0 !important;
+        font-size:  20px !important;
     }
     .portfolio p {
         width: 90% !important;
     }
     .portfolio a.rnr-button {
-        font-size: 14px !important;
         padding: 5px !important;
         bottom: 6% !important;
         left: 5% !important;
+        font-size: 12px !important;
     }
     .info{
         /* display: none !important; */
@@ -1403,7 +1410,7 @@ div#slide-out {
         font-size: 13px !important;
     }
     .info{
-    /*display: none !important;*/
+    display: none !important;
     }
     .deegeelab {
         height: 10.5% !important;

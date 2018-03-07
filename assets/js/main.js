@@ -197,8 +197,9 @@
 			"oh1":"OH! HOSIERY",
 			"oh":"Australia's top hosiery brand that provides comfortable, chic and affordable hosiery to aviation and corporate women.",
 			"alto1":"ALDRIN ALTO REALTY",
-			"alto":"A company that offers real estate services in Manila. The website serves as an online brochure for their prospects."
-
+			"alto":"A company that offers real estate services in Manila. The website serves as an online brochure for their prospects.",
+			"hope1":"HOPE PROPERTY SOLUTIONS",
+			"hope":"A company that offers real estate services in US. The website serves as an online brochure for their prospects.",
 		}
 		var scrollHandler = function() {
 				requestAnimationFrame(function() {
@@ -231,6 +232,10 @@
 				else if( id == 'alto'){
 					$('#service-info').html(portfolio.alto);
 					$('#service-title').html(portfolio.alto1);
+				}
+				else if( id == 'hope'){
+					$('#service-info').html(portfolio.hope);
+					$('#service-title').html(portfolio.hope1);
 				}
 
 			},

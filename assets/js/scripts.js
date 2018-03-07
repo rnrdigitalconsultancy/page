@@ -136,7 +136,7 @@ $(document).on("ready",function(){
     type.ini();
     dot.hover();
     _idle.ini();
-    portfolio.ini();
+    // portfolio.ini();
     $('#modal_services').modal({
         ready:function(e){
             $.fn.fullpage.setMouseWheelScrolling(false);
