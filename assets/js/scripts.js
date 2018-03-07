@@ -67,12 +67,17 @@ let dot ={
         return timer;
     },
     show:function(){
-        let r = Math.floor(Math.random()*4)+1;
+        let r, exists=[];
+        do {
+           r = Math.floor(Math.random()*5)+1;  
+        } while (exists[r]);
+        exists[r] = true;
         $(`tr`).removeClass('active');
         $(`tr:nth-child(${r})`).addClass('active');
     },
     hover:function () {
         $(`tr`).mouseover(function(){
+            $(`tr`).removeClass('active');
             let node = $(this).data('node');
             $(`tr:nth-child(${node})`).addClass('active');
         });

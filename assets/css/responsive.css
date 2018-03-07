@@ -67,7 +67,7 @@
 }
 .rnr-parallax3 .col p{
     text-align: left;
-    margin: 0px !important;
+    margin: 0 !important;
     letter-spacing: 1px !important;
 }
 .rnr-parallax3 .col{
@@ -83,7 +83,8 @@
     margin: -190px 0px 0 30px;
 }
 table.services-menu td{
-    padding: 18px 0px;
+    padding: 15px 0px;
+    position:  relative;
 }
 .services-line::before{
     content: "";
@@ -92,7 +93,7 @@ table.services-menu td{
     top: 50%;
     margin: -190px 0 0 30px;
     width: 0.05em;
-    height: 380px;
+    height: 370px;
     display:  block;
 }
 .rnr-parallax5{
@@ -133,6 +134,27 @@ div#slide-out {
 .terms a {
     color: #fff !important;
 }
+.chi{
+    background: url(../images/team/chi.png) center no-repeat;
+}
+.rufo{
+    background: url(../images/team/rufo.png) center no-repeat;
+}
+.errol{
+    background: url(../images/team/errol.png) center no-repeat;
+}
+.sab{
+    background: url(../images/team/sab.png) center no-repeat;
+}
+.renz{
+    background: url(../images/team/renz.png) center no-repeat;
+}
+.jake{
+    background: url(../images/team/jake.png) center no-repeat;
+}
+.othan{
+    background: url(../images/team/jonathan.png) center no-repeat;
+}
 @media (min-width: 994px) { /* Desktop */
     #display{
         /* padding-left: 25px; */
@@ -171,6 +193,14 @@ div#slide-out {
     #display_right #hand{
         width: 60%;
         top: 30%;
+    }
+    div[data-anchor='services']{
+        box-shadow: rgb(0, 0, 0) 0px 25px 100px 50px;
+        z-index: 1;
+    }
+    div[data-anchor='contact']{
+        box-shadow: rgb(0, 0, 0) 0px -25px 100px 50px;
+        z-index: 1;
     }
     .rnr-parallax3 div[data-display='services-slider']{
         /*display: none;*/
@@ -251,11 +281,12 @@ div#slide-out {
     }
     .copyright small{
         color: white;
-        font-size: 14px;
+        font-size: 20px;
         font-family: 'Calibri';
     }
     .copyright small i{
         margin: -5px 5px 0 0;
+        font-size:  20px !important;
     }
     .rnr-parallax6 .footer li{
         font-weight: lighter;
@@ -266,7 +297,7 @@ div#slide-out {
         border-top: 0.05em solid #222;
     }
     .footer-section h4 {
-        font-size: 18px !important;
+        /* font-size: 18px !important; */
         font-family:  'Calibri';
         letter-spacing: 1px;
     }
@@ -283,12 +314,13 @@ div#slide-out {
         font-size: 14px !important;
         font-family: 'Calibri';
         letter-spacing: 1px;
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
     form#form_newsletter label {
-        font-size: 15px !important;
+        font-size: 20px !important;
         font-family: 'Calibri';
         letter-spacing: 1px;
+        top: -8px;
     }
     .footer-section li {
         margin: 0px 0px !important;
@@ -297,7 +329,7 @@ div#slide-out {
         color: #00ceff !important;
     }
     .footer-section li a{
-        font-size: 15px !important;
+        font-size: 20px !important;
         color: #777;
         letter-spacing: 1px;
         font-family: 'Calibri';
@@ -305,14 +337,20 @@ div#slide-out {
     form#form_newsletter button {
         min-width: 80px !important;
         padding: 5px !important;
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     tr.active p.txt{
-        font-size: 26px !important;
-        font-family: 'coco-gothic' !important;
+        font-size: 24px !important;
+        font-family: 'rnr-head' !important;
         color: white !important;
-        margin: 0 0 !important;
-        padding-top: 6px;
+        margin: 0px 0 !important;
+        /* padding-top: 6px; */
+        font-weight: lighter !important;
+        position: relative;
+         -webkit-transition: font-size 500ms ease-Out;
+        -moz-transition: font-size 500ms ease-Out;
+        -o-transition: font-size 500ms ease-Out;
+        transition: font-size 500ms ease-Out;
     }
     .footer-section {
         position: relative !important;
@@ -337,6 +375,7 @@ div#slide-out {
     }
     .layer.about {
         width: 100%;
+        text-align:  center;
     }
     .about .view{
         margin-left: 0 !important;
@@ -474,6 +513,7 @@ div#slide-out {
     }
     .team .right {
         width: 50%;
+        background: url(assets/images/team/errol.png);
     }
     .team .left p {
         margin: 0 0 !important;
@@ -510,6 +550,16 @@ div#slide-out {
         width: 50%;
         float: right;
         position: relative;
+    }
+    .team li.row:nth-child(7) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .img{
+        background-size: cover !important;
+        width: 287px;
+        height: 310px;
     }
 }
 @media (min-width: 641px) and (max-width: 993px) { /* Tables */
@@ -863,6 +913,7 @@ div#slide-out {
     }
     .container .layer {
         width: 100% !important;
+        text-align: center !important;
     }
     .container .layer h1 {
         text-align: center !important;
@@ -883,6 +934,7 @@ div#slide-out {
     }
     .team .left p {
         margin: 0 0 !important;
+        width: 93%;
     }
     .team img{
         width: 150px;
@@ -917,6 +969,11 @@ div#slide-out {
         float: right;
         position: relative;
     }
+    .team li.row:nth-child(7) {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
     .portfolio li {
     margin: 15px;
     }
@@ -948,8 +1005,55 @@ div#slide-out {
         width: 44%;
         float: right;
     }
+    .deegeelab {
+        left: 8% !important;
+        height: 13% !important;
+        top: 19% !important;
+        width: 38% !important;
+    }
+    .kaboom {
+        left: 51.5% !important;
+        height: 13% !important;
+        top: 19% !important;
+        width: 38% !important;
+    }
+    .kareer {
+        left: 8% !important;
+        height: 13% !important;
+        top: 34% !important;
+        width: 38% !important;
+    }
+    .oh {
+        left: 51.5% !important;
+        height: 13% !important;
+        top: 34% !important;
+        width: 38% !important;
+    }
+    .alto {
+        left: 8% !important;
+        height: 13% !important;
+        top: 49% !important;
+        width: 38% !important;
+    }
+    .portfolio h6 {
+        margin: 0 0 10px 0 !important;
+    }
+    .portfolio p {
+        width: 90% !important;
+    }
+    .portfolio a.rnr-button {
+        font-size: 14px !important;
+        padding: 5px !important;
+        bottom: 6% !important;
+        left: 5% !important;
+    }
     .info{
-        display: none !important;
+        /* display: none !important; */
+    }
+    .img{
+        background-size: cover;
+        width: 175px;
+        height: 185px;
     }
 }
 @media (min-width: 320px) and (max-width: 640px) { /* Smartphones */
@@ -1134,7 +1238,8 @@ div#slide-out {
     }
     .rnr-parallax3 .col p {
         text-align: left !important;
-        font-size: 12px !important;
+        font-size: 16px !important;
+        width: 75%;
     }
     .services-line {
         float: unset;
@@ -1263,6 +1368,11 @@ div#slide-out {
     .team img{
         width: 150px;
     }
+    .img{
+        background-size: cover;
+        width: 150px;
+        height: 180px;
+    }
     .team .left{
         width: 61%;
         height: 0px;
@@ -1290,7 +1400,49 @@ div#slide-out {
         font-size: 13px !important;
     }
     .info{
-        display: none !important;
+    /*display: none !important;*/
+    }
+    .deegeelab {
+        height: 10.5% !important;
+        top: 7% !important;
+        width: 93% !important;
+        left: 0% !important;
+    }
+    .kaboom {
+        left: 0% !important;
+        height: 10.5% !important;
+        top: 17.5% !important;
+        width: 93% !important;
+    }
+    .kareer {
+        left: 0% !important;
+        height: 10.5% !important;
+        top: 28% !important;
+        width: 93% !important;
+    }
+    .oh {
+        left: 0% !important;
+        height: 10.5% !important;
+        top: 38% !important;
+        width: 93% !important;
+    }
+    .alto {
+        left: 0% !important;
+        height: 10.5% !important;
+        top: 48.5% !important;
+        width: 93% !important;
+    }
+    .portfolio h6 {
+        margin: 0 0 10px 0 !important;
+    }
+    .portfolio p {
+        width: 90% !important;
+    }
+    .portfolio a.rnr-button {
+        font-size: 14px !important;
+        padding: 5px !important;
+        bottom: 14% !important;
+        left: 5% !important;
     }
 }
 
@@ -1344,7 +1496,7 @@ p.label{
     /* min-width: 200px; */
     font-family: coco-gothic;
     letter-spacing: 3px;
-    font-size:  16px;
+    font-size: 16px;
 }
 
 .rnr-button:hover{
@@ -1511,7 +1663,7 @@ p.label{
 }
 */
 #modal_services .modal-content{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .s5ths,
