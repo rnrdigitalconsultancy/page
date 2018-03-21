@@ -1316,6 +1316,10 @@ i.contact-icons{
     top: 13%;
     left: 10%;
     opacity: 0;
+    -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .deegeelab:hover{
     opacity: 1;
@@ -1324,6 +1328,10 @@ i.contact-icons{
     top: 13%;
     left: 52%;
     opacity: 0;
+     -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .kaboom:hover{
     opacity: 1;
@@ -1332,6 +1340,10 @@ i.contact-icons{
     top: 32%;
     left: 10%;
     opacity: 0;
+    -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .kareer:hover{
     opacity: 1;
@@ -1340,6 +1352,10 @@ i.contact-icons{
     top: 32%;
     left: 52%;
     opacity: 0;
+    -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .oh:hover{
     opacity: 1;
@@ -1348,6 +1364,10 @@ i.contact-icons{
     top: 52%;
     left: 10%;
     opacity: 0;
+   -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .psu:hover{
     opacity: 1;
@@ -1356,6 +1376,10 @@ i.contact-icons{
     left: 10%;
     top: 50.5%;
     opacity: 0;
+    -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .alto:hover{
     opacity: 1;
@@ -1364,6 +1388,10 @@ i.contact-icons{
     left: 52%;
     top: 50.5%;
     opacity: 0;
+    -webkit-transition: opacity .4s ease-In;
+    -moz-transition: opacity .4s ease-In;
+    -o-transition: opacity .4s ease-In;
+    transition: opacity .4s ease-In;
 }
 .hope:hover{
     opacity: 1;
