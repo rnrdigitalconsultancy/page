@@ -20,7 +20,7 @@ ul {
 }
 
 p{
-    font-size: 20px;
+    font-size: 16px;
     color: #bbb;
     /* margin: 0px 10%; */
     letter-spacing: 1px;
@@ -87,7 +87,7 @@ h3 {
 }
 h4,
 h5,
-h6 {font-weight: bold;color: #fff;font-size: 24px !important;font-family: 'rnr-head';}
+h6 {font-weight: bold;color: #fff;font-size: 24px !important;font-family: 'coco-gothicUltralight';}
 
 h1 strong{
     font-family: 'rnr-head';
@@ -967,7 +967,7 @@ i.mouse{
 .menubar{
     border-right: darkgrey solid 1.5px;
     padding: 0 15px;
-    font-family: 'coco-gothic' !important;
+    font-family: 'Calibri' !important;
     letter-spacing: 4px;
     font-size: 12px;
 }
@@ -1001,7 +1001,7 @@ a.menubar.about {
     border-right: 1px solid #fff;
 }
 #typing_animation{
-    font-family: 'rnr-head' !important;
+    font-family: 'rnr-head' !important; /* 'coco-gothicUltralight' */
     color: #bbb !important;
 }
 
@@ -1050,7 +1050,7 @@ table.services-menu tr td:nth-child(1) p{
 p.txt {
     font-size: 16px;
     font-weight:  200;
-    font-family: 'rnr-head' !important;
+    font-family: 'calibri' !important;
 }
 
 p.dot{

@@ -310,52 +310,52 @@ $(document).on("ready",function(){
             wheelPropagation:true
         });
         imageContent = "<img src='assets/images/rnrdigitalconsultancy2.png' width='300' class='logo'>";
-        descriptionContent = "<ul>"+
+        descriptionContent = "<ul class='contents'>"+
                                 "<li>Step 1: Information Gathering"+
-                                "   <ol type='a'>"+
-                                "       <li>Set goals for your website</li>"+
-                                "       <li>Define your target market</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Set goals for your website</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Define your target market</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 2: Planning"+
-                                "   <ol type='a'>"+
-                                "       <li>Create a Sitemap sketch</li>"+
-                                "       <li>Create a wireframe/mock up site</li>"+
-                                "       <li>Select Technology to be used (Framework, CMS, Programming Language)</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Create a Sitemap sketch</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Create a wireframe/mock up site</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Select Technology to be used (Framework, CMS, Programming Language)</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 3: Design"+
-                                "   <ol type='a'>"+
-                                "       <li>Create page layouts</li>"+
-                                "       <li>Review the layouts</li>"+
-                                "       <li>Get client’s feedback on the layouts</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Create page layouts</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Review the layouts</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Get client’s feedback on the layouts</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 4: Content Writing and Assembly"+
-                                "   <ol type='a'>"+
-                                "       <li>Create new content</li>"+
-                                "       <li>Get content ready for migration</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Create new content</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Get content ready for migration</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 5: Coding"+
-                                "   <ol type='a'>"+
-                                "       <li>Build and deploy</li>"+
-                                "       <li>Add special features and interactivity</li>"+
-                                "       <li>SEO for the website</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Build and deploy</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Add special features and interactivity</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>SEO for the website</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 6: Testing, Review and Launch"+
-                                "   <ol type='a'>"+
-                                "       <li>Test the created website</li>"+
-                                "       <li>Upload the website to go on live</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Test the created website</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Upload the website to go on live</p>"+
+                                "   </ul>"+
                                 "</li>"+
                                 "<li>Step 7: Maintenance and Regular Updating"+
-                                "   <ol type='a'>"+
-                                "       <li>Add user report system</li>"+
-                                "       <li>Fix bugs asap</li>"+
-                                "       <li>Keep website up to day</li>"+
-                                "   </ol>"+
+                                "   <ul>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Add user report system</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Fix bugs asap</p>"+
+                                "       <p><i class='material-icons'>fiber_manual_record</i>Keep website up to day</p>"+
+                                "   </ul>"+
                                 "</li>"+
                              "</ul>";
 

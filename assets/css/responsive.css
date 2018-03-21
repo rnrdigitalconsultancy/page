@@ -16,7 +16,7 @@
     font-size: 20px;
     text-align: center;
     border-bottom:  1px solid white;
-    font-family: 'rnr-head' !important;
+    font-family: 'coco-gothicUltralight' !important;
     margin-bottom: 10px !important;
     padding-bottom: 20px;
 }
@@ -113,9 +113,13 @@ table.services-menu td{
     margin-left: 0 !important;
     padding: 0 0 0 50px;
 }
-.form button{
+.form button{ /* Send Message*/
     float: right;
     top: 20px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border: 1px solid darkgray !important;
+    padding: 9px 15px !important;
 }
 div#slide-out {
     width: 225px !important;
@@ -283,11 +287,11 @@ div#slide-out {
     .rnr-parallax6 .foot .copyright{
         float: left;
         color: white ;
-        font-size: 14px ;
+        font-size: 14px;
     }
     .copyright small{
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Calibri' !important;
     }
     .copyright small i{
@@ -304,13 +308,13 @@ div#slide-out {
     }
     .footer-section h4 {
         /* font-size: 18px !important; */
-        font-family: 'calibri' !important;
+        font-family: 'coco-gothicUltralight' !important;
     }
     .foot li {
         padding: 15px 0;
     }
     h4#service-title {      
-        font-family: 'coco-gothic' !important;
+        font-family: 'coco-gothicUltralight' !important;
         letter-spacing: 2px;
         color: #bbb;  
     }
@@ -333,19 +337,21 @@ div#slide-out {
         color: #00ceff !important;
     }
     .footer-section li a{
-        font-size: 20px !important;
+        font-size: 18px !important;
         color: #777;
         letter-spacing: 1px;
-        font-family: 'Calibri';
+        font-family: 'calibri';
     }
     form#form_newsletter button {
-        min-width: 80px !important;
-        padding: 5px !important;
+        /* min-width: 80px !important; */
+        /* padding: 5px !important; */
         font-size: 16px !important;
+        margin-top: 30px !important;
+        
     }
     tr.active p.txt{
         font-size: 24px !important;
-        font-family: 'rnr-head' !important;
+        font-family: 'calibri' !important;
         color: white !important;
         margin: 0px 0 !important;
         /* padding-top: 6px; */
@@ -514,6 +520,7 @@ div#slide-out {
         z-index: 1;
         position: relative;
         top: 47px;
+    
     }
     .team .right {
         width: 50%;
@@ -852,8 +859,8 @@ div#slide-out {
         color: #777;
     }
     form#form_newsletter button {
-        min-width: 80px !important;
-        padding: 5px !important;
+      /*  min-width: 80px !important; */
+        /* padding: 5px !important; */
         font-size: 10px !important;
     }
     .rnr-parallax3 .layer.service {
@@ -1349,7 +1356,7 @@ div#slide-out {
     }
     form#form_newsletter button {
         /* min-width: 80px !important; */
-        padding: 5px !important;
+        /* padding: 5px !important; */
         nt; */
         nt; */
         font-size: 10px !important;
@@ -1522,8 +1529,10 @@ p.label{
     color: #777;
     border-radius: 2px;
     /* text-transform: uppercase; */
-    /* min-width: 200px; */
-    font-family: coco-gothic !important;
+   /*  min-width: 200px;
+     max-width: 241px; */
+    width: 241px !important;
+    font-family: 'coco-gothicUltralight' !important;
     letter-spacing: 3px;
     font-size: 16px;
 }
