@@ -3236,7 +3236,7 @@ nav ul a span.badge {
 .section {
     padding-top: 0rem;
     padding-bottom: 0rem;
-    border-bottom: 0.1em solid #222;
+    border-bottom: 2px solid #fff;
 }
 
 .section.no-pad {

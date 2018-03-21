@@ -201,11 +201,11 @@ div#slide-out {
         top: 30%;
     }
     div[data-anchor='services']{
-        box-shadow: rgb(0, 0, 0) 0px 25px 100px 50px;
+        box-shadow: rgb(0, 0, 0) 0px 25px 100px 16px;
         z-index: 1;
     }
     div[data-anchor='contact']{
-        box-shadow: rgb(0, 0, 0) 0px -25px 100px 50px;
+        box-shadow: rgb(0, 0, 0) 0px -25px 100px 16px;
         z-index: 1;
     }
     .rnr-parallax3 div[data-display='services-slider']{
