@@ -63,7 +63,7 @@ let dot ={
         timer = setTimeout(function(){
             dot.show();
             dot.random();
-        },2000);
+        },2000); /*2000*/
         return timer;
     },
     show:function(){
@@ -112,13 +112,13 @@ let _idle = {
         dot.show();
         dot.random();
     },
-    active:function(e){
-        if(e.target.nodeName != "tr"){
-        }
-        window.clearTimeout(timer);
-        window.clearTimeout(idleTimerID);
-        this.startTimer();
-    }
+    // active:function(e){
+    //     if(e.target.nodeName != "tr"){
+    //     }
+    //     window.clearTimeout(timer);
+    //     window.clearTimeout(idleTimerID);
+    //     this.startTimer();
+    // }
 }
 let portfolio ={
     ini:function(){

@@ -291,8 +291,9 @@ div#slide-out {
     }
     .copyright small{
         color: white;
-        font-size: 18px;
+        font-size: 16px !important;
         font-family: 'Calibri' !important;
+        letter-spacing: 1px;
     }
     .copyright small i{
         margin: -5px 5px 0 0;
@@ -337,7 +338,7 @@ div#slide-out {
         color: #00ceff !important;
     }
     .footer-section li a{
-        font-size: 18px !important;
+        font-size: 16px !important;
         color: #777;
         letter-spacing: 1px;
         font-family: 'calibri';
